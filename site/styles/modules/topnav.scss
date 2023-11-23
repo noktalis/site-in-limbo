@@ -1,0 +1,49 @@
+$nav-color: #22374D;
+$nav-hover-color: #426476;
+
+$nav-a-color: #D8D9E2;
+$nav-a-hover-color: #FFFFFF;
+$nav-a-active-color: #A5A5BD;
+
+$indicator-bg: #426476;
+
+$footer-color: #F2ECE7;
+$footer-bg-color: #375468;
+
+.nav {
+	position: sticky;
+	top: 0;
+
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 10%;
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(6, 100px);
+	gap: 10px;
+}
+
+.buttons button {
+	border: 0px;
+	border-radius: 15px;
+
+	padding: 8px;
+	margin: 4px;
+
+	font-size: 14px;
+}
+
+.indicator {
+	justify-self: start;
+	margin: 4px;
+    padding: 2px;
+    border-radius: 99px;
+    opacity: 50%;
+
+	&:hover {
+		transition: opacity 0.1s;
+		opacity: 100%;
+	}
+}
