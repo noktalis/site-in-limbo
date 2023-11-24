@@ -5,6 +5,7 @@ $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-seri
 @mixin nav ($bg-color, $font) {
 	position: sticky;
 	top: 0;
+	width: 100%;
 
 	display: grid;
 	grid: 'left buttons right';
@@ -35,9 +36,9 @@ $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-seri
 
 	padding:  0 2vh 0 2vh;
 	margin: 0 auto;
-	height: 75%;
+	height: 65%;
 
-	font-size: 16px;
+	font-size: 20px;
 	font-family: $nav-font;
 
 	background-color: var($bg-color);
@@ -79,30 +80,39 @@ $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-seri
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+	.buttons button {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 785px) {
 	.nav {
-		grid: 	'top'
-				'buttons';
-		gap: 2vh;
+		grid: 'top' 'buttons';
+		gap: 1.25vh;
 	}
 	.indicator {
 		justify-self: center;
 	}
 	.buttons {
-		grid-template-columns: auto;
-		grid-template-rows: repeat(6, auto);
-		gap: 3vh;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(2, auto);
+		gap: 1vh;
 		padding-bottom: 2vh;
 	}
 	.buttons button {
 		height: 100%;
-		padding: 3vh;
-		width: 65%;
+		padding: 2vh 1.5vh 2vh 1.5vh;
+		width: 95%;
+		font-size: 18px;
 	}
 }
 
-@media (max-width: 525px) {
-	.buttons button {
-		width: 85%;
+@media (max-width: 425px) {
+	.buttons {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(6, auto);
+		// gap: 1vh;
+		// padding-bottom: 2vh;
 	}
 }
