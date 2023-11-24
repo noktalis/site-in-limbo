@@ -1,0 +1,22 @@
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+
+/* Friday October Twelve */
+@font-face {
+    font-family: FridayOctoberTwelve;
+    src: url('../../public/fonts/FridayOctoberTwelve.otf');
+}
+
+@font-face {
+    font-family: FridayOctoberTwelve;
+    src: url('../../public/fonts/FridayOctoberTwelveItalic.otf');
+    font-style: italic;
+}
+
+/* 	
+ *	Xue Voice:
+ *	Dehasta
+*/

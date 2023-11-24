@@ -1,6 +1,8 @@
-@use "../components/_lynt-colors.scss";
+@use "../components/fonts";
 
-.nav {
+$nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+
+@mixin nav ($bg-color, $font) {
 	position: sticky;
 	top: 0;
 
@@ -8,23 +10,48 @@
 	grid-template-columns: 1fr auto 1fr;
 	gap: 10%;
 
-	//font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;;
+	background-color: var($bg-color);
+	font-family: $font;
+}
+
+.nav {
+	@include nav(--lyt-nav, $nav-font);
 }
 
 .buttons {
 	display: grid;
-	grid-template-columns: repeat(6, 100px);
+	grid-template-columns: repeat(6, minmax(0, 1fr));
 	gap: 10px;
 }
 
-.buttons button {
+@mixin button ($bg-color, $text-color) {
 	border: 0px;
 	border-radius: 15px;
 
-	padding: 8px;
-	margin: 4px;
+	align-self: center;
+
+	padding:  0 2vh 0 2vh;
+	margin: 0 auto;
+	height: 75%;
 
 	font-size: 14px;
+	font-family: $nav-font;
+
+	background-color: var($bg-color);
+	color: var($text-color);
+}
+
+@mixin button-hover ($bg-color, $text-color) {
+	background-color: var($bg-color);
+	color: var($text-color);
+}
+
+.buttons button {
+	@include button(--lyt-nav, --lyt-nav-a);
+
+	&:hover {
+		@include button-hover(--lyt-nav-h,--lyt-nav-a-h);
+	}
 }
 
 .indicator {

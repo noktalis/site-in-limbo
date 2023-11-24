@@ -2,20 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import topnav from "../styles/modules/topnav.module.scss";
-import colors from "../styles/modules/lynt-colors.module.scss";
-
-const styles = {
-	navStyle: {
-		backgroundColor: colors.navBg
-	},
-	indicatorStyle: {
-		backgroundColor: colors.indicatorBg
-	},
-	buttonStyle: {
-		backgroundColor: colors.navBtn,
-		color: colors.navBtnTxt
-	}
-}
 
 export default function Home(){
 	return (
@@ -37,29 +23,28 @@ export default function Home(){
 
 function TopNav() {
 	return (
-		<div className={topnav.nav}
-			style={styles.navStyle}>
+		<div className={topnav.nav}>
 			
 			<Indicator type=""></Indicator>
 
-			<div className={`${topnav.buttons} buttons`}
+			<div className={topnav.buttons}
 				id='navBtns'>
-				<button style={styles.buttonStyle}>
+				<button>
 					Home
 				</button>
-				<button style={styles.buttonStyle}>
+				<button>
 					Arknights
 				</button>
-				<button style={styles.buttonStyle}>
+				<button>
 					Genshin
 				</button>
-				<button style={styles.buttonStyle}>
+				<button>
 					Star&nbsp;Rail
 				</button>
-				<button style={styles.buttonStyle}>
+				<button>
 					Webring
 				</button>
-				<button style={styles.buttonStyle}>
+				<button>
 					Misc.
 				</button>
 			</div>
@@ -97,8 +82,6 @@ function Indicator(type = "") {
 			width={64}
 			height={64}
 			alt={altText}
-
-			style={styles.indicatorStyle}
 		/>
 	);
 }

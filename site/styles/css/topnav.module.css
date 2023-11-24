@@ -1,0 +1,63 @@
+/*
+ *	CUSTOM FONTS
+ *
+ *	Doesn't seem to work with absolute paths. Stick to relative paths.
+*/
+/* Friday October Twelve */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.otf");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.otf");
+  font-style: italic;
+}
+/* 	
+ *	Xue Voice:
+ *	Dehasta
+*/
+.nav {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10%;
+  background-color: var(--lyt-nav);
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.buttons button {
+  border: 0px;
+  border-radius: 15px;
+  align-self: center;
+  padding: 0 2vh 0 2vh;
+  margin: 0 auto;
+  height: 75%;
+  font-size: 14px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+  background-color: var(--lyt-nav);
+  color: var(--lyt-nav-a);
+}
+.buttons button:hover {
+  background-color: var(--lyt-nav-h);
+  color: var(--lyt-nav-a-h);
+}
+
+.indicator {
+  justify-self: start;
+  margin: 4px;
+  padding: 2px;
+  border-radius: 99px;
+  opacity: 50%;
+}
+.indicator:hover {
+  transition: opacity 0.1s;
+  opacity: 100%;
+}
