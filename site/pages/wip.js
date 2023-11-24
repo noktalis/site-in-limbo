@@ -23,12 +23,14 @@ export default function Home(){
 
 function TopNav() {
 	return (
-		<div className={topnav.nav}>
+		<div className={topnav.nav}
+			id='nav'>
 			
 			<Indicator type=""></Indicator>
 
 			<div className={topnav.buttons}
-				id='navBtns'>
+				id='navBtns'
+				style={{display: "grid"}}>
 				<button>
 					Home
 				</button>
@@ -74,14 +76,35 @@ function Indicator(type = "") {
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 
+	function toggleMenu() {
+		let nav = document.getElementById("nav");
+		let menu = document.getElementById("navBtns");
+		let indic = document.getElementById("indicator");
+
+		// Hide menu
+		if (menu.style.display == 'grid') {
+			menu.style.display = 'none';
+			nav.style.gap = "0";
+		} 
+		//Show menu
+		else {
+			menu.style.display = 'grid';
+			nav.style.gap = "2vh";
+		}
+	}
+
 	return (
 		<Image
 			className={topnav.indicator}
+			id='indicator'
 
 			src={path}
 			width={64}
 			height={64}
 			alt={altText}
+			title="Toggle Menu"
+
+			onClick={toggleMenu}
 		/>
 	);
 }
