@@ -1,0 +1,9 @@
+.lynt {
+  background-image: url("../../public/images/lynette_pattern.svg");
+  background-size: 23%;
+}
+
+.container {
+  display: grid;
+  grid: "aside content right";
+}

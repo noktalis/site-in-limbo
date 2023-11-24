@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import topnav from "../styles/modules/topnav.module.scss";
+import theme from "../styles/modules/lynt.module.scss";
 
 export default function Home(){
 	return (
 		// div container to appease jsx
-		<div>
+		<div className={theme.lynt}>
 			<Head>
 				<title>Home</title>
 				<link rel="icon" href="/ventiico.png" />
@@ -14,7 +15,7 @@ export default function Home(){
 
 			<TopNav></TopNav>
 
-			<div>
+			<div className={theme.container}>
 				<p>Hello World!</p>
 			</div>
 		</div>
@@ -58,6 +59,7 @@ function Indicator(type = "") {
 	let path = "/images/";
 	let altText = "Sticker of "
 
+	// Determines which image to use as indicator
 	switch(type){
 		case "ak":
 			path += "bagpipe_potatoes.png";
@@ -79,17 +81,16 @@ function Indicator(type = "") {
 	function toggleMenu() {
 		let nav = document.getElementById("nav");
 		let menu = document.getElementById("navBtns");
-		let indic = document.getElementById("indicator");
 
 		// Hide menu
 		if (menu.style.display == 'grid') {
 			menu.style.display = 'none';
-			nav.style.gap = "0";
+			nav.style.gap = "0"; //removes funny gap under indicator
 		} 
 		//Show menu
 		else {
 			menu.style.display = 'grid';
-			nav.style.gap = "2vh";
+			nav.style.gap = "2vh"; //returns room between indicator and buttons
 		}
 	}
 
