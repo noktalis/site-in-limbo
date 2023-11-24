@@ -1,0 +1,34 @@
+.container {
+	display: grid;
+	grid: "left center right";
+	grid-template-columns: 1fr 3fr 1fr;
+
+	min-height: 80vh;
+}
+
+@mixin main-color($bg, $txt) {
+	background-color: var($bg);
+	color: var($txt);
+}
+
+.main {
+	grid-area: center;
+	
+	@include main-color(--lyt-main, --lyt-txt);
+
+	h1,h2,h3,h4,h5,h6 {
+		color: var(--lyt-header);
+	}
+
+	a {
+		color: var(--lyt-a);
+		
+		&:hover {
+			color: var(--lyt-a-h);
+		}
+		&:active {
+			color: var(--lyt-a-a);
+		}
+	}
+
+}

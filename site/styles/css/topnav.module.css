@@ -58,6 +58,11 @@
   color: var(--lyt-nav-a-a);
 }
 
+.buttons a {
+  display: flex;
+  text-decoration: none;
+}
+
 .indicator {
   justify-self: start;
   margin: 6px;

@@ -61,6 +61,11 @@ $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-seri
 	}
 }
 
+.buttons a {
+	display: flex;
+	text-decoration: none;
+}
+
 @mixin indicator ($bg-color) {
 	justify-self: start;
 	margin: 6px;
