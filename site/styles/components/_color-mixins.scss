@@ -1,0 +1,19 @@
+
+
+@mixin textColor($color) {
+	color: var($color);
+}
+
+@mixin bgColor($color) {
+	background-color: var($color);
+}
+
+@mixin colors($bg, $text) {
+	background-color: var($bg);
+	color: var($text);
+}
+
+@mixin scrollbarColors($thumb, $track){
+	scrollbar-color: var($thumb) var($track);
+}
+

@@ -7,7 +7,7 @@ import format from "../styles/modules/main.module.scss";
  */
 export default function Main({children}){
 	return(
-		<div className={format.container}>
+		<div className={`${format.container} ${format.lyt}`}>
 			<div className={format.main}>
 				{children}
 			</div>

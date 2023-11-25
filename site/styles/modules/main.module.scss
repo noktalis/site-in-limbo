@@ -1,74 +1,89 @@
-@use "sass:math";
+@use "../components/color-mixins" as *;
 
 /*
  *	Styling for the main container of content and content within
- *	TODO: themes
- * TODO: comments
- * TODO: style scrollbar
 */
 
-@mixin main-color($bg, $txt) {
-	background-color: var($bg);
-	color: var($txt);
-}
-
+/*
+ *	Contains main container and footer in center of page
+ * 	Scrollbar applied here
+*/
 .container {
-	// Keep main and footer in center of page
+	// Center of page
 	grid-area: center;
 
 	// Removes awkward gap between main and footer
 	display: flex;
 	flex-direction: column;
 
-	/* 
-	 *	Styles scrollbar on the side of main and footer
-	*/
+	/* Styles scrollbar on the side of main and footer */
 	// Scroll the container rather than the page
 	height: 89.5vh;
 	overflow-y: auto;
 
-	// Scrollbar settings
-	scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+	/* Scrollbar settings */
 	&::-webkit-scrollbar {
         background-color: transparent;
     }
     &::-webkit-scrollbar-thumb {
-        background-color: var(--lyt-scroll);
         border-radius: 50px;
-
-        &:hover {
-            background-color: var(--lyt-scroll-h);
-        }
     }
 }
 
+/*
+ *	Contains contents of the page that the user is looking for
+*/
 .main {
 	padding: 2vh;
-	
-	@include main-color(--lyt-main, --lyt-txt);
-
-	h1,h2,h3,h4,h5,h6 {
-		color: var(--lyt-header);
-	}
-
-	a {
-		color: var(--lyt-a);
-		
-		&:hover {
-			color: var(--lyt-a-h);
-		}
-		&:active {
-			color: var(--lyt-a-a);
-		}
-	}
 }
 
+/*
+ *	Footer at the bottom of the page below the main container
+*/
 .footer {
-	background-color: var(--lyt-foot);
-	color: var(--lyt-foot-txt);
+	min-height: 8vh;	// maintains that the footer exists on the page w/o content
 
 	padding: 2vh;
 	text-align: center;
+	
+}
 
-	min-height: 8vh;
+/*
+ * 	Theming
+ * 		Applied alongside .container
+*/
+
+/* Lynette */
+.lyt {
+	// Scrollbar Settings
+	@include scrollbarColors(--lyt-scroll, --lyt-scroll-h);	// for firefox
+    &::-webkit-scrollbar-thumb {
+		@include bgColor(--lyt-scroll);
+        &:hover {
+			@include bgColor(--lyt-scroll-h);
+        }
+    }
+	.main {
+		// Background & text color
+		@include colors(--lyt-main, --lyt-txt);
+
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			@include textColor(--lyt-header);
+		}
+
+		// Link colors
+		a {
+			@include textColor(--lyt-a);
+			&:hover {
+				@include textColor(--lyt-a-h);
+			}
+			&:active {
+				@include textColor(--lyt-a-a);
+			}
+		}
+	}
+	.footer {
+		@include colors(--lyt-foot, --lyt-foot-txt);
+	}
 }

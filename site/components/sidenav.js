@@ -1,7 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import LinkButton from "./linkbtn";
 import sidenav from "../styles/modules/sidenav.module.scss";
+
+// TODO: themes
 
 export default function SideNav({type}){
 	let fandom;
