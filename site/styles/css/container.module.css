@@ -1,0 +1,38 @@
+/* 
+ *	Styling for all the space underneath the top navigation bar
+ *	Splits the space into three parts, left, center, and right
+ *		left will contain the aside menu
+ *		center will contain the main container of content
+ *		right will contain free space
+ *	TODO: hide left and right on mobile
+*/
+.container {
+  display: grid;
+  grid: "left center right";
+  grid-template-columns: 1fr 3fr 1fr;
+  min-height: 80vh;
+}
+
+/*
+ *	Styling for the main container of content and content within
+ *	TODO: themes
+ * TODO: comments
+*/
+.main {
+  grid-area: center;
+  padding: 2vh;
+  background-color: var(--lyt-main);
+  color: var(--lyt-txt);
+}
+.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+  color: var(--lyt-header);
+}
+.main a {
+  color: var(--lyt-a);
+}
+.main a:hover {
+  color: var(--lyt-a-h);
+}
+.main a:active {
+  color: var(--lyt-a-a);
+}

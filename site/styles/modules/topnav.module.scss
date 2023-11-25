@@ -1,5 +1,8 @@
 @use "../components/fonts";
 
+// TODO: Comments
+// TODO: themes
+
 $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 
 @mixin nav ($bg-color, $font) {
@@ -10,7 +13,7 @@ $nav-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-seri
 	display: grid;
 	grid: 'left buttons right';
 	grid-template-columns: 1fr auto 1fr;
-	gap: 10%;
+	gap: 2vh;
 
 	background-color: var($bg-color);
 	font-family: $font;

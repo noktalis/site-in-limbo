@@ -24,7 +24,7 @@
   display: grid;
   grid: "left buttons right";
   grid-template-columns: 1fr auto 1fr;
-  gap: 10%;
+  gap: 2vh;
   background-color: var(--lyt-nav);
   font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
 }

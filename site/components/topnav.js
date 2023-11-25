@@ -2,12 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import topnav from "../styles/modules/topnav.module.scss";
 
-export default function TopNav() {
+// TODO: fix links later
+/**
+ * Top navigation bar of a page
+ * Includes Indicator component and 6 navigation buttons between fandom pages
+ * @returns 
+ */
+export default function TopNav({indicType}) {
 	return (
 		<div className={topnav.nav}
 			id='nav'>
 			
-			<Indicator type=""></Indicator>
+			<Indicator type={indicType}></Indicator>
 
 			<div className={topnav.buttons}
 				id='navBtns'
@@ -72,9 +78,14 @@ export default function TopNav() {
 	);
 }
 
-function Indicator(type = "") {
+/**
+ * Image in the left corner of the top navigation bar INDICATING theme of the page
+ * @param {String} type 
+ * @returns 
+ */
+function Indicator({ type }) {
 	let path = "/images/";
-	let altText = "Sticker of "
+	let altText = "Sticker of ";
 
 	// Determines which image to use as indicator
 	switch(type){
