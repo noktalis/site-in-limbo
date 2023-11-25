@@ -16,8 +16,11 @@ export default function Main({children}){
 	);
 }
 
-// TODO: put footer here so scrollbar can be styled
-
+/**
+ * Footer at the bottom of the page
+ * Goes into the container after Main so that its width doesn't span the whole page
+ * @returns 
+ */
 export function Footer(){
 	return (
 		<div className={format.footer}>

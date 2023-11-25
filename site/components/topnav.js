@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import LinkButton from './linkbtn';
 import topnav from "../styles/modules/topnav.module.scss";
 
 // TODO: fix links later
@@ -19,59 +19,35 @@ export default function TopNav({type}) {
 				id='navBtns'
 				style={{display: "grid"}}>
 
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Home'>
-						Home
-					</button>
-				</Link>
+				<LinkButton
+					path={"/"}
+					title={"Home"}
+					text={"Home"}></LinkButton>
+
+				<LinkButton
+					path={"/"}
+					title={"Arknights"}
+					text={"Arknights"}></LinkButton>
+
+				<LinkButton
+					path={"/"}
+					title={"Genshin Impact"}
+					text={"Genshin"}></LinkButton>
+
+				<LinkButton
+					path={"/"}
+					title={"Honkai: Star Rail"}
+					text={"Star Rail"}></LinkButton>
 				
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Arknights'>
-						Arknights
-					</button>
-				</Link>
+				<LinkButton
+					path={"/"}
+					title={"Webring"}
+					text={"Webring"}></LinkButton>
 
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Genshin'>
-						Genshin
-					</button>
-				</Link>
-				
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Star Rail'>
-						Star&nbsp;Rail
-					</button>
-				</Link>
-
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Webring'>
-						Webring
-					</button>
-				</Link>
-
-				<Link
-					href="/">
-					<button 
-						role='link'
-						title='Miscellaneous'>
-						Misc.
-					</button>
-				</Link>
+				<LinkButton
+					path={"/"}
+					title={"Miscellaneous"}
+					text={"Misc."}></LinkButton>
 				
 			</div>
 		</div>

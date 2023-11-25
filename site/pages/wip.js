@@ -2,7 +2,6 @@ import Head from 'next/head';
 import TopNav from '../components/topnav';
 import Container from '../components/container';
 import theme from "../styles/modules/lynt.module.scss";
-import format from "../styles/modules/container.module.scss";
 
 export default function Home(){
 	return (
@@ -16,9 +15,6 @@ export default function Home(){
 			<TopNav type="ak"></TopNav>
 
 			<Container contents={<Content/>}>
-				{/* Left: Aside Menu */}
-				{/* TODO: aside component */}
-
 				{/* TODO: Content component define per page */}
 			</Container>
 		</div>
@@ -43,6 +39,21 @@ function Content() {
 				<li>Item 4</li>
 				<li>Item 3</li>
 			</ul>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>hi</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>hi</p>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>hi</p>
 		</div>
 	);
 }

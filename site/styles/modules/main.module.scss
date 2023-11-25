@@ -13,14 +13,37 @@
 }
 
 .container {
+	// Keep main and footer in center of page
 	grid-area: center;
+
+	// Removes awkward gap between main and footer
 	display: flex;
 	flex-direction: column;
+
+	/* 
+	 *	Styles scrollbar on the side of main and footer
+	*/
+	// Scroll the container rather than the page
+	height: 89.5vh;
+	overflow-y: auto;
+
+	// Scrollbar settings
+	scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+	&::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--lyt-scroll);
+        border-radius: 50px;
+
+        &:hover {
+            background-color: var(--lyt-scroll-h);
+        }
+    }
 }
 
 .main {
 	padding: 2vh;
-	min-height: 78.5vh;
 	
 	@include main-color(--lyt-main, --lyt-txt);
 
