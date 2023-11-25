@@ -14,36 +14,4 @@
 	min-height: 80vh;
 }
 
-
-/*
- *	Styling for the main container of content and content within
- *	TODO: themes
- * TODO: comments
-*/
-
-@mixin main-color($bg, $txt) {
-	background-color: var($bg);
-	color: var($txt);
-}
-
-.main {
-	grid-area: center;
-	padding: 2vh;
-	
-	@include main-color(--lyt-main, --lyt-txt);
-
-	h1,h2,h3,h4,h5,h6 {
-		color: var(--lyt-header);
-	}
-
-	a {
-		color: var(--lyt-a);
-		
-		&:hover {
-			color: var(--lyt-a-h);
-		}
-		&:active {
-			color: var(--lyt-a-a);
-		}
-	}
-}
+// TODO: put aside styling here so it can be handled on mobile

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import TopNav from '../components/topnav';
-import Main from '../components/main';
+import Container from '../components/container';
 import theme from "../styles/modules/lynt.module.scss";
 import format from "../styles/modules/container.module.scss";
 
@@ -15,18 +15,12 @@ export default function Home(){
 
 			<TopNav indicType=""></TopNav>
 
-			<div className={format.container}>
+			<Container contents={<Content/>}>
 				{/* Left: Aside Menu */}
 				{/* TODO: aside component */}
 
-				{/* Center: Main w/ contents */}
-				<Main children={<Content/>}>
-					{/* TODO: Content component define per page */}
-				</Main>
-
-				{/* Right: Free Space */}
-				
-			</div>
+				{/* TODO: Content component define per page */}
+			</Container>
 		</div>
 	); // end return
 } // end Home Component
