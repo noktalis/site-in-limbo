@@ -1,5 +1,6 @@
 import format from "../styles/modules/container.module.scss";
 import Main from "./main";
+import SideNav from "./sidenav";
 
 // TODO: handle aside types
 /**
@@ -14,7 +15,7 @@ import Main from "./main";
 export default function Container({contents}){
 	return(
 		<div className={format.container}>
-			{/* TODO: add aside menu */}
+			<SideNav type={""}></SideNav>
 			<Main children={contents}/>
 		</div>
 	);

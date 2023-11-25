@@ -1,4 +1,7 @@
+import Link from "next/link";
+import Image from "next/image";
 import LinkButton from "./linkbtn";
+import sidenav from "../styles/modules/sidenav.module.scss";
 
 export default function SideNav({type}){
 	let fandom;
@@ -12,17 +15,29 @@ export default function SideNav({type}){
 	}
 
 	return(
-		<div>
-			<Link>
-				<h2>{fandom}</h2>
-			</Link>
-			<hr/>
+		<div className={sidenav.nav}>
+			<div className={`${sidenav.container} ${sidenav.top}`}>
+				<Link href="/">
+					<h1>{fandom}</h1>
+				</Link>
+			</div>
+			
+			<Divider/>
 
-			{/* Link Buttons */}
-			<LinkButton
+			<div className={`${sidenav.container} ${sidenav.bottom}`}>
+				<LinkButton
 				path={"/"}
 				title={"Placeholder"}
 				text={"idk lol"}></LinkButton>
+			</div>
+
+			<div className={sidenav.extra}></div>
 		</div>
+	);
+}
+
+function Divider(){
+	return(
+		<div className={sidenav.divider}></div>
 	);
 }

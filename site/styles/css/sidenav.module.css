@@ -17,3 +17,70 @@
  *	Xue Voice:
  *	Dehasta
 */
+.nav {
+  grid-area: left;
+  justify-self: end;
+  margin-right: 3vh;
+  margin-top: 3vh;
+  height: 85%;
+  width: 65%;
+  border-radius: 30px 5px 5px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lyt-main);
+  border: #9D9286 solid 5px;
+}
+.nav hr {
+  border: 2px solid black;
+  margin: 0 0 1vh 0;
+}
+
+/*
+ *	Content container
+*/
+.container {
+  padding: 2vh;
+}
+
+/*	
+ *	Styling for the top container within the side navigation menu
+ *		Styles the link and h1 element
+*/
+.top h1 {
+  font-size: 28px;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
+}
+
+/*	
+ *	Styling for the custom divider using an image
+ *		Setting the image done where since it wouldn't appear on sidenav.js
+*/
+.divider {
+  background-image: url("../../public/images/lynette_teacup_segment.svg");
+  background-size: 120px;
+  background-repeat: repeat-x;
+  background-color: #333333;
+  border-top: #9D9286 solid 5px;
+  height: 55px;
+}
+
+/*	
+ *	Styling for the bottom container within the side navigation menu
+ *		Styles the link buttons
+*/
+.bottom {
+  background-color: #333333;
+  height: 100%;
+  border-radius: 0 0px 0px 25px;
+}
+.bottom a {
+  display: flex;
+  text-decoration: none;
+}
+.bottom button {
+  width: 100%;
+  border: #9D9286 solid 4px;
+  border-radius: 10px;
+  padding: 1vh;
+}
