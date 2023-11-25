@@ -1,7 +1,10 @@
+@use "sass:math";
+
 /*
  *	Styling for the main container of content and content within
  *	TODO: themes
  * TODO: comments
+ * TODO: style scrollbar
 */
 
 @mixin main-color($bg, $txt) {
@@ -9,9 +12,15 @@
 	color: var($txt);
 }
 
-.main {
+.container {
 	grid-area: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
 	padding: 2vh;
+	min-height: 78.5vh;
 	
 	@include main-color(--lyt-main, --lyt-txt);
 
@@ -29,4 +38,14 @@
 			color: var(--lyt-a-a);
 		}
 	}
+}
+
+.footer {
+	background-color: var(--lyt-foot);
+	color: var(--lyt-foot-txt);
+
+	padding: 2vh;
+	text-align: center;
+
+	min-height: 8vh;
 }

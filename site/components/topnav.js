@@ -8,12 +8,12 @@ import topnav from "../styles/modules/topnav.module.scss";
  * Includes Indicator component and 6 navigation buttons between fandom pages
  * @returns 
  */
-export default function TopNav({indicType}) {
+export default function TopNav({type}) {
 	return (
 		<div className={topnav.nav}
 			id='nav'>
 			
-			<Indicator type={indicType}></Indicator>
+			<Indicator type={type}></Indicator>
 
 			<div className={topnav.buttons}
 				id='navBtns'

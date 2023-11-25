@@ -7,13 +7,13 @@ import format from "../styles/modules/container.module.scss";
 export default function Home(){
 	return (
 		// div container to appease jsx
-		<div className={theme.lynt}>
+		<div className={theme.bg}>
 			<Head>
 				<title>Home</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 
-			<TopNav indicType=""></TopNav>
+			<TopNav type="ak"></TopNav>
 
 			<Container contents={<Content/>}>
 				{/* Left: Aside Menu */}
@@ -25,6 +25,10 @@ export default function Home(){
 	); // end return
 } // end Home Component
 
+/**
+ * Contents uniquely defined on each page
+ * @returns 
+ */
 function Content() {
 	return (
 		<div>
@@ -43,6 +47,6 @@ function Content() {
 	);
 }
 
-/* See
+/* See context
 https://react.dev/reference/react/Component
 for semi-automating theming */
