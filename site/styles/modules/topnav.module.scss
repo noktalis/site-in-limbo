@@ -85,13 +85,12 @@
 /* Lynette */
 .lyt {
 	background-color: var(--lyt-nav);
-	font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 
 	.buttons button {
 		border-radius: 15px;
 		@include btn-colors(--lyt-nav, --lyt-nav-a,--lyt-nav-h,--lyt-nav-a-h,--lyt-nav-h, --lyt-nav-a-a);
 		font-size: 20px;
-		// font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
 
 	.indicator {
