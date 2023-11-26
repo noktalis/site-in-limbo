@@ -2,7 +2,6 @@ import format from "../styles/modules/container.module.scss";
 import Main from "./main";
 import SideNav from "./sidenav";
 
-// TODO: handle aside types
 /**
  * Container that holds all elements aside from the top navigation bar
  * Divides itself into three sections:
@@ -15,7 +14,7 @@ import SideNav from "./sidenav";
 export default function Container({children}){
 	return(
 		<div className={format.container}>
-			<SideNav type={""}></SideNav>
+			<SideNav></SideNav>
 			<Main>{children}</Main>
 		</div>
 	);

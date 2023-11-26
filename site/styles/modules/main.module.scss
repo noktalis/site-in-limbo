@@ -48,8 +48,7 @@
 	text-align: center;
 }
 
-/*
- * 	Theming
+/*	Theming
  * 		Applied alongside .container
 */
 
@@ -75,7 +74,7 @@
 			color: var(--lyt-header);
 		}
 
-		// Link colors
+		// Link colors TODO: create mixin
 		a {
 			color: var(--lyt-a);
 			&:hover {
@@ -86,6 +85,7 @@
 			}
 		}
 	}
+
 	.footer {
 		@include colors(--lyt-foot, --lyt-foot-txt);
 	}

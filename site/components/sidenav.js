@@ -4,8 +4,11 @@ import sidenav from "../styles/modules/sidenav.module.scss";
 import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
 
-// TODO: themes
-
+/**
+ * Side navigation menu
+ * 		Content changes based on the theme
+ * @returns 
+ */
 export default function SideNav(){
 	const theme = useContext(ThemeContext);
 
@@ -18,6 +21,7 @@ export default function SideNav(){
 			fandom = "Arknights";
 			themeClass = sidenav.lyt;	// TODO: change later
 			break;
+		case "lyt":
 		case "genshin":
 			fandom = "Genshin";
 			themeClass = sidenav.lyt;
@@ -37,6 +41,7 @@ export default function SideNav(){
 			
 			<Divider/>
 
+			{/* might turn this div into a Menu component */}
 			<div className={`${sidenav.container} ${sidenav.bottom}`}>
 				<LinkButton
 				path={"/"}
@@ -66,8 +71,14 @@ export default function SideNav(){
 	);
 }
 
+/**
+ * Divider between the top and bottom containers of the navigation menu
+ * @returns 
+ */
 function Divider(){
 	return(
 		<div className={sidenav.divider}></div>
 	);
 }
+
+// TODO: change content of sidenav based on theme (Menu function here)

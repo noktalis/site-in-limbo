@@ -1,8 +1,18 @@
 
 
-@mixin colors($bg, $text) {
+@mixin colors($bg, $text){
 	background-color: var($bg);
 	color: var($text);
+}
+
+@mixin btn-colors($bg, $text, $bg-hover, $text-hover, $bg-active, $text-active){
+	@include colors($bg, $text);
+	&:hover {
+		@include colors($bg-hover, $text-hover);
+	}
+	&:active{
+		@include colors($bg-active, $text-active);
+	}
 }
 
 @mixin scrollbarColorsFF($thumb, $track){

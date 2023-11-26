@@ -2,7 +2,7 @@
  * Followed from:
  * https://nextjs.org/learn-pages-router/basics/assets-metadata-css/global-styles
  * 
- * This file exists to apply global.css across the app
+ * This file exists to apply global.scss and other global stylesheets across the app
  */
 
 import '../styles/global.scss';

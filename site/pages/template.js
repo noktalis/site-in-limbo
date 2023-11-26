@@ -3,20 +3,25 @@ import Layout from '../components/layout';
 import { ThemeContext } from '../components/ThemeContext';
 
 /**
- * Home page of website
+ * Defines elements of a page at the highest level, including:
+ * 		- page theme (ThemeContext)
+ * 		- page title (<Head>)
+ * 		- page content (See Content() below)
  * @returns 
  */
-export default function Home(){
+export default function Template(){
 	return (
+		// TODO: change page theme
 		<ThemeContext.Provider value=''>
 			<Head>
-				<title>Home</title>
+				{/* TODO: change page title */}
+				<title>Template</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
 		</ThemeContext.Provider>
 	); // end return
-} // end Home Component
+} // end Component
 
 /**
  * Contents uniquely defined on each page
@@ -25,6 +30,7 @@ export default function Home(){
 function Content() {
 	return (
 		<div>
+			{/* TODO: define page content */}
 			<h1>Header 1</h1>
 			<h6>Header 6</h6>
 			<p>Hello World!</p>
@@ -54,3 +60,4 @@ function Content() {
 		</div>
 	);
 }
+

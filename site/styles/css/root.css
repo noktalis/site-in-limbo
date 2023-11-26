@@ -1,7 +1,10 @@
 :root {
-  --shrink-right-1: 1200px;
-  /*  
-   *	Lynette Colors 
+  /*	Manual collapsible fold:
+   *		Ctrl+K Ctrl+,
+   *	To remove:
+   *		Ctrl+K Ctrl+.
+  */
+  /*  Lynette Colors 
   */
   --lyt-white1: #D8D9E2;
   --lyt-white2: #F2ECE7;
@@ -24,8 +27,7 @@
   --lyt-teal1: #3CA9A8;
   --lyt-teal2: #08A8B1;
   --lyt-teal3: #25C9CC;
-  /*
-   *	Lynette Theme
+  /*	Lynette Theme
   */
   --lyt-bg: var(--lyt-teal1);
   --lyt-nav: var(--lyt-blue1);
@@ -65,5 +67,5 @@
   --lyt-bub-L: var(--lyt-violet3);
   --lyt-bub-L-txt: var(--lyt-white1);
   --lyt-bub-R: var(--lyt-violet2);
-  --lyt-bub-R-txt: var(--lyt-violet3) ;
+  --lyt-bub-R-txt: var(--lyt-violet3);
 }

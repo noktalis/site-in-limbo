@@ -5,20 +5,25 @@ import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 
 // TODO: fix links later
-// TODO: navbar themes
 /**
  * Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages
  * @returns 
  */
 export default function TopNav() {
-	// const theme = useContext(ThemeContext);
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch(theme){
+		default:
+			themeClass = topnav.lyt;
+	}
+
 	return (
-		<div className={topnav.nav}
+		<div className={`${topnav.nav} ${themeClass}`}
 			id='nav'>
 			
 			<Indicator></Indicator>
-
 			<div className={topnav.buttons}
 				id='navBtns'
 				style={{display: "grid"}}>
@@ -52,7 +57,6 @@ export default function TopNav() {
 					path={"/"}
 					title={"Miscellaneous"}
 					text={"Misc."}></LinkButton>
-				
 			</div>
 		</div>
 	);
@@ -82,6 +86,7 @@ function Indicator() {
 			path += "";
 			altText += "Yanqing being smug";
 			break;
+		case "test":
 		default:
 			path += "anemo.png";
 			altText = "Symbol of Anemo from Genshin Impact"

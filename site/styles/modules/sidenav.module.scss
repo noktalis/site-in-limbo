@@ -1,6 +1,10 @@
 @use "../components/fonts";
 @use "../components/color-mixins" as *;
 
+
+/*
+ * Styles the container that holds the entire navigation menu
+*/
 .nav {
 	// Positioning
 	grid-area: left;
@@ -18,9 +22,8 @@
 	flex-direction: column;
 }
 
-
 /*
- *	Content container
+ *	Content container within .nav
 */
 .container {
 	padding: 2vh;
@@ -108,16 +111,55 @@
 		$scroll: #161616;
 
 		// scroll settings
-		// TODO: scrollbar thumb colors
 		@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox TODO:
 		@include scrollbarColor($scroll);
 
 		button {
 			border: var(--gold) solid 4px;
 			border-radius: 10px;
+			// TODO: background color
 		}
 	}
 }
+
+/* Template/Test */
+.test {
+	//.nav
+	background-color: transparent;
+
+	.divider {
+		height: 55px;
+		width: 100%;
+		background-color: transparent;
+	}
+
+	.bottom {
+		background-color: transparent;
+
+		//scroll settings
+		$scroll: black;
+		@include scrollbarColorsFF($scroll, $scroll);
+		@include scrollbarColor($scroll);
+
+		button {
+			background-color: white;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*	Mobile formatting
+*/
 
 @media (max-width: 1250px) {
 	.nav {

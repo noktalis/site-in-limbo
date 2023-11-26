@@ -1,10 +1,8 @@
-/* 
- *	Styling for all the space underneath the top navigation bar
+/* Styling for all the space underneath the top navigation bar
  *	Splits the space into three parts, left, center, and right
  *		left will contain the aside menu
  *		center will contain the main container of content
  *		right will contain free space
- *	TODO: hide left and right on mobile
 */
 .container {
   display: grid;
