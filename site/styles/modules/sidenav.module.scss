@@ -105,7 +105,7 @@
 
 	.bottom {
 		background-color: var(--gray);
-		$scroll: #9D9286;
+		$scroll: #161616;
 
 		// scroll settings
 		// TODO: scrollbar thumb colors
@@ -116,5 +116,30 @@
 			border: var(--gold) solid 4px;
 			border-radius: 10px;
 		}
+	}
+}
+
+@media (max-width: 1250px) {
+	.nav {
+		width: 75%;
+	}
+}
+
+@media (max-width: 1150px) {
+	.nav {
+		width: 80%;
+	}
+}
+
+@media (max-width: 970px) {
+	.nav {
+		width: 90%;
+		margin-right: 2vh;
+	}
+}
+
+@media (max-width: 850px) {
+	.nav {
+		display: none;
 	}
 }

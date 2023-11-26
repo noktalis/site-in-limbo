@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import TopNav from '../components/topnav';
 import Container from '../components/container';
-import theme from "../styles/modules/lynt.module.scss";
+import theme from "../styles/modules/background.module.scss";
 import { ThemeContext } from '../components/ThemeContext';
 
 export default function Home(){

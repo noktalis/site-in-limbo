@@ -13,4 +13,29 @@
 	gap: 0;
 }
 
-// TODO: put aside styling here so it can be handled on mobile
+/*	Mobile formatting
+*/
+
+@media (max-width: 1250px) {
+	.container {
+		grid-template-columns: 4fr 10fr 2fr;
+	}
+}
+
+@media (max-width: 1150px) {
+	.container {
+		grid-template-columns: 4fr 10fr 1fr;
+	}
+}
+
+@media (max-width: 970px) {
+	.container {
+		grid-template-columns: 4fr 10fr;
+	}
+}
+
+@media (max-width: 850px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+}
