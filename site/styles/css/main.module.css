@@ -16,6 +16,7 @@
 }
 .container::-webkit-scrollbar {
   background-color: transparent;
+  width: 1.5vh;
 }
 .container::-webkit-scrollbar-thumb {
   border-radius: 50px;
@@ -43,13 +44,18 @@
 */
 /* Lynette */
 .lyt {
+  /* 	Note about $scroll: update with --lyt-scroll manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
   scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
 }
 .lyt::-webkit-scrollbar-thumb {
-  background-color: var(--lyt-scroll);
+  background-color: rgba(3, 44, 52, 0.7);
 }
 .lyt::-webkit-scrollbar-thumb:hover {
-  background-color: var(--lyt-scroll-h);
+  background-color: rgba(3, 44, 52, 0.9);
 }
 .lyt .main {
   background-color: var(--lyt-main);

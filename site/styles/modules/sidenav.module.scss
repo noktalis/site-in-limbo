@@ -1,6 +1,5 @@
 @use "../components/fonts";
-
-$gold: #9D9286;
+@use "../components/color-mixins" as *;
 
 .nav {
 	// Positioning
@@ -15,18 +14,8 @@ $gold: #9D9286;
 	border-radius: 30px 5px 5px 30px;
 
 	// Appearance
-	
 	display: flex;
 	flex-direction: column;
-	background-color: var(--lyt-main);
-	border: $gold solid 5px;
-
-	hr {
-		border: 2px solid black;
-		margin: 0 0 1vh 0;
-	}
-
-	
 }
 
 
@@ -41,6 +30,7 @@ $gold: #9D9286;
  *	Styling for the top container within the side navigation menu
  *		Styles the link and h1 element
 */
+// TODO: adjust after fonts are added
 .top {
 	h1 {
 		font-size: 28px;
@@ -50,20 +40,11 @@ $gold: #9D9286;
 }
 
 
-$bottom-color: #333333;
-
 /*	
  *	Styling for the custom divider using an image
  *		Setting the image done where since it wouldn't appear on sidenav.js
 */
 .divider {
-	background-image: url("../../public/images/lynette_teacup_segment.svg");
-	background-size: 120px;
-	background-repeat: repeat-x;
-
-	background-color: $bottom-color;
-	border-top: $gold solid 5px;
-
 	height: 55px;
 }
 
@@ -72,7 +53,6 @@ $bottom-color: #333333;
  *		Styles the link buttons
 */
 .bottom {
-	background-color: $bottom-color;
 	height: 100%;
 	border-radius: 0 0px 0px 25px;
 
@@ -83,10 +63,58 @@ $bottom-color: #333333;
 
 	button {
 		width: 100%;
-
-		border: $gold solid 4px;
-		border-radius: 10px;
-
 		padding: 1vh;
+	}
+
+	// scroll settings
+	height: 100%;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+        background-color: transparent;
+		width: 1vh;
+    }
+	&::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+    }
+}
+
+
+/*	Theming
+ *		Applied alongside .nav
+*/
+
+/* Lynette*/
+.lyt {
+	--gold: #9D9286;
+	--gray: #333333;
+
+	// .nav
+	background-color: var(--lyt-main);
+	border: var(--gold) solid 5px;
+
+	.divider {
+		background-image: url("../../public/images/lynette_teacup_segment.svg");
+		background-size: 120px;
+		background-repeat: repeat-x;
+		height: 55px;
+		width: 100%;
+
+		background-color: var(--gray);
+		border-top: var(--gold) solid 5px;
+	}
+
+	.bottom {
+		background-color: var(--gray);
+		$scroll: #9D9286;
+
+		// scroll settings
+		// TODO: scrollbar thumb colors
+		@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox TODO:
+		@include scrollbarColor($scroll);
+
+		button {
+			border: var(--gold) solid 4px;
+			border-radius: 10px;
+		}
 	}
 }

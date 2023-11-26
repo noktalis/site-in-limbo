@@ -1,19 +1,23 @@
 import Image from 'next/image';
 import LinkButton from './linkbtn';
 import topnav from "../styles/modules/topnav.module.scss";
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
 
 // TODO: fix links later
+// TODO: navbar themes
 /**
  * Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages
  * @returns 
  */
-export default function TopNav({type}) {
+export default function TopNav() {
+	// const theme = useContext(ThemeContext);
 	return (
 		<div className={topnav.nav}
 			id='nav'>
 			
-			<Indicator type={type}></Indicator>
+			<Indicator></Indicator>
 
 			<div className={topnav.buttons}
 				id='navBtns'
@@ -56,15 +60,16 @@ export default function TopNav({type}) {
 
 /**
  * Image in the left corner of the top navigation bar INDICATING theme of the page
- * @param {String} type 
  * @returns 
  */
-function Indicator({ type }) {
+function Indicator() {
+	const theme = useContext(ThemeContext);
+
 	let path = "/images/";
 	let altText = "Sticker of ";
 
 	// Determines which image to use as indicator
-	switch(type){
+	switch(theme){
 		case "ak":
 			path += "bagpipe_potatoes.png";
 			altText += "Bagpipe with potatoes";

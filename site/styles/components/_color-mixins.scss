@@ -1,19 +1,21 @@
 
 
-@mixin textColor($color) {
-	color: var($color);
-}
-
-@mixin bgColor($color) {
-	background-color: var($color);
-}
-
 @mixin colors($bg, $text) {
 	background-color: var($bg);
 	color: var($text);
 }
 
-@mixin scrollbarColors($thumb, $track){
+@mixin scrollbarColorsFF($thumb, $track){
 	scrollbar-color: var($thumb) var($track);
+	
 }
 
+@mixin scrollbarColor($color){
+	$scroll: $color;
+	&::-webkit-scrollbar-thumb {
+		background-color: transparentize($scroll, 0.3);
+		&:hover {
+			background-color: transparentize($scroll, 0.1);
+		}
+	}
+}

@@ -2,22 +2,22 @@ import Head from 'next/head';
 import TopNav from '../components/topnav';
 import Container from '../components/container';
 import theme from "../styles/modules/lynt.module.scss";
+import { ThemeContext } from '../components/ThemeContext';
 
 export default function Home(){
 	return (
-		// div container to appease jsx
-		<div className={theme.bg}>
-			<Head>
-				<title>Home</title>
-				<link rel="icon" href="/ventiico.png" />
-			</Head>
+		<ThemeContext.Provider value=''>
+			<div className={theme.bg}>
+				<Head>
+					<title>Home</title>
+					<link rel="icon" href="/ventiico.png" />
+				</Head>
 
-			<TopNav type="ak"></TopNav>
+				<TopNav></TopNav>
 
-			<Container contents={<Content/>}>
-				{/* TODO: Content component define per page */}
-			</Container>
-		</div>
+				<Container><Content/></Container>	
+			</div>
+		</ThemeContext.Provider>
 	); // end return
 } // end Home Component
 

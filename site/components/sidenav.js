@@ -1,22 +1,34 @@
 import Link from "next/link";
 import LinkButton from "./linkbtn";
 import sidenav from "../styles/modules/sidenav.module.scss";
+import { ThemeContext } from "./ThemeContext";
+import { useContext } from "react";
 
 // TODO: themes
 
-export default function SideNav({type}){
-	let fandom;
+export default function SideNav(){
+	const theme = useContext(ThemeContext);
 
-	switch(type){
+	let fandom;
+	let themeClass;
+
+	// TODO: switch href
+	switch(theme){
 		case "ak":
 			fandom = "Arknights";
+			themeClass = sidenav.lyt;	// TODO: change later
+			break;
+		case "genshin":
+			fandom = "Genshin";
+			themeClass = sidenav.lyt;
 			break;
 		default:
 			fandom = "Navigation";
+			themeClass = sidenav.lyt;
 	}
 
 	return(
-		<div className={sidenav.nav}>
+		<div className={`${sidenav.nav} ${themeClass}`}>
 			<div className={`${sidenav.container} ${sidenav.top}`}>
 				<Link href="/">
 					<h1>{fandom}</h1>
@@ -30,9 +42,26 @@ export default function SideNav({type}){
 				path={"/"}
 				title={"Placeholder"}
 				text={"idk lol"}></LinkButton>
-			</div>
 
-			<div className={sidenav.extra}></div>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<p>hi</p>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<p>hi</p>
+			</div>
 		</div>
 	);
 }

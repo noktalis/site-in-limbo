@@ -24,6 +24,7 @@
 	/* Scrollbar settings */
 	&::-webkit-scrollbar {
         background-color: transparent;
+		width: 1.5vh;
     }
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
@@ -45,7 +46,6 @@
 
 	padding: 2vh;
 	text-align: center;
-	
 }
 
 /*
@@ -55,31 +55,34 @@
 
 /* Lynette */
 .lyt {
+	/* 	Note about $scroll: update with --lyt-scroll manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #032C34;
+
 	// Scrollbar Settings
-	@include scrollbarColors(--lyt-scroll, --lyt-scroll-h);	// for firefox
-    &::-webkit-scrollbar-thumb {
-		@include bgColor(--lyt-scroll);
-        &:hover {
-			@include bgColor(--lyt-scroll-h);
-        }
-    }
+	@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
 	.main {
 		// Background & text color
 		@include colors(--lyt-main, --lyt-txt);
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
-			@include textColor(--lyt-header);
+			color: var(--lyt-header);
 		}
 
 		// Link colors
 		a {
-			@include textColor(--lyt-a);
+			color: var(--lyt-a);
 			&:hover {
-				@include textColor(--lyt-a-h);
+				color: var(--lyt-a-h);
 			}
 			&:active {
-				@include textColor(--lyt-a-a);
+				color: var(--lyt-a-a);
 			}
 		}
 	}
