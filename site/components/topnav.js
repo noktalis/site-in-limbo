@@ -5,11 +5,9 @@ import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 
 // TODO: fix links later
-/**
- * Top navigation bar of a page
+/**Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages
- * @returns 
- */
+ * @returns  */
 export default function TopNav() {
 	const theme = useContext(ThemeContext);
 	let themeClass;
@@ -68,10 +66,8 @@ export default function TopNav() {
 	);
 }
 
-/**
- * Image in the left corner of the top navigation bar INDICATING theme of the page
- * @returns 
- */
+/**Image in the left corner of the top navigation bar INDICATING theme of the page
+ * @returns  */
 function Indicator() {
 	const theme = useContext(ThemeContext);
 

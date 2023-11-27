@@ -3,23 +3,138 @@
  *
  *	Doesn't seem to work with absolute paths. Stick to relative paths.
 */
-/* Friday October Twelve */
+/* 	Xue Voice: Dehasta */
 @font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelve.otf");
+  font-family: Dehasta;
+  src: url("../../public/fonts/Dehasta.woff2") format("woff2");
 }
 @font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelveItalic.otf");
+  font-family: Dehasta;
+  src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
   font-style: italic;
 }
-/* 	
- *	Xue Voice:
- *	Dehasta
-*/
-/*
- * Styles the container that holds the entire navigation menu
-*/
+/* Friday October Twelve 
+ *   For the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* SaltyCheese
+ *   For headers */
+@font-face {
+  font-family: SaltyCheese;
+  src: url("../../public/fonts/SaltyCheese.woff2") format("woff2");
+}
+/* Handlee
+ *   For headers */
+@font-face {
+  font-family: Handlee;
+  src: url("../../public/fonts/Handlee.woff2") format("woff2");
+}
+/* Matilda 
+ *   For text in Main container */
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/Mattilda.woff2") format("woff2");
+}
+@font-face {
+  font-family: Mattilda;
+  src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
+  font-style: italic;
+}
+/* Roboto Condensed 
+ *   For Arknights */
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: RobotoCondensed;
+  src: url("../../public/fonts/RobotoCondensed/RobotoCondensed-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/* I forgot what I wanted these for but I want them around In Case */
+/* BalsamiqSans */
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../publicfonts/Balsamiq/BalsamiqSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: BalsamiqSans;
+  src: url("../../public/fonts/Balsamiq/BalsamiqSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+/* Comic Nue */
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-Italic.woff2") format("woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-Bold.woff2") format("woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-Light.woff2") format("woff2");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "Comic Nue";
+  src: url("../../public/fonts/ComicNeue/ComicNeue-LightItalic.woff2") format("woff2");
+  font-weight: lighter;
+  font-style: italic;
+}
+/*	Styles the container that holds the entire navigation menu */
 .nav {
   grid-area: left;
   justify-self: end;
@@ -32,35 +147,27 @@
   flex-direction: column;
 }
 
-/*
- *	Content container within .nav
-*/
+/*	Content container within .nav */
 .container {
   padding: 2vh;
 }
 
-/*	
- *	Styling for the top container within the side navigation menu
- *		Styles the link and h1 element
-*/
+/*	Styling for the top container within the side navigation menu
+ *		Styles the link and h1 element */
 .top h1 {
   font-size: 28px;
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
 
-/*	
- *	Styling for the custom divider using an image
- *		Setting the image done where since it wouldn't appear on sidenav.js
-*/
+/*	Styling for the custom divider using an image
+ *		Setting the image done where since it wouldn't appear on sidenav.js */
 .divider {
   height: 55px;
 }
 
-/*	
- *	Styling for the bottom container within the side navigation menu
- *		Styles the link buttons
-*/
+/*	Styling for the bottom container within the side navigation menu
+ *		Styles the link buttons */
 .bottom {
   height: 100%;
   border-radius: 0 0px 0px 25px;
@@ -83,9 +190,30 @@
   border-radius: 2px;
 }
 
+/*	Mobile formatting */
+@media (max-width: 1250px) {
+  .nav {
+    width: 75%;
+  }
+}
+@media (max-width: 1150px) {
+  .nav {
+    width: 80%;
+  }
+}
+@media (max-width: 970px) {
+  .nav {
+    width: 90%;
+    margin-right: 2vh;
+  }
+}
+@media (max-width: 850px) {
+  .nav {
+    display: none;
+  }
+}
 /*	Theming
- *		Applied alongside .nav
-*/
+ *		Applied alongside .nav */
 /* Lynette*/
 .lyt {
   --gold: #9D9286;
@@ -138,28 +266,4 @@
 }
 .test .bottom button {
   background-color: white;
-}
-
-/*	Mobile formatting
-*/
-@media (max-width: 1250px) {
-  .nav {
-    width: 75%;
-  }
-}
-@media (max-width: 1150px) {
-  .nav {
-    width: 80%;
-  }
-}
-@media (max-width: 970px) {
-  .nav {
-    width: 90%;
-    margin-right: 2vh;
-  }
-}
-@media (max-width: 850px) {
-  .nav {
-    display: none;
-  }
 }

@@ -2,8 +2,7 @@
  *	Splits the space into three parts, left, center, and right
  *		left will contain the aside menu
  *		center will contain the main container of content
- *		right will contain free space
-*/
+ *		right will contain free space */
 .container {
   display: grid;
   grid: "left center right";
@@ -12,8 +11,7 @@
   width: 100%;
 }
 
-/*	Mobile formatting
-*/
+/*	Mobile formatting */
 @media (max-width: 1250px) {
   .container {
     grid-template-columns: 4fr 10fr 2fr;
@@ -31,7 +29,7 @@
 }
 @media (max-width: 850px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0 1fr;
     gap: 0px;
   }
 }

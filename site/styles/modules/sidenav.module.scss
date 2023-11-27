@@ -2,9 +2,7 @@
 @use "../components/color-mixins" as *;
 
 
-/*
- * Styles the container that holds the entire navigation menu
-*/
+/*	Styles the container that holds the entire navigation menu */
 .nav {
 	// Positioning
 	grid-area: left;
@@ -22,17 +20,13 @@
 	flex-direction: column;
 }
 
-/*
- *	Content container within .nav
-*/
+/*	Content container within .nav */
 .container {
 	padding: 2vh;
 }
 
-/*	
- *	Styling for the top container within the side navigation menu
- *		Styles the link and h1 element
-*/
+/*	Styling for the top container within the side navigation menu
+ *		Styles the link and h1 element */
 // TODO: adjust after fonts are added
 .top {
 	h1 {
@@ -42,19 +36,14 @@
 	}
 }
 
-
-/*	
- *	Styling for the custom divider using an image
- *		Setting the image done where since it wouldn't appear on sidenav.js
-*/
+/*	Styling for the custom divider using an image
+ *		Setting the image done where since it wouldn't appear on sidenav.js */
 .divider {
 	height: 55px;
 }
 
-/*	
- *	Styling for the bottom container within the side navigation menu
- *		Styles the link buttons
-*/
+/*	Styling for the bottom container within the side navigation menu
+ *		Styles the link buttons */
 .bottom {
 	height: 100%;
 	border-radius: 0 0px 0px 25px;
@@ -82,9 +71,32 @@
 }
 
 
+/*	Mobile formatting */
+@media (max-width: 1250px) {
+	.nav {
+		width: 75%;
+	}
+}
+@media (max-width: 1150px) {
+	.nav {
+		width: 80%;
+	}
+}
+@media (max-width: 970px) {
+	.nav {
+		width: 90%;
+		margin-right: 2vh;
+	}
+}
+@media (max-width: 850px) {
+	.nav {
+		display: none;
+	}
+}
+
+
 /*	Theming
- *		Applied alongside .nav
-*/
+ *		Applied alongside .nav */
 
 /* Lynette*/
 .lyt {
@@ -158,30 +170,3 @@
 
 
 
-/*	Mobile formatting
-*/
-
-@media (max-width: 1250px) {
-	.nav {
-		width: 75%;
-	}
-}
-
-@media (max-width: 1150px) {
-	.nav {
-		width: 80%;
-	}
-}
-
-@media (max-width: 970px) {
-	.nav {
-		width: 90%;
-		margin-right: 2vh;
-	}
-}
-
-@media (max-width: 850px) {
-	.nav {
-		display: none;
-	}
-}

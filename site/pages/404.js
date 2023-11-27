@@ -30,7 +30,6 @@ export default function Template(){
 function Content() {
 	return (
 		<div className={style.center}>
-			{/* TODO: define page content */}
 			<h1>404: Page Not Found</h1>
 			<div className={style.jean}>
 				<Image 
