@@ -44,9 +44,10 @@ export default function SideNav(){
 			{/* might turn this div into a Menu component */}
 			<div className={`${sidenav.container} ${sidenav.bottom}`}>
 				<LinkButton
-				path={"/"}
-				title={"Placeholder"}
-				text={"idk lol"}></LinkButton>
+					path={"/"}
+					title={"Placeholder"}>
+						idk lol
+				</LinkButton>
 
 				<br/>
 				<br/>

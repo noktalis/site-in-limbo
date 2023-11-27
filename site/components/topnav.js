@@ -30,33 +30,39 @@ export default function TopNav() {
 
 				<LinkButton
 					path={"/"}
-					title={"Home"}
-					text={"Home"}></LinkButton>
+					title={"Home"}>
+						Home
+				</LinkButton>
 
 				<LinkButton
 					path={"/"}
-					title={"Arknights"}
-					text={"Arknights"}></LinkButton>
+					title={"Arknights"}>
+						Arknights
+				</LinkButton>
 
 				<LinkButton
 					path={"/"}
-					title={"Genshin Impact"}
-					text={"Genshin"}></LinkButton>
+					title={"Genshin Impact"}>
+						Genshin
+				</LinkButton>
 
 				<LinkButton
 					path={"/"}
-					title={"Honkai: Star Rail"}
-					text={"Star Rail"}></LinkButton>
+					title={"Honkai: Star Rail"}>
+						Star&nbsp;Rail
+				</LinkButton>
 				
 				<LinkButton
 					path={"/"}
-					title={"Webring"}
-					text={"Webring"}></LinkButton>
+					title={"Webring"}>
+						Webring
+				</LinkButton>
 
 				<LinkButton
 					path={"/"}
-					title={"Miscellaneous"}
-					text={"Misc."}></LinkButton>
+					title={"Miscellaneous"}>
+						Misc.
+				</LinkButton>
 			</div>
 		</div>
 	);
@@ -82,8 +88,9 @@ function Indicator() {
 			path += "";
 			altText += "";
 			break;
+		case "test":
 		case "hsr":
-			path += "";
+			path = "https://64.media.tumblr.com/c6084b85a6c9949935cc323f4bab7642/c5a5a3383c4c5c89-73/s540x810/04c17256455d5697f857132543afb1180d195033.png";
 			altText += "Yanqing being smug";
 			break;
 		case "test":

@@ -9,6 +9,7 @@
   grid: "left center right";
   grid-template-columns: 1fr 2.5fr 1fr;
   gap: 0;
+  width: 100%;
 }
 
 /*	Mobile formatting
@@ -31,5 +32,6 @@
 @media (max-width: 850px) {
   .container {
     grid-template-columns: 1fr;
+    gap: 0px;
   }
 }

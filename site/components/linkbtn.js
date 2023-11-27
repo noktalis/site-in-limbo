@@ -8,11 +8,11 @@ import Link from "next/link";
  * 		text	- Text that appears on the button
  * @returns 
  */
-export default function LinkButton({path, title, text}){
+export default function LinkButton({path, title, children}){
 	return(
 		<Link href={path}>
 			<button role="link" title={title}>
-				{text}
+				{children}
 			</button>
 		</Link>
 	);
