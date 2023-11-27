@@ -1,0 +1,37 @@
+.button {
+  position: relative;
+  min-height: 70px;
+  width: 60%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.sticker {
+  max-width: 90px;
+  position: absolute;
+  top: -20px;
+}
+
+.left {
+  left: -7%;
+}
+
+.right {
+  right: -7%;
+}
+
+.big {
+  transform: scale(1.2);
+}
+
+.bigger {
+  transform: scale(1.3);
+}
+
+.small {
+  transform: scale(0.85);
+}
+
+.smaller {
+  transform: scale(0.7);
+}

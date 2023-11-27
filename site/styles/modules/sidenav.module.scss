@@ -107,6 +107,19 @@
 	background-color: var(--lyt-main);
 	border: var(--gold) solid 5px;
 
+	.top {
+		h1 {
+			font-family: 'SaltyCheese',SaltyCheese,sans-serif;
+			letter-spacing: 0.075em;
+			margin: 5px 0 10px;
+
+			
+		}
+		a {
+			@include link-colors(--lyt-sd-hdr,--lyt-sd-hdr-h, --lyt-sd-hr);
+		}
+	}
+
 	.divider {
 		background-image: url("../../public/images/lynette_teacup_segment.svg");
 		background-size: 120px;

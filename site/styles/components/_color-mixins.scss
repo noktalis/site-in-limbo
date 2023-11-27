@@ -15,6 +15,16 @@
 	}
 }
 
+@mixin link-colors($default, $hover, $active){
+	color: $default;
+	&:hover {
+		color: $hover;
+	}
+	&:active {
+		color: $active;
+	}
+}
+
 @mixin scrollbarColorsFF($thumb, $track){
 	scrollbar-color: var($thumb) var($track);
 	

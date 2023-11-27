@@ -1,0 +1,56 @@
+@use "../components/color-mixins" as *;
+
+// TODO: documentations
+
+/* buttons for an in-page menu */
+.button {
+	position: relative;
+	
+	// Dimensions
+	min-height: 70px;
+	width: 60%;
+
+	// Appearance Attributes
+	margin: 10px auto;
+	padding: 15px;
+}
+
+/* Images that stick out over the sides of buttons */
+.sticker {
+	// Appearance
+	max-width: 90px;
+
+	// Positioning
+	position: absolute;
+	top: -20px;
+}
+
+// Sticker positioning
+.left { left: -7%; }
+.right { right: -7%; }
+
+// Size adjustments
+.big { transform: scale(1.2); }
+.bigger { transform: scale(1.3); }
+.small { transform: scale(0.85); }
+.smaller { transform: scale(0.7); }
+
+
+/* Theming
+ *	 Applied on the button element */
+
+ /* Lynette */
+.lyt {
+	@include colors(--lyt-tbl, --lyt-tbl-a);
+	border: 4px solid var(--lyt-tbl-b);
+	border-radius: 10px;						// friend shaped!
+	font-family: Mattilda, serif;
+	font-size: large;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	&:hover, &:focus {
+		@include colors(--lyt-tbl-h, --lyt-tbl-a-h);
+	}
+	&:active {
+		color: var(--lyt-tbl-a-a);
+	}
+}

@@ -36,6 +36,11 @@
 */
 .main {
 	padding: 2vh;
+	font-family: Mattilda, serif;
+	font-size: 18px;
+	h1,h2,h3,h4,h5,h6 {
+		font-family:Handlee, 'Handlee', cursive;
+	}
 }
 
 /*
@@ -46,6 +51,9 @@
 
 	padding: 2vh;
 	text-align: center;
+	p {
+		margin: 0;
+	}
 }
 
 /* Mobile formatting */

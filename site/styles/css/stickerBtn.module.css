@@ -1,0 +1,59 @@
+/* buttons for an in-page menu */
+.button {
+  position: relative;
+  min-height: 70px;
+  width: 60%;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+/* Images that stick out over the sides of buttons */
+.sticker {
+  max-width: 90px;
+  position: absolute;
+  top: -20px;
+}
+
+.left {
+  left: -7%;
+}
+
+.right {
+  right: -7%;
+}
+
+.big {
+  transform: scale(1.2);
+}
+
+.bigger {
+  transform: scale(1.3);
+}
+
+.small {
+  transform: scale(0.85);
+}
+
+.smaller {
+  transform: scale(0.7);
+}
+
+/* Theming
+ *	 Applied on the button element */
+/* Lynette */
+.lyt {
+  background-color: var(--lyt-tbl);
+  color: var(--lyt-tbl-a);
+  border: 4px solid var(--lyt-tbl-b);
+  border-radius: 10px;
+  font-family: Mattilda, serif;
+  font-size: large;
+  font-weight: bold;
+}
+.lyt:hover, .lyt:focus {
+  background-color: var(--lyt-tbl-h);
+  color: var(--lyt-tbl-a-h);
+}
+.lyt:active {
+  color: var(--lyt-tbl-a-a);
+}

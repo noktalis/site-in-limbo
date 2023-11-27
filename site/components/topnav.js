@@ -33,7 +33,7 @@ export default function TopNav() {
 				</LinkButton>
 
 				<LinkButton
-					path={"/"}
+					path={"/ak/"}
 					title={"Arknights"}>
 						Arknights
 				</LinkButton>
