@@ -40,7 +40,6 @@ function Content() {
 			<p>
 				Some of these pages probably don't exist yet, whoops! Which ones? That's for you to find out. Go! Explore! Be freeeee!
 			</p>
-			<p>To Be Added, testing below!</p>{/* TODO: */}
 
 			<NavCol>
 				<StickerButtonLink
@@ -80,8 +79,6 @@ function Content() {
 						A pinch of Star Rail content
 				</StickerButtonLink>
 			</NavCol>
-			
-			
 		</div>
 	);
 }
