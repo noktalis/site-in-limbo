@@ -7,7 +7,7 @@ import background from "../styles/modules/background.module.scss";
 /**
  * Layout of the page
  * 		Consists of the TopNav and Container
- * 		Background is styled at this level
+ * 		Background theme is styled at this level
  * @param {*} children - child elements to be displayed as content 
  * @returns 
  */
@@ -19,7 +19,6 @@ export default function Layout({children}){
 		case "test":
 			themeClass = background.test;
 			break;
-		case "genshin":
 		case "lyt":
 		default:
 			themeClass = background.lyt;

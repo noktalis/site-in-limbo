@@ -1,8 +1,9 @@
 import Link from "next/link";
 import LinkButton from "./linkbtn";
 import sidenav from "../styles/modules/sidenav.module.scss";
-import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+import { FandomContext } from "./FandomContext";
 
 /**
  * Side navigation menu
@@ -11,30 +12,49 @@ import { useContext } from "react";
  */
 export default function SideNav(){
 	const theme = useContext(ThemeContext);
+	const fandomContext = useContext(FandomContext);
 
 	let fandom;
 	let themeClass;
+	let link;
 
-	// TODO: switch href
-	switch(theme){
+	switch(fandomContext){
 		case "ak":
 			fandom = "Arknights";
-			themeClass = sidenav.lyt;	// TODO: change later
+			link = "/ak/";
 			break;
-		case "lyt":
 		case "genshin":
 			fandom = "Genshin";
-			themeClass = sidenav.lyt;
+			link = "/genshin/";
+			break;
+		case "hsr":
+			fandom = "Star Rail";
+			link = "/star_rail/";
+			break;
+		case "misc":
+			fandom = "Misc.";
+			link = "/misc/";
 			break;
 		default:
 			fandom = "Navigation";
+			link = "/";
+	}
+
+	switch(theme){
+		case "ri":
+			themeClass = sidenav.lyt;	// TODO: change later
+			break;
+		case "lyt":
+			themeClass = sidenav.lyt;
+			break;
+		default:
 			themeClass = sidenav.lyt;
 	}
 
 	return(
 		<div className={`${sidenav.nav} ${themeClass}`}>
 			<div className={`${sidenav.container} ${sidenav.top}`}>
-				<Link href="/">
+				<Link href={link}>
 					<h1>{fandom}</h1>
 				</Link>
 			</div>
@@ -82,4 +102,4 @@ function Divider(){
 	);
 }
 
-// TODO: change content of sidenav based on theme (Menu function here)
+// TODO: change content of sidenav based on fandom (Menu function here)

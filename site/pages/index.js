@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../components/layout';
 import { ThemeContext } from '../components/ThemeContext';
-import StickerButton from '../components/stickerbtn';
+import { FandomContext } from '../components/FandomContext';
 import StickerButtonLink from '../components/stickerbtnlink';
 import NavCol from '../components/navCol';
 
@@ -12,6 +12,7 @@ import NavCol from '../components/navCol';
  */
 export default function Home(){
 	return (
+		<FandomContext.Provider value=''>
 		<ThemeContext.Provider value=''>
 			<Head>
 				<title>Home</title>
@@ -19,6 +20,7 @@ export default function Home(){
 			</Head>
 			<Layout><Content/></Layout>
 		</ThemeContext.Provider>
+		</FandomContext.Provider>
 	); // end return
 } // end Home Component
 
@@ -49,7 +51,7 @@ function Content() {
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj"}
 					imgAlt={"Lynette sipping tea"}>
-						Genshin Blorbo Shrines
+						Trope Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/error/"}

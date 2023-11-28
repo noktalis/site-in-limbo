@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/layout';
 import { ThemeContext } from '../components/ThemeContext';
+import { FandomContext } from '../components/FandomContext';
 import style from "../styles/modules/etc.module.scss";
 
 /**
@@ -13,6 +14,7 @@ import style from "../styles/modules/etc.module.scss";
  */
 export default function Template(){
 	return (
+		<FandomContext.Provider value=''>
 		<ThemeContext.Provider value=''>
 			<Head>
 				<title>404: Not Found</title>
@@ -20,6 +22,8 @@ export default function Template(){
 			</Head>
 			<Layout><Content/></Layout>
 		</ThemeContext.Provider>
+		</FandomContext.Provider>
+		
 	); // end return
 } // end Component
 

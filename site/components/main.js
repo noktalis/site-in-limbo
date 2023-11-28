@@ -1,4 +1,8 @@
 import format from "../styles/modules/main.module.scss";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
+// TODO: themes
 
 /**
  * Main container that holds actual content for users at the center of the page
@@ -6,8 +10,17 @@ import format from "../styles/modules/main.module.scss";
  * @returns 
  */
 export default function Main({children}){
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch(theme){
+		case "lyt":
+		default:
+			themeClass = format.lyt;
+	}
+
 	return(
-		<div className={`${format.container} ${format.lyt}`}>
+		<div className={`${format.container} ${themeClass}`}>
 			<div className={format.main}>
 				{children}
 			</div>
@@ -20,6 +33,8 @@ export default function Main({children}){
  * Footer at the bottom of the page
  * Goes into the container after Main so that its width doesn't span the whole page
  * @returns 
+ * 
+ * Footer theme is handled by container in <Main>
  */
 export function Footer(){
 	return (

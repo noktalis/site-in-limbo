@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import { ThemeContext } from '../components/ThemeContext';
-import { FandomContext } from '../components/FandomContext';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -12,10 +11,8 @@ import { FandomContext } from '../components/FandomContext';
  */
 export default function Template(){
 	return (
-		// TODO: change fandom
-		<FandomContext.Provider>
-		{/* // TODO: change page theme */}
-		<ThemeContext.Provider value=''>
+		// TODO: change page theme
+		<ThemeContext.Provider value='genshin'>
 			<Head>
 				{/* TODO: change page title */}
 				<title>Template</title>
@@ -23,8 +20,6 @@ export default function Template(){
 			</Head>
 			<Layout><Content/></Layout>
 		</ThemeContext.Provider>
-		</FandomContext.Provider>
-		
 	); // end return
 } // end Component
 
