@@ -16,7 +16,7 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 	
 	return (
 		<button role='link' 
-			class={`${style.button} ${themeClass}`} 
+			className={`${style.button} ${themeClass}`} 
 			title={btnTitle}>
 			<Sticker
 				size={imgSize}
@@ -35,6 +35,12 @@ function Sticker({side, src, alt, size}){
 	switch(side){
 		case "right":
 			sideClass = style.right;
+			break;
+		case "righter":
+			sideClass = style.righter;
+			break;
+		case "lefter":
+			sideClass = style.lefter;
 			break;
 		case "left":
 		default:

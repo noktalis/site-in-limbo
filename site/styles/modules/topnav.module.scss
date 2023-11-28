@@ -79,7 +79,7 @@
 @media (max-width: 845px) {
 	.nav {
 		grid: 'top' 'buttons';
-		gap: 2vh;
+		gap: 0vh;
 	}
 	.indicator {
 		justify-self: center;
@@ -89,6 +89,7 @@
 		grid-template-rows: repeat(2, auto);
 		gap: 1vh;
 		padding-bottom: 2vh;
+		display: none;
 	}
 	.buttons button {
 		height: 100%;

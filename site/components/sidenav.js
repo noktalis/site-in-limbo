@@ -41,8 +41,8 @@ export default function SideNav(){
 	}
 
 	switch(theme){
-		case "ri":
-			themeClass = sidenav.lyt;	// TODO: change later
+		case "test":
+			themeClass = sidenav.test;	// TODO: change later
 			break;
 		case "lyt":
 			themeClass = sidenav.lyt;
@@ -66,27 +66,28 @@ export default function SideNav(){
 				<LinkButton
 					path={"/"}
 					title={"Placeholder"}>
-						idk lol
+						Currently
 				</LinkButton>
-
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<p>hi</p>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<br/>
-				<p>hi</p>
+				<LinkButton
+					path={"/"}
+					title={"Placeholder"}>
+						out
+				</LinkButton>
+				<LinkButton
+					path={"/"}
+					title={"Placeholder"}>
+						of
+				</LinkButton>
+				<LinkButton
+					path={"/"}
+					title={"Placeholder"}>
+						order
+				</LinkButton>
+				<LinkButton
+					path={"/"}
+					title={"Placeholder"}>
+						&lt;/3
+				</LinkButton>
 			</div>
 		</div>
 	);

@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '../components/layout';
-import { ThemeContext } from '../components/ThemeContext';
-import { FandomContext } from '../components/FandomContext';
-import StickerButtonLink from '../components/stickerbtnlink';
-import NavCol from '../components/navCol';
+import Layout from '/components/layout';
+import { ThemeContext } from '/components/ThemeContext';
+import { FandomContext } from '/components/FandomContext';
+import StickerButtonLink from '/components/stickerbtnlink';
+import NavCol from '/components/navCol';
 
 /**
  * Home page of website
@@ -47,7 +47,7 @@ function Content() {
 				<StickerButtonLink
 					href={"/error/"}
 					btnTitle={"Trope Tier List"}
-					imgSide={"left"}
+					imgSide={"lefter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj"}
 					imgAlt={"Lynette sipping tea"}>
@@ -56,7 +56,7 @@ function Content() {
 				<StickerButtonLink
 					href={"/error/"}
 					btnTitle={"Genshin Blorbo Shrines"}
-					imgSide={"right"}
+					imgSide={"righter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/651b585c99e86f7e60a948839e0e04c7/f76574c9be82fb98-0c/s400x600/932f33780e76d9e3fce74482a304e29bc4e66d4b.pnj"}
 					imgAlt={"Lyney soaking in applause and confetti"}>
@@ -65,7 +65,7 @@ function Content() {
 				<StickerButtonLink
 					href={"/error/"}
 					btnTitle={"Arknights story moments that keep me up at night"}
-					imgSide={"left"}
+					imgSide={"lefter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/96430863df291e66baec879d4d5a5f48/2efd9f400ea04908-c3/s400x600/cc3364ab0478254cfcf0543150ec36b692d25bea.pnj"}
 					imgAlt={"Lynette clapping"}>
@@ -74,7 +74,7 @@ function Content() {
 				<StickerButtonLink
 					href={"/error/"}
 					btnTitle={"Honkai: Star Rail"}
-					imgSide={"right"}
+					imgSide={"righter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/f91d2f6f379a01df5f901b830b06b2e7/c5a5a3383c4c5c89-db/s540x810/8b32e0ab783d18efaa8d51fb6ff9515f873764f3.png"}
 					imgAlt={"Yanqing sad that he's broke"}>

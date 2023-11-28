@@ -6,3 +6,32 @@
 .oneCol button {
   width: 60%;
 }
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.twoCol button {
+  width: 95%;
+}
+.twoCol a:nth-child(odd) {
+  text-align: right;
+}
+.twoCol a:nth-child(odd) button {
+  text-align: right;
+}
+.twoCol a:nth-child(even) {
+  text-align: left;
+}
+.twoCol a:nth-child(even) button {
+  text-align: left;
+}
+
+.test {
+  grid-row: 2;
+  grid-column: 2;
+}

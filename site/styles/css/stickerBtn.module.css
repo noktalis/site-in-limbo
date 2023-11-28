@@ -14,10 +14,18 @@
 }
 
 .left {
+  left: -2%;
+}
+
+.lefter {
   left: -7%;
 }
 
 .right {
+  right: -2%;
+}
+
+.righter {
   right: -7%;
 }
 
