@@ -1,16 +1,16 @@
 import format from "../styles/modules/navmenu.module.scss";
 
 /**
- * Arranges elements of a menu into a single column
+ * Arranges elements of a menu into two columns
  * @param {*} prop
- * 		children - children elements
+ * 		children - children elements that make up a menu
  * @returns 
  * 
  * Reminder: Theme is handled within the children, by the children
  */
-export default function NavCol({children}){
+export default function Nav2Col({children}){
 	return(
-		<div className={format.oneCol}>
+		<div className={format.twoCol}>
 			{children}
 		</div>
 	);

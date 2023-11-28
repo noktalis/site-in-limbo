@@ -3,6 +3,12 @@
  *
  *	Doesn't seem to work with absolute paths. Stick to relative paths.
 */
+/* Nat Voice: Friday October Twelve 
+ *   Also for the top navigation bar */
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
+}
 /* 	Xue Voice: Dehasta */
 @font-face {
   font-family: Dehasta;
@@ -12,12 +18,6 @@
   font-family: Dehasta;
   src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
   font-style: italic;
-}
-/* Friday October Twelve 
- *   For the top navigation bar */
-@font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
 }
 @font-face {
   font-family: FridayOctoberTwelve;
@@ -196,7 +196,7 @@
 @media (max-width: 845px) {
   .nav {
     grid: "top" "buttons";
-    gap: 2vh;
+    gap: 0vh;
   }
   .indicator {
     justify-self: center;
@@ -206,6 +206,7 @@
     grid-template-rows: repeat(2, auto);
     gap: 1vh;
     padding-bottom: 2vh;
+    display: none;
   }
   .buttons button {
     height: 100%;

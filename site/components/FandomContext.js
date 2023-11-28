@@ -10,4 +10,5 @@ export const FandomContext = createContext("");
  * 
  * Fandoms to fall under Miscellaneous:
  * 		PokeSpe
+ * 		Persona 5
  */

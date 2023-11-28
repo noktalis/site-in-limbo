@@ -1,0 +1,40 @@
+@use "../components/color-mixins" as *;
+@use "../components/fonts";
+
+$nat-font: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+$hua-font: Dehasta, 'Dehasta', 'Dehasta Momentos', Helvetica, sans-serif;
+
+.container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.bubble {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 7px;
+	margin: 3px;
+	max-width: 55%;
+	width: fit-content;
+}
+
+.left {
+	@include colors(--lyt-bub-L, --lyt-bub-L-txt);
+}
+
+.right {
+	@include colors(--lyt-bub-R, --lyt-bub-R-txt);
+	align-self: flex-end;
+	text-align: right;
+}
+
+/* Speaker Fonts */
+.nat {
+	font-family: $nat-font;
+	font-size: 85%;
+}
+.hua {
+	font-family: $hua-font;
+	font-size: 105%;
+}

@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Layout from '../components/layout';
-import { ThemeContext } from '../components/ThemeContext';
-import { FandomContext } from '../components/FandomContext';
+import Layout from '/components/layout';
+import { ThemeContext } from '/components/ThemeContext';
+import { FandomContext } from '/components/FandomContext';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -13,7 +13,7 @@ import { FandomContext } from '../components/FandomContext';
 export default function Template(){
 	return (
 		// TODO: change fandom
-		<FandomContext.Provider>
+		<FandomContext.Provider value=''>
 		{/* // TODO: change page theme */}
 		<ThemeContext.Provider value=''>
 			<Head>

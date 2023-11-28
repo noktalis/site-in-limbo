@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import LinkButton from './linkbtn';
-import topnav from "../styles/modules/topnav.module.scss";
+import topnav from "/styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
+import { FandomContext } from './FandomContext';
 
 // TODO: fix links later
 /**Top navigation bar of a page
@@ -23,8 +24,7 @@ export default function TopNav() {
 			
 			<Indicator></Indicator>
 			<div className={topnav.buttons}
-				id='navBtns'
-				style={{display: "grid"}}>
+				id='navBtns'>
 
 				<LinkButton
 					path={"/"}
@@ -39,25 +39,25 @@ export default function TopNav() {
 				</LinkButton>
 
 				<LinkButton
-					path={"/"}
+					path={"/genshin/"}
 					title={"Genshin Impact"}>
 						Genshin
 				</LinkButton>
 
 				<LinkButton
-					path={"/"}
+					path={"/star_rail/"}
 					title={"Honkai: Star Rail"}>
 						Star&nbsp;Rail
 				</LinkButton>
 				
 				<LinkButton
-					path={"/"}
+					path={"/webring/"}
 					title={"Webring"}>
 						Webring
 				</LinkButton>
 
 				<LinkButton
-					path={"/"}
+					path={"/misc/"}
 					title={"Miscellaneous"}>
 						Misc.
 				</LinkButton>
@@ -69,20 +69,20 @@ export default function TopNav() {
 /**Image in the left corner of the top navigation bar INDICATING theme of the page
  * @returns  */
 function Indicator() {
-	const theme = useContext(ThemeContext);
+	const fandom = useContext(FandomContext);
 
 	let path = "/images/";
-	let altText = "Sticker of ";
+	let altText;
 
 	// Determines which image to use as indicator
-	switch(theme){
+	switch(fandom){
 		case "ak":
 			path += "bagpipe_potatoes.png";
 			altText += "Bagpipe with potatoes";
 			break;
 		case "genshin":
-			path += "";
-			altText += "";
+			path = "https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj";
+			altText += "Lynette sipping tea";
 			break;
 		case "test":
 		case "hsr":

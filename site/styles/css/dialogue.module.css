@@ -134,150 +134,40 @@
   font-weight: lighter;
   font-style: italic;
 }
-/*	Styles the container that holds the entire navigation menu */
-.nav {
-  grid-area: left;
-  justify-self: end;
-  margin-right: 3vh;
-  margin-top: 3vh;
-  height: 85%;
-  width: 65%;
-  border-radius: 30px 5px 5px 30px;
+.container {
   display: flex;
   flex-direction: column;
 }
 
-/*	Content container within .nav */
-.container {
-  padding: 2vh;
-}
-
-/*	Styling for the top container within the side navigation menu
- *		Styles the link and h1 element */
-.top h1 {
-  font-size: 28px;
-  margin-top: 0.5vh;
-  margin-bottom: 1vh;
-}
-
-/*	Styling for the custom divider using an image
- *		Setting the image done where since it wouldn't appear on sidenav.js */
-.divider {
-  height: 55px;
-}
-
-/*	Styling for the bottom container within the side navigation menu
- *		Styles the link buttons */
-.bottom {
-  height: 100%;
-  border-radius: 0 0px 0px 25px;
-  height: 100%;
-  overflow-y: auto;
-}
-.bottom a {
-  display: flex;
-  text-decoration: none;
-}
-.bottom button {
-  width: 100%;
-  padding: 1vh;
-}
-.bottom::-webkit-scrollbar {
-  background-color: transparent;
-  width: 1vh;
-}
-.bottom::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-}
-
-/*	Mobile formatting */
-@media (max-width: 1250px) {
-  .nav {
-    width: 75%;
-  }
-}
-@media (max-width: 1150px) {
-  .nav {
-    width: 80%;
-  }
-}
-@media (max-width: 970px) {
-  .nav {
-    width: 90%;
-    margin-right: 2vh;
-  }
-}
-@media (max-width: 850px) {
-  .nav {
-    display: none;
-  }
-}
-/*	Theming
- *		Applied alongside .nav */
-/* Lynette*/
-.lyt {
-  --gold: #9D9286;
-  --gray: #333333;
-  background-color: var(--lyt-main);
-  border: var(--gold) solid 5px;
-}
-.lyt .top h1 {
-  font-family: "SaltyCheese", SaltyCheese, sans-serif;
-  letter-spacing: 0.075em;
-  margin: 5px 0 10px;
-}
-.lyt .top a {
-  color: --lyt-sd-hdr;
-}
-.lyt .top a:hover {
-  color: --lyt-sd-hdr-h;
-}
-.lyt .top a:active {
-  color: --lyt-sd-hr;
-}
-.lyt .divider {
-  background-image: url("../../public/images/lynette_teacup_segment.svg");
-  background-size: 120px;
-  background-repeat: repeat-x;
-  height: 55px;
-  width: 100%;
-  background-color: var(--gray);
-  border-top: var(--gold) solid 5px;
-}
-.lyt .bottom {
-  background-color: var(--gray);
-  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
-}
-.lyt .bottom::-webkit-scrollbar-thumb {
-  background-color: rgba(22, 22, 22, 0.7);
-}
-.lyt .bottom::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(22, 22, 22, 0.9);
-}
-.lyt .bottom button {
-  border: var(--gold) solid 4px;
+.bubble {
+  display: inline-block;
   border-radius: 10px;
+  padding: 7px;
+  margin: 3px;
+  max-width: 55%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-/* Template/Test */
-.test {
-  background-color: transparent;
+.left {
+  background-color: var(--lyt-bub-L);
+  color: var(--lyt-bub-L-txt);
 }
-.test .divider {
-  height: 55px;
-  width: 100%;
-  background-color: transparent;
+
+.right {
+  background-color: var(--lyt-bub-R);
+  color: var(--lyt-bub-R-txt);
+  align-self: flex-end;
+  text-align: right;
 }
-.test .bottom {
-  background-color: transparent;
-  scrollbar-color: var(black) var(black);
+
+/* Speaker Fonts */
+.nat {
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+  font-size: 85%;
 }
-.test .bottom::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.test .bottom::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.test .bottom button {
-  background-color: white;
+
+.hua {
+  font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
+  font-size: 105%;
 }
