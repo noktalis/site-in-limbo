@@ -41,7 +41,7 @@ function Content() {
 				If it was not already clear, yes, my favorite element is anemo.  
 			</p>
 			<p>
-				Yes I love them all.
+				Yes I love all the anemo characters.
 			</p>
 			<p>
 				No I do not love them all equally LMAO.

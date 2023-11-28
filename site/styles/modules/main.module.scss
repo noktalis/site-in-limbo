@@ -1,4 +1,5 @@
 @use "../components/color-mixins" as *;
+@use "../components/fonts" as *;
 
 /*
  *	Styling for the main container of content and content within
@@ -43,12 +44,20 @@
 		font-family:Handlee, 'Handlee', cursive;
 	}
 	p {
-		margin: 5px 0 10px 0;
+		margin: 20px 0 20px 0;
 	}
 	hr {
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
+}
+
+/* Voices that may appear in content */
+.nat {
+	@include nat-voice;
+}
+.hua {
+	@include hua-voice;
 }
 
 /*

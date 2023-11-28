@@ -12,6 +12,10 @@
     src: url('../../public/fonts/FridayOctoberTwelve.woff2') format('woff2');
 }
 
+@mixin nat-voice {
+    font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+}
+
 /* 	Xue Voice: Dehasta */
 @font-face {
     font-family: Dehasta;
@@ -21,6 +25,11 @@
     font-family: Dehasta;
     src: url('../../public/fonts/DehastaItalic.woff2') format('woff2');
     font-style: italic;
+}
+
+@mixin hua-voice {
+    font-family: Dehasta, 'Dehasta', 'Dehasta Momentos', Helvetica, sans-serif;
+    font-size: 105%;
 }
 
 @font-face {
