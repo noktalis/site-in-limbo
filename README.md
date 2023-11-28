@@ -19,6 +19,7 @@ I'm writing this up after looking at a handful of articles I managed to scrounge
 You can probably do this in Github Desktop but I've gotten used to command line so I'll go through the command line steps, but the Github Desktop route has the same idea.
 
 Open the terminal/command line and navigate into the empty folder from Step 2. 
+
 Window terminal navigate commands:
 `cd file`	Goes into a file
 `cd ..`		Goes up a folder
