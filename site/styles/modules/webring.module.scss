@@ -1,0 +1,27 @@
+
+
+.container {
+	display: grid;
+	grid-template-columns: 2fr 1fr 2fr;
+	grid-template-rows: 1fr auto;
+}
+
+.prev, .home, .next {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.prev {
+	grid-column: 1;
+}
+
+.home {
+	grid-column: 2;
+}
+
+.next {
+	grid-column: 3;
+}
