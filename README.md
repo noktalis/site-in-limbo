@@ -2,7 +2,7 @@
 
 Runs on Next.js and React framework because I'm Learning:tm:
 
-## (For collaborators but specifically Hua) How to clone project to local repository:
+## (For collaborators but specifically Xue) How to clone project to local repository:
 
 1. Download Node.js
 

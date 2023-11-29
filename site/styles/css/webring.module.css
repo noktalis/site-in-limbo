@@ -1,15 +1,27 @@
 .container {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
   grid-template-rows: 1fr auto;
+  margin-top: 10px;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+}
+.container img {
+  border-radius: 50px;
+  border: var(--lyt-blue5) solid 6px;
 }
 
 .prev, .home, .next {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   overflow: hidden;
+}
+
+.link {
+  font-size: 30px;
 }
 
 .prev {
@@ -22,4 +34,11 @@
 
 .next {
   grid-column: 3;
+}
+
+.desc {
+  grid-row: 2;
+}
+.desc h1, .desc h2, .desc h3, .desc h4, .desc h5, .desc h6 {
+  text-align: center;
 }

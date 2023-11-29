@@ -37,7 +37,7 @@ function Content() {
 			<h1>The Weebring</h1>
 			<p>Behold... the webring, Weebring!!!</p>
 			<p>
-				<span className={style.hua}>Hua</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found here: <span>
+				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found here: <span>
 					<a title="WeebRing Home" href="https://sincerelyandyourstruly.neocities.org/webring/">
 						WeebRing Home</a></span>
 			</p>

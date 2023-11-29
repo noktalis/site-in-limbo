@@ -23,8 +23,8 @@ export function Bubble({children, side, speaker}){
 
 	let speakerClass;
 	switch(speaker){
-		case "hua":
-			speakerClass = format.hua;
+		case "xue":
+			speakerClass = format.xue;
 			break;
 		default:
 			speakerClass = format.nat;

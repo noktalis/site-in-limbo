@@ -38,7 +38,7 @@ function Content() {
 		<div>
 			{/* Dialogue about how I explain blorbos */}
 			<Dialogue>
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					i like that you don't even elaborate on Why they are blorbos
 				</Bubble>
 
@@ -49,10 +49,10 @@ function Content() {
 					i did not choose for them to move into my head rent free, they just did.
 				</Bubble>
 
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					me archiving my ten million billion essays n thoughts to my neocities vs. you
 				</Bubble>
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					"these are my blorbos"
 				</Bubble>
 
@@ -60,7 +60,7 @@ function Content() {
 					no thoughts, head empty, only blorbos
 				</Bubble>
 
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					"i will not elaborate on why i like them"
 				</Bubble>
 			</Dialogue>
