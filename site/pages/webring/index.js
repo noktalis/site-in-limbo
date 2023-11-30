@@ -37,9 +37,10 @@ function Content() {
 			<h1>The Weebring</h1>
 			<p>Behold... the webring, Weebring!!!</p>
 			<p>
-				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found here: <span>
-					<a title="WeebRing Home" href="https://sincerelyandyourstruly.neocities.org/webring/">
-						WeebRing Home</a></span>
+				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found at <b>Weebring Home</b>, just click the link below to navigate!
+			</p>
+			<p>
+				(By the way, this page in particular is probably buggy as hell, so if the information here doesn't look quite right, take a screenshot inform <span className={style.xue}>Xue</span> in their <a href='https://sincerelyandyourstruly.neocities.org/ask/' target='_blank'>askbox</a> so I can hear about it from our telepathic link.)
 			</p>
 			<Webring></Webring>
 		</div>

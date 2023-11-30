@@ -51,22 +51,28 @@ export default function WebringDisplay(){
 	return(
 		<div className={format.container}>
 			<div className={format.prev}>
-				<a title={sites[prev].title} href={sites[prev].shortURL} className={format.link}>
+				<a title={sites[prev].title} href={sites[prev].shortURL} className={format.link} target='_blank'>
 					Prev
 				</a>
-				<img src="https://sincerelyandyourstruly.neocities.org/images/icons/xiaoico.png"></img>
+				<div className={format.imgContainer}>
+					<img src="https://sincerelyandyourstruly.neocities.org/images/icons/xiaoico.png"></img>
+				</div>
 			</div>
 			<div className={format.home}>
-				<a title={sites[home].title} href={sites[home].shortURL} className={format.link}>
+				<a title={sites[home].title} href={sites[home].shortURL} className={format.link} target='_blank'>
 					Weebring Home
 				</a>
-				<img src="/ventiico.png"></img>
+				<div className={format.imgContainer}>
+					<img src="/ventiico.png"></img>
+				</div>
 			</div>
 			<div className={format.next}>
-				<a title={sites[next].title} href={sites[next].shortURL} className={format.link}>
+				<a title={sites[next].title} href={sites[next].shortURL} className={format.link} target='_blank'>
 					Next
 				</a>
-				<img src="https://betweenseasons.neocities.org/theme/images/icons/kazuico.png"></img>
+				<div className={format.imgContainer}>
+					<img src="https://betweenseasons.neocities.org/theme/images/icons/kazuico.png"></img>
+				</div>
 			</div>
 
 			<div className={format.desc}>
