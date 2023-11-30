@@ -40,7 +40,7 @@ function Content() {
 				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found at <b>Weebring Home</b>, just click the link below to navigate!
 			</p>
 			<p>
-				(By the way, this page in particular is probably buggy as hell, so if the information here doesn't look quite right, take a screenshot inform <span className={style.xue}>Xue</span> in their <a href='https://sincerelyandyourstruly.neocities.org/ask/' target='_blank'>askbox</a> so I can hear about it from our telepathic link.)
+				(By the way, this page in particular is probably buggy as hell, so if the information here doesn't look quite right, take a screenshot and inform <span className={style.xue}>Xue</span> through their <a href='https://sincerelyandyourstruly.neocities.org/ask/' target='_blank'>askbox</a> so I can hear about it from our telepathic link.)
 			</p>
 			<Webring></Webring>
 		</div>

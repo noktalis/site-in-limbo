@@ -1,6 +1,6 @@
 import LinkButton from "./linkbtn";
 import sidenav from "../styles/modules/sidenav.module.scss";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { FandomContext } from "./FandomContext";
 
@@ -60,34 +60,7 @@ export default function SideNav(){
 			
 			<Divider/>
 
-			{/* might turn this div into a Menu component */}
-			<div className={`${sidenav.container} ${sidenav.bottom}`}>
-				<LinkButton
-					path={"/"}
-					title={"Placeholder"}>
-						Currently
-				</LinkButton>
-				<LinkButton
-					path={"/"}
-					title={"Placeholder"}>
-						out
-				</LinkButton>
-				<LinkButton
-					path={"/"}
-					title={"Placeholder"}>
-						of
-				</LinkButton>
-				<LinkButton
-					path={"/"}
-					title={"Placeholder"}>
-						order
-				</LinkButton>
-				<LinkButton
-					path={"/"}
-					title={"Placeholder"}>
-						&lt;/3
-				</LinkButton>
-			</div>
+			<Menu></Menu>
 		</div>
 	);
 }
@@ -103,10 +76,63 @@ function Divider(){
 }
 
 function Menu(){
+	const [links, setLinks] = useState([{}]);
+
 	let fandom = useContext(FandomContext);
+	let path;
 	switch(fandom){
-		
+		case "genshin":
+			path = "/json/nav_gi.json";
+			break;
+		case "ak":
+			path = "json/nav_ak.json";
+			break;
+		default:
+			path = "json/nav_default.json";
 	}
+
+	useEffect(() => {
+		const fetchData = async() => {
+			/* Fetch request */
+			const response = await fetch(path);
+			const obj = await response.json();
+			const data = obj.buttons;	// array of button data
+
+			console.log(data);
+		}
+		fetchData()
+		.catch(console.error);
+	},[])
+
+	return (
+		<div className={`${sidenav.container} ${sidenav.bottom}`}>
+			<LinkButton
+				path={"/"}
+				title={"Placeholder"}>
+					Currently
+			</LinkButton>
+			<LinkButton
+				path={"/"}
+				title={"Placeholder"}>
+					out
+			</LinkButton>
+			<LinkButton
+				path={"/"}
+				title={"Placeholder"}>
+					of
+			</LinkButton>
+			<LinkButton
+				path={"/"}
+				title={"Placeholder"}>
+					order
+			</LinkButton>
+			<LinkButton
+				path={"/"}
+				title={"Placeholder"}>
+					&lt;/3
+			</LinkButton>
+		</div>
+	);
 }
 
 // TODO: change content of sidenav based on fandom (Menu function here)
