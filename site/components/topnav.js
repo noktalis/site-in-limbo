@@ -66,6 +66,8 @@ export default function TopNav() {
 	);
 }
 
+// TODO: indicator theming
+
 /**Image in the left corner of the top navigation bar INDICATING theme of the page
  * @returns  */
 function Indicator() {
@@ -74,7 +76,7 @@ function Indicator() {
 	let path = "/images/";
 	let altText;
 
-	// Determines which image to use as indicator
+	/* Determines which image to use as indicator */
 	switch(fandom){
 		case "ak":
 			path += "bagpipe_potatoes.png";
@@ -89,12 +91,12 @@ function Indicator() {
 			path = "https://64.media.tumblr.com/c6084b85a6c9949935cc323f4bab7642/c5a5a3383c4c5c89-73/s540x810/04c17256455d5697f857132543afb1180d195033.png";
 			altText += "Yanqing being smug";
 			break;
-		case "test":
 		default:
 			path += "anemo.png";
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 
+	/* Toggles the presence of the buttons in the top navigation bar */
 	function toggleMenu() {
 		let nav = document.getElementById("nav");
 		let menu = document.getElementById("navBtns");

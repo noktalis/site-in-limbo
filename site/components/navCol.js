@@ -2,6 +2,8 @@ import format from "../styles/modules/navmenu.module.scss";
 
 /**
  * Arranges elements of a menu into a single column
+ * 	Only intended for use in the Main element
+ * 
  * @param {*} prop
  * 		children - children elements
  * @returns 

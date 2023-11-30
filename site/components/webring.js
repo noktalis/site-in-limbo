@@ -63,7 +63,10 @@ export default function WebringDisplay(){
 	}, [])
 
 	return(
+		// Container is split into three columns for prev, home, and next
 		<div className={format.container}>
+
+			{/* Links and images */}
 			<div className={format.prev}>
 				<a title={sites[prev].title} href={sites[prev].shortURL} className={format.link} target='_blank'>
 					Prev
@@ -72,6 +75,7 @@ export default function WebringDisplay(){
 					<img src="https://sincerelyandyourstruly.neocities.org/images/icons/xiaoico.png"></img>
 				</div>
 			</div>
+
 			<div className={format.home}>
 				<a title={sites[home].title} href={sites[home].shortURL} className={format.link} target='_blank'>
 					Weebring Home
@@ -80,6 +84,7 @@ export default function WebringDisplay(){
 					<img src="/ventiico.png"></img>
 				</div>
 			</div>
+
 			<div className={format.next}>
 				<a title={sites[next].title} href={sites[next].shortURL} className={format.link} target='_blank'>
 					Next
@@ -89,6 +94,7 @@ export default function WebringDisplay(){
 				</div>
 			</div>
 
+			{/* Short descriptions under images */}
 			<div className={format.desc}>
 				<h2>{sites[prev].title}</h2>
 				<h4>Run by {sites[prev].runBy}!</h4>

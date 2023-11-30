@@ -1,7 +1,8 @@
 import format from "../styles/modules/navmenu.module.scss";
 
-/**
- * Arranges elements of a menu into two columns
+/**Arranges elements of a menu into two columns
+ * 	Only intended for use in the Main element
+ * 
  * @param {*} prop
  * 		children - children elements that make up a menu
  * @returns 

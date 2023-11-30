@@ -2,12 +2,24 @@ import style from "../styles/modules/stickerBtn.module.scss";
 import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
 
-//TODO: button dimensions
-// TODO: themes
+/**A button with a Sticker on the side
+ * 
+ * @param {*} prop	- holds data needed for attributes
+ * 
+ * @param btnTitle	- button title
+ * @param imgSide	- which side of the button the Sticker should be
+ * @param imgSrc	- the source the Sticker should get its image from
+ * @param imgSize	- determines how the Sticker's size should be scaled
+ * @param imgAlt	- alternative text for the Sticker
+ * @param children	- elements that should be within the button alongside the Sticker
+ *  
+ * @returns 
+ */
 export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSize, children}){	
 	const theme = useContext(ThemeContext);
 	let themeClass;
 
+	/* Theme determines the button and sticker's appearance */
 	switch(theme){
 		case "lyt":
 		default:
@@ -28,10 +40,21 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 	);
 }
 
+/**A image that will stick out of its container a bit on one side
+ * 
+ * @param {*} prop - holds data needed for attributes
+ * 
+ * @param imgSide	- which side of the button the Sticker should be
+ * @param imgSrc	- the source the Sticker should get its image from
+ * @param imgSize	- determines how the Sticker's size should be scaled
+ * @param imgAlt	- alternative text for the Sticker
+ * @returns 
+ */
 function Sticker({side, src, alt, size}){
 	let sideClass;
 	let sizeClass;
 
+	/* Determines which side of the container the Sticker should stick to */
 	switch(side){
 		case "right":
 			sideClass = style.right;
@@ -47,6 +70,7 @@ function Sticker({side, src, alt, size}){
 			sideClass = style.left;
 	}
 
+	/* Determines how big the img should scale */
 	switch(size){
 		case "big":
 			sizeClass = style.big;

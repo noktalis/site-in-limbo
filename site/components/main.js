@@ -2,8 +2,6 @@ import format from "../styles/modules/main.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 
-// TODO: themes
-
 /**
  * Main container that holds actual content for users at the center of the page
  * @param {Components} children - contents to be held inside 

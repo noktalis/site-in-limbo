@@ -15,7 +15,7 @@ import StickerButtonLink from '/components/stickerbtnlink';
 export default function Home(){
 	return (
 		<FandomContext.Provider value='ak'>
-		<ThemeContext.Provider value='ri'>
+		<ThemeContext.Provider value='lyt'>
 			<Head>
 				<title>Arknights Home</title>
 				<link rel="icon" href="/ventiico.png" />

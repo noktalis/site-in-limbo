@@ -6,7 +6,7 @@ import { FandomContext } from "./FandomContext";
 
 /**
  * Side navigation menu
- * 		Content changes based on the theme
+ * 		Content changes based on the fandom
  * @returns 
  */
 export default function SideNav(){
@@ -17,6 +17,7 @@ export default function SideNav(){
 	let themeClass;
 	let link;
 
+	/* Figure out which header link to use at top of side nav */
 	switch(fandomContext){
 		case "ak":
 			fandom = "Arknights";
@@ -39,6 +40,7 @@ export default function SideNav(){
 			link = "/";
 	}
 
+	/* Figure out which theme to appear with */
 	switch(theme){
 		case "test":
 			themeClass = sidenav.test;	// TODO: change later
@@ -53,13 +55,15 @@ export default function SideNav(){
 	return(
 		<div className={`${sidenav.nav} ${themeClass}`}>
 			<div className={`${sidenav.container} ${sidenav.top}`}>
-				<a href={link}>
+				{/* Changes based on fandom */}
+				<a href={link}> 
 					<h1>{fandom}</h1>
 				</a>
 			</div>
 			
 			<Divider/>
 
+			{/* Changes based on fandom */}
 			<Menu/>
 		</div>
 	);
@@ -75,9 +79,15 @@ function Divider(){
 	);
 }
 
+/**Navigation buttons in the bottom container of the navigation menu
+ * 	Changes the set of buttons based on fandom
+ * 
+ * @returns 
+ */
 function Menu(){
 	const [links, setLinks] = useState([{title:"",text:"",href:""}]);
 
+	/* Figure out which set of button data to fetch based on fandom */
 	let fandom = useContext(FandomContext);
 	let path;
 	switch(fandom){
@@ -91,6 +101,7 @@ function Menu(){
 			path = "json/nav_default.json";
 	}
 
+	/* Fetch the data */
 	useEffect(() => {
 		const fetchData = async() => {
 			/* Fetch request */
@@ -107,6 +118,7 @@ function Menu(){
 
 	return (
 		<div className={`${sidenav.container} ${sidenav.bottom}`}>
+			{/* Map each button's data to a LinkButton element */}
 			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
 		</div>
 	);
