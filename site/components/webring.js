@@ -1,52 +1,66 @@
 import format from "/styles/modules/webring.module.scss";
 import { useState, useEffect } from "react";
 
-
-
-const thisSite = "https://noktalis.github.io/webring/";	//TODO: temp
-
-// indices
-let siteIndex = null;
-let home = 0;
+// site indices
+let siteIndex;
+let home = 0;	// all initialized to 0 here for initial state of sites
 let prev = 0;
 let next = 0;
 let here = 0;
 
+const thisSite = "https://noktalis.github.io/webring/";	//TODO: change url
+
+/**Displays links and information about adjacent members in the webring,
+ * along with a link to the webring home on xue's site.
+ * 
+ * @var {Object[]} sites	- An array of (json) objects
+ * 								Inital state: sites is an array of length one. The only item is an empty object.
+ * @function setSites		- Reassigns the value of sites and triggers a reload of the page with new data from
+ * 								the async function.
+ * 
+ * @returns	- A display of webring data including:
+ * 				A link to the previous site in the webring
+ * 				The name of the person running the previous site
+ * 				(static) previous site's ico
+ * 				A link to the next site in the webring
+ * 				The name of the person running the next site
+ * 				(static) next site's ico
+ * 				A link to the webring home
+ * 				The name of the current site
+ * 				(static) current site's ico
+ */
 export default function WebringDisplay(){
-	// [homeTitle, homeURL, prevTitle, prevURL, nextTitle, nextURL]
 	const [sites, setSites] = useState([{}]);
-	const hostURL = "/webring/weebring.json";
+	const hostURL = "/json/weebring.json";
 
 	/**Fetches, processes, and selects webring data to be used
 	 * 
+	 * @const fetchData	- const to prevent repeat calls that can race
+	 * 						Only intend to use this function for the initial page loading
 	 */
 	useEffect(() => {
-		// uses const to avoid racing calls
 		const fetchData = async () =>{
-			// Fetch request
+			/* Fetch request */
 			const response = await fetch(hostURL);
 			const obj = await response.json();
-			const sites = obj.sites;				// sites of sites in webring
+			const sites = obj.sites;	// array of sites in webring
 
-			// indices
-			here = findSiteIndex(sites);
-			home = 0;
-			prev = (siteIndex - 1 + sites.length) % sites.length;
-			next = (siteIndex + 1) % sites.length;
+			/* Update site indices */
+			here = findSiteIndex(sites);						// current site
+			prev = (here - 1 + sites.length) % sites.length;	// previous site
+			next = (here + 1) % sites.length;					// next site
 
-			console.log(`site index: ${siteIndex}
+			console.log(`site index: ${here}
 			 			prev site: ${prev}
 						home: ${home}
 						next site: ${next}
 						sites: ${sites}`);
-						
+			
 			setSites(sites);
 		}
 		fetchData()
 		.catch(console.error);
 	}, [])
-	
-	console.log(siteIndex);
 
 	return(
 		<div className={format.container}>
@@ -100,6 +114,8 @@ export default function WebringDisplay(){
  * @returns index of current site
  */
 function findSiteIndex(sites){
+	siteIndex = null;
+
 	// Search through sites of webring sites
 	for (let i = 0; i < sites.length; i++) {
         let site = sites[i];

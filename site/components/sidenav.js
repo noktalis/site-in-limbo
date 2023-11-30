@@ -1,4 +1,3 @@
-import Link from "next/link";
 import LinkButton from "./linkbtn";
 import sidenav from "../styles/modules/sidenav.module.scss";
 import { useContext } from "react";
@@ -54,9 +53,9 @@ export default function SideNav(){
 	return(
 		<div className={`${sidenav.nav} ${themeClass}`}>
 			<div className={`${sidenav.container} ${sidenav.top}`}>
-				<Link href={link}>
+				<a href={link}>
 					<h1>{fandom}</h1>
-				</Link>
+				</a>
 			</div>
 			
 			<Divider/>
@@ -101,6 +100,13 @@ function Divider(){
 	return(
 		<div className={sidenav.divider}></div>
 	);
+}
+
+function Menu(){
+	let fandom = useContext(FandomContext);
+	switch(fandom){
+		
+	}
 }
 
 // TODO: change content of sidenav based on fandom (Menu function here)

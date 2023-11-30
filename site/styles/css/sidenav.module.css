@@ -159,6 +159,9 @@
   margin-top: 0.5vh;
   margin-bottom: 1vh;
 }
+.top a {
+  text-decoration: underline;
+}
 
 /*	Styling for the custom divider using an image
  *		Setting the image done where since it wouldn't appear on sidenav.js */
