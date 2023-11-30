@@ -140,7 +140,7 @@
   justify-self: end;
   margin-right: 3vh;
   margin-top: 3vh;
-  height: 85%;
+  height: 70vh;
   width: 65%;
   border-radius: 30px 5px 5px 30px;
   display: flex;
@@ -148,48 +148,67 @@
 }
 
 /*	Content container within .nav */
-.container {
-  padding: 2vh;
-}
-
 /*	Styling for the top container within the side navigation menu
  *		Styles the link and h1 element */
+.top {
+  display: flex;
+  border-radius: 25px 0 0 0;
+  min-height: 8vh;
+  align-items: center;
+  justify-content: center;
+}
 .top h1 {
+  text-align: center;
   font-size: 28px;
-  margin-top: 0.5vh;
-  margin-bottom: 1vh;
 }
 .top a {
+  text-decoration: none;
+}
+.top a:hover {
   text-decoration: underline;
 }
 
 /*	Styling for the custom divider using an image
  *		Setting the image done where since it wouldn't appear on sidenav.js */
 .divider {
-  height: 55px;
+  height: 2vh;
+}
+.divider img {
+  width: 100%;
 }
 
-/*	Styling for the bottom container within the side navigation menu
- *		Styles the link buttons */
+/*	Styling for the bottom container within the side navigation menu */
 .bottom {
   height: 100%;
   border-radius: 0 0px 0px 25px;
-  height: 100%;
-  overflow-y: auto;
 }
-.bottom a {
+
+/* Styling for the side navigation menu's buttons
+ *		Adds a scrollbar to the side nav */
+.menu {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+.menu a {
   display: flex;
   text-decoration: none;
 }
-.bottom button {
+.menu button {
   width: 100%;
   padding: 1vh;
+  margin-bottom: 15px;
 }
-.bottom::-webkit-scrollbar {
+.menu:last-child {
+  margin-bottom: 0;
+}
+.menu::-webkit-scrollbar {
   background-color: transparent;
-  width: 1vh;
+  width: 8px;
 }
-.bottom::-webkit-scrollbar-thumb {
+.menu::-webkit-scrollbar-thumb {
   border-radius: 2px;
 }
 
@@ -219,47 +238,62 @@
  *		Applied alongside .nav */
 /* Lynette*/
 .lyt {
-  --gold: #9D9286;
   --gray: #333333;
+  border: var(--lyt-gold1) solid 5px;
+}
+.lyt .top {
   background-color: var(--lyt-main);
-  border: var(--gold) solid 5px;
+  border-bottom: var(--lyt-gold1) solid 5px;
 }
 .lyt .top h1 {
-  font-family: "SaltyCheese", SaltyCheese, sans-serif;
-  letter-spacing: 0.075em;
-  margin: 5px 0 10px;
+  font-family: SaltyCheese, sans-serif;
+  letter-spacing: 0.095em;
+  margin: 0 auto;
 }
 .lyt .top a {
-  color: --lyt-sd-hdr;
+  color: var(--lyt-sd-hdr);
 }
 .lyt .top a:hover {
-  color: --lyt-sd-hdr-h;
+  color: var(--lyt-sd-hdr-h);
 }
 .lyt .top a:active {
-  color: --lyt-sd-hr;
+  color: var(--lyt-sd-hdr-a);
 }
 .lyt .divider {
-  background-image: url("../../public/images/lynette_teacup_segment.svg");
-  background-size: 120px;
-  background-repeat: repeat-x;
-  height: 55px;
-  width: 100%;
-  background-color: var(--gray);
-  border-top: var(--gold) solid 5px;
+  position: absolute;
+  z-index: 60;
 }
 .lyt .bottom {
+  position: relative;
   background-color: var(--gray);
-  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
 }
-.lyt .bottom::-webkit-scrollbar-thumb {
+.lyt .menu {
+  position: absolute;
+  scrollbar-color: var(--lyt-scroll) var(--lyt-scroll-h);
+  padding-top: 5.25vh;
+}
+.lyt .menu::-webkit-scrollbar-thumb {
   background-color: rgba(22, 22, 22, 0.7);
 }
-.lyt .bottom::-webkit-scrollbar-thumb:hover {
+.lyt .menu::-webkit-scrollbar-thumb:hover {
   background-color: rgba(22, 22, 22, 0.9);
 }
-.lyt .bottom button {
-  border: var(--gold) solid 4px;
+.lyt .menu button {
+  border: var(--lyt-sd-itm-brdr) solid 4px;
   border-radius: 10px;
+  font-family: Mattilda, ComicSans, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--lyt-sd-itm);
+  color: var(--lyt-sd-a);
+}
+.lyt .menu button:hover {
+  background-color: var(--lyt-sd-itm-h);
+  color: var(--lyt-sd-a-h);
+}
+.lyt .menu button:active {
+  background-color: var(--lyt-sd-itm-h);
+  color: var(--lyt-sd-a-a);
 }
 
 /* Template/Test */

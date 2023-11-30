@@ -16,13 +16,15 @@
 	--lyt-brown5: #5A3619;
 	--lyt-brown6: #381508;
 
+	--lyt-gold1: #9D9286;
+
 	--lyt-blue1: #22374D;
 	--lyt-blue2: #426476;
 	--lyt-blue3: #375468;
 	--lyt-blue4: #032C34;
 	--lyt-blue5: #075969;
 	--lyt-blue6: #096F83;
-	--lyt-blut7: #064D5B;
+	--lyt-blue7: #064D5B;
 
 	--lyt-violet1: #A5A5BD;
 	--lyt-violet2: #DBB1EF;
@@ -63,28 +65,28 @@
 	--lyt-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
 	
 	// Navigation Tables
-	--lyt-tbl: var(--lyt-blut7);
+	--lyt-tbl: var(--lyt-blue7);
 	--lyt-tbl-h: var(--lyt-blue4);
-	--lyt-tbl-b: var(--lyt-teal2);
+	--lyt-tbl-b: var(--lyt-teal2);	//border
 	--lyt-tbl-a: var(--lyt-brown1);
 	--lyt-tbl-a-h: var(--lyt-white2);
 	--lyt-tbl-a-a: var(--lyt-brown2);
 	
 	// Sidebar Navigation
-	--lyt-sd: var(--lyt-brown3);
-	--lyt-sd-hdr:var(--lyt-brown6);
-	--lyt-sd-hdr-h: var(--lyt-brown5);
-	--lyt-sd-hr: var(--lyt-brown5);
+	--lyt-sd: var(--lyt-white1);
+	--lyt-sd-hdr:var(--lyt-blue5);
+	--lyt-sd-hdr-h: var(--lyt-blue6);
+	--lyt-sd-hdr-a: var(--lyt-blue4);
 
-	--lyt-sd-itm: var(--lyt-brown4);
-	--lyt-sd-itm-h: var(--lyt-brown6);
-	--lyt-sd-itm-brdr: var(--lyt-brown5);
+	--lyt-sd-itm: var(--lyt-blue6);
+	--lyt-sd-itm-h: var(--lyt-teal2);
+	--lyt-sd-itm-brdr: var(--lyt-gold1);
 
 	--lyt-sd-a: var(--lyt-white1);
 	--lyt-sd-a-h: white;
 	--lyt-sd-a-a: var(--lyt-violet1);
 
-	--lyt-sd-scroll: var(--lyt-brown4);
+	--lyt-sd-scroll: #161616;				//out of order
 	--lyt-sd-scroll-h: var(--lyt-brown5);
 	
 	// Dialogue Bubbles

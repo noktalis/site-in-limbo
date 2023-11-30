@@ -37,8 +37,6 @@ function Content() {
 			<h1 style={{textAlign:"center"}}>Arknights</h1>
 			<h3 style={{textAlign:"center"}}>The gacha game I've been married to the longest and also has the best skin game</h3>
 
-			
-
 			<Nav2Col>
 				<StickerButtonLink
 					href={"/genshin/blorbos/"}

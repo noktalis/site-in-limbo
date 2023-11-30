@@ -60,11 +60,15 @@ export default function SideNav(){
 					<h1>{fandom}</h1>
 				</a>
 			</div>
-			
-			<Divider/>
 
-			{/* Changes based on fandom */}
-			<Menu/>
+			<div className={`${sidenav.container} ${sidenav.bottom}`}>
+				<Divider/>
+
+				{/* Changes based on fandom */}
+				<Menu/>
+			</div>
+			
+			
 		</div>
 	);
 }
@@ -75,7 +79,9 @@ export default function SideNav(){
  */
 function Divider(){
 	return(
-		<div className={sidenav.divider}></div>
+		<div className={sidenav.divider}>
+			<img src="/images/lynette_teacup_segment.png"></img>
+		</div>
 	);
 }
 
@@ -117,9 +123,13 @@ function Menu(){
 	},[])
 
 	return (
-		<div className={`${sidenav.container} ${sidenav.bottom}`}>
+		<div className={sidenav.menu}>
 			{/* Map each button's data to a LinkButton element */}
 			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
 		</div>
 	);
 }
+
+/* References:
+	https://www.reddit.com/r/reactjs/comments/pknouj/comment/hc4wv8m/?utm_source=share&utm_medium=web2x&context=3
+*/
