@@ -60,7 +60,7 @@ export default function SideNav(){
 			
 			<Divider/>
 
-			<Menu></Menu>
+			<Menu/>
 		</div>
 	);
 }
@@ -76,7 +76,7 @@ function Divider(){
 }
 
 function Menu(){
-	const [links, setLinks] = useState([{}]);
+	const [links, setLinks] = useState([{title:"",text:"",href:""}]);
 
 	let fandom = useContext(FandomContext);
 	let path;
@@ -99,6 +99,7 @@ function Menu(){
 			const data = obj.buttons;	// array of button data
 
 			console.log(data);
+			setLinks(data);
 		}
 		fetchData()
 		.catch(console.error);
@@ -106,33 +107,7 @@ function Menu(){
 
 	return (
 		<div className={`${sidenav.container} ${sidenav.bottom}`}>
-			<LinkButton
-				path={"/"}
-				title={"Placeholder"}>
-					Currently
-			</LinkButton>
-			<LinkButton
-				path={"/"}
-				title={"Placeholder"}>
-					out
-			</LinkButton>
-			<LinkButton
-				path={"/"}
-				title={"Placeholder"}>
-					of
-			</LinkButton>
-			<LinkButton
-				path={"/"}
-				title={"Placeholder"}>
-					order
-			</LinkButton>
-			<LinkButton
-				path={"/"}
-				title={"Placeholder"}>
-					&lt;/3
-			</LinkButton>
+			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
 		</div>
 	);
 }
-
-// TODO: change content of sidenav based on fandom (Menu function here)
