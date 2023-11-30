@@ -78,6 +78,7 @@ export default function SideNav(){
  * @returns 
  */
 function Divider(){
+	// TODO: fandom context
 	return(
 		<div className={sidenav.divider}>
 			<img src="/images/lynette_teacup_segment.png"></img>

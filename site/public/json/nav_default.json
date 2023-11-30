@@ -1,5 +1,34 @@
 {
 	"buttons": [
-		{}
+		{
+			"title": "Home",
+			"text": "Home",
+			"href": "/"
+		},
+		{
+			"title": "Arknights",
+			"text": "Arknights",
+			"href": "/ak/"
+		},
+		{
+			"title": "Genshin Impact",
+			"text": "Genshin",
+			"href": "/genshin/"
+		},
+		{
+			"title": "Honkai: Star Rail",
+			"text": "Star\u00A0Rail",
+			"href": "/star_rail/"
+		},
+		{
+			"title": "Webring",
+			"text": "Webing",
+			"href": "/webring/"
+		},
+		{
+			"title": "Mischellaneous",
+			"text": "Misc.",
+			"href": "/misc/"
+		}
 	]
 }
