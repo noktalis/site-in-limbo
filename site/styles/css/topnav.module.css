@@ -247,4 +247,25 @@
   background-color: var(--lyt-indic);
 }
 
-/* Arknights */
+/* Rhodes Island */
+.ri {
+  background-color: var(--ri-nav);
+}
+.ri .buttons button {
+  border-radius: 10px;
+  background-color: var(--ri-nav);
+  color: var(--ri-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.ri .buttons button:hover {
+  background-color: var(--ri-nav-h);
+  color: var(--ri-nav-a-h);
+}
+.ri .buttons button:active {
+  background-color: var(--ri-nav-h);
+  color: var(--ri-nav-a-a);
+}
+.ri .indicator {
+  background-color: var(--ri-indic);
+}

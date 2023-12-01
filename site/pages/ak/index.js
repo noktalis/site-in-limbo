@@ -15,7 +15,7 @@ import StickerButtonLink from '/components/stickerbtnlink';
 export default function Home(){
 	return (
 		<FandomContext.Provider value='ak'>
-		<ThemeContext.Provider value='lyt'>
+		<ThemeContext.Provider value='ri'>
 			<Head>
 				<title>Arknights Home</title>
 				<link rel="icon" href="/ventiico.png" />
@@ -35,62 +35,77 @@ function Content() {
 	return (
 		<div>
 			<h1 style={{textAlign:"center"}}>Arknights</h1>
-			<h3 style={{textAlign:"center"}}>The gacha game I've been married to the longest and also has the best skin game</h3>
+			<h3 style={{textAlign:"center"}}>The gacha game I've been married to the longest and also has such good skins</h3>
+
+			<a>Testing!</a>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+			<p>sdhfadsfdnfosdnf</p>
 
 			<Nav2Col>
 				<StickerButtonLink
-					href={"/genshin/blorbos/"}
-					btnTitle={"Genshin Blorbos"}
+					href={"/ak/friend_id/"}
+					btnTitle={"Friend ID"}
 					imgSide={"lefter"}
-					imgSize={"big"}
+					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/2b1bd2bf6fa42a5df7e3b2469c503bd6/77331089143a31ce-af/s1280x1920/d61d2161abb25e3b85be353f7514b4096339b4c4.png"}
 					imgAlt={"Venti, amazed"}>
-						Blorbos
+						Friend ID
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/genshin/ships/"}
-					btnTitle={"Genshin Ships"}
+					href={"/ak/friend_id/"}
+					btnTitle={"Support Units"}
 					imgSide={"righter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/9353554dcd39efa572cf1654198a25d9/c16e3361993a1d61-db/s1280x1920/4d43f6c4e30fb5663aeb5930b060e0057bb8ac44.png"}
 					imgAlt={"Xiao eating almond tofu"}>
-						Ship List
+						Support Units
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/genshin/wish/"}
-					btnTitle={"My Primogem Savings"}
+					href={"/ak/waifu/"}
+					btnTitle={"Arknights Waifus"}
 					imgSide={"left"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/96430863df291e66baec879d4d5a5f48/2efd9f400ea04908-c3/s400x600/cc3364ab0478254cfcf0543150ec36b692d25bea.pnj"}
 					imgAlt={"Lynette clapping"}>
-						Wishlist
+						Waifus
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/genshin/haterism/"}
-					btnTitle={"Genshin Haterisms"}
+					href={"/ak/ships/"}
+					btnTitle={"Arknights Ships"}
 					imgSide={"right"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/16bda86a2593c5dd6a39075c637b51dc/b31fedeeae4e5294-c9/s1280x1920/fa4df89433c93462b319fd07550482adeb0bc971.png"}
 					imgAlt={"Heizou about to inflict violence"}>
-						Shit List
+						Ships
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/genshin/vo_rank/"}
-					btnTitle={"Genshin Voiceover Rankings"}
+					href={"/ak/wish/"}
+					btnTitle={"Operator Wishlist"}
 					imgSide={"lefter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/f4e85995735d44f06033052e6bb42116/673c391823193445-75/s400x600/768852549c00e066e7fa9339ef5adffa0494c1f5.png"}
 					imgAlt={""}>
-						Voiceover Rankings
+						Wishlist
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/genshin/au/"}
-					btnTitle={"Genshin AU Ideas"}
+					href={"/ak/story/"}
+					btnTitle={"Story Highlights"}
 					imgSide={"righter"}
-					imgSize={"small"}
+					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/08645b101b77e9679c952cd0e9264324/549ae0728a253d2f-f0/s400x600/56b87645d3a228f09f084b891732d1072b52235a.png"}
 					imgAlt={"Empty page held by Layla"}>
-						AU Ideas
+						Story Highlights
 				</StickerButtonLink>
 			</Nav2Col>
 		</div>

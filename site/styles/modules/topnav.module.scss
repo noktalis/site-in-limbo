@@ -118,7 +118,9 @@
 
 	.buttons button {
 		border-radius: 15px;
-		@include btn-colors(--lyt-nav, --lyt-nav-a,--lyt-nav-h,--lyt-nav-a-h,--lyt-nav-h, --lyt-nav-a-a);
+		@include btn-colors(--lyt-nav, --lyt-nav-a,
+						--lyt-nav-h,--lyt-nav-a-h,
+						--lyt-nav-h, --lyt-nav-a-a);
 		font-size: 20px;
 		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
@@ -128,7 +130,20 @@
 	}
 }
 
-/* Arknights */
-.ak {
-	
+/* Rhodes Island */
+.ri {
+	background-color: var(--ri-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(--ri-nav, --ri-nav-a,
+							--ri-nav-h, --ri-nav-a-h,
+							--ri-nav-h, --ri-nav-a-a);
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--ri-indic);
+	}
 }

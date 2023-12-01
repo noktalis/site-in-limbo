@@ -42,8 +42,8 @@ export default function SideNav(){
 
 	/* Figure out which theme to appear with */
 	switch(theme){
-		case "test":
-			themeClass = sidenav.test;	// TODO: change later
+		case "ri":
+			themeClass = sidenav.ri;
 			break;
 		case "lyt":
 			themeClass = sidenav.lyt;
@@ -78,10 +78,20 @@ export default function SideNav(){
  * @returns 
  */
 function Divider(){
-	// TODO: fandom context
+	const fandom = useContext(FandomContext);
+	let path;
+
+	switch(fandom) {
+		case "genshin":
+			path = "/images/lynette_teacup_segment.png";
+			break;
+		default:
+			path = "";
+	}
+
 	return(
 		<div className={sidenav.divider}>
-			<img src="/images/lynette_teacup_segment.png"></img>
+			<img src={path}></img>
 		</div>
 	);
 }

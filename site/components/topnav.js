@@ -14,6 +14,10 @@ export default function TopNav() {
 	let themeClass;
 
 	switch(theme){
+		case "ri":
+			themeClass = topnav.ri;
+			break;
+		case "lyt":
 		default:
 			themeClass = topnav.lyt;
 	}

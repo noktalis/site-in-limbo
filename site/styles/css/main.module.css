@@ -239,3 +239,39 @@
   background-color: var(--lyt-foot);
   color: var(--lyt-foot-txt);
 }
+
+/* Rhodes Island */
+.ri {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--ri-scroll) var(--ri-scroll-h);
+}
+.ri::-webkit-scrollbar-thumb {
+  background-color: rgba(11, 136, 177, 0.7);
+}
+.ri::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(11, 136, 177, 0.9);
+}
+.ri .main {
+  background-color: var(--ri-main);
+  color: var(--ri-txt);
+}
+.ri .main h1, .ri .main h2, .ri .main h3, .ri .main h4, .ri .main h5, .ri .main h6 {
+  color: var(--ri-header);
+}
+.ri .main a {
+  color: var(--ri-a);
+}
+.ri .main a:hover {
+  color: var(--ri-a-h);
+}
+.ri .main a:active {
+  color: var(--ri-a-a);
+}
+.ri .footer {
+  background-color: var(--ri-foot);
+  color: var(--ri-foot-txt);
+}

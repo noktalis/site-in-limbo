@@ -16,8 +16,8 @@ export default function Layout({children}){
 	let themeClass;
 
 	switch(theme){
-		case "test":
-			themeClass = background.test;
+		case "ri":
+			themeClass = background.ri;
 			break;
 		case "lyt":
 		default:

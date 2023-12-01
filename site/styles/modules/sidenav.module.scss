@@ -13,8 +13,7 @@
 	// Shape
 	height: 70vh;
 	width: 65%;
-	border-radius: 30px 5px 5px 30px;
-
+	
 	// Appearance
 	display: flex;
 	flex-direction: column;
@@ -27,10 +26,8 @@
 
 /*	Styling for the top container within the side navigation menu
  *		Styles the link and h1 element */
-// TODO: adjust after fonts are added
 .top {
 	display: flex;
-	border-radius: 25px 0 0 0;
 	min-height: 8vh;
 	align-items: center;
 	justify-content: center;
@@ -59,9 +56,6 @@
 /*	Styling for the bottom container within the side navigation menu */
 .bottom {
 	height: 100%;
-	border-radius: 0 0px 0px 25px;
-
-	
 }
 
 /* Styling for the side navigation menu's buttons
@@ -73,12 +67,10 @@
 	padding-right: 15px;
 	
 	a {
-		display: flex;
 		text-decoration: none;
 	}
 
 	button {
-		width: 100%;
 		padding: 1vh;
 		margin-bottom: 15px;
 	}
@@ -132,10 +124,13 @@
 
 	// .nav
 	border: var(--lyt-gold1) solid 5px;
+	border-radius: 30px 5px 5px 30px;
 	
 	.top {
 		background-color: var(--lyt-main);
 		border-bottom: var(--lyt-gold1) solid 5px;
+		border-radius: 25px 0 0 0;
+
 		h1 {
 			font-family: SaltyCheese,sans-serif;
 			letter-spacing: 0.095em;
@@ -153,7 +148,8 @@
 
 	.bottom {
 		position: relative;
-		background-color: var(--gray);	
+		background-color: var(--gray);
+		border-radius: 0 0px 0px 25px;
 	}
 
 	.menu {
@@ -165,11 +161,70 @@
 		@include scrollbarColor($scroll);
 		padding-top: 5.25vh;
 
+		a {
+			display: flex;
+		}
+
 		button {
+			width: 100%;
 			border: var(--lyt-sd-itm-brdr) solid 4px;
 			border-radius: 10px;
 
 			font-family: Mattilda, ComicSans, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+
+			@include btn-colors(--lyt-sd-itm,--lyt-sd-a,
+				--lyt-sd-itm-h,--lyt-sd-a-h,
+				--lyt-sd-itm-h,--lyt-sd-a-a);
+		}
+	}
+}
+
+/* Rhodes Island */
+.ri {
+
+	.top {
+		background-color: var(--ri-sd);
+
+		h1 {
+			font-family: RobotoCondensed,sans-serif;
+			font-size: 32px;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--ri-sd-hdr),var(--ri-sd-hdr-h),var(--ri-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		display: none;	
+	}
+
+	.bottom {
+		border: black solid 1px;
+	}
+
+	.menu {
+		$scroll: #161616;
+		position: relative;
+
+		// scroll settings
+		@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox TODO:
+		@include scrollbarColor($scroll);
+		padding-top: 5.25vh;
+
+		a {
+			display: inline-block;
+
+			&:nth-child(2) {
+				background-color: red;
+			}
+		}
+
+		button {
+			border: none;
+			font-family: RobotoCondensed, sans-serif;
 			font-size: 16px;
 			font-weight: bold;
 

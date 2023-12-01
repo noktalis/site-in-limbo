@@ -36,8 +36,6 @@
 	
 	/*	Lynette Theme */
 
-	--lyt-bg: var(--lyt-teal1);
-
 	// Top Navigation Bar
 	--lyt-nav: var(--lyt-blue1);
 	--lyt-nav-h: var(--lyt-blue2);
@@ -48,6 +46,7 @@
 
 	--lyt-indic: var(--lyt-blue2);
 
+	// Footer
 	--lyt-foot: var(--lyt-blue3);
 	--lyt-foot-txt: var(--lyt-white2);
 
@@ -61,6 +60,7 @@
 	--lyt-a-a: var(--lyt-blue6);
 
 	// Scrollbar Thumb
+	// --lyt-blue4, #032C34;
 	--lyt-scroll: rgba(3,44,52,0.7); // blue4 w/ a = 0.7	
 	--lyt-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
 	
@@ -96,35 +96,91 @@
 	--lyt-bub-R-txt: var(--lyt-violet3);
 
 	/* Arknights Colors */
-	--ak-black1: #1D242D;	// blue tint
-	--ak-black2: #15151E;	// blue tint
+	--ri-black1: #1D242D;	// blue tint
+	--ri-black2: #15151E;	// blue tint
 
-	--ak-gray1: #373F48;
-	--ak-gray2: #B5BCD3;
-	--ak-gray3: #37455E;	// more blue than gray1
-	--ak-gray4: #254958;
-	--ak-gray5: #DDDDDD;
-	--ak-gray6: #323232;
-	--ak-gray7: #BFC0C1;
+	--ri-gray1: #373F48;
+	--ri-gray2: #B5BCD3;
+	--ri-gray3: #37455E;	// more blue than gray1
+	--ri-gray4: #254958;
+	--ri-gray5: #323232;
+	--ri-gray6: #BFC0C1;
 
-	--ak-white1: #F2ECE7;	// orange tint
+	--ri-white1: #DDDDDD;
 
-	--ak-blue1: #41D2E5;
-	--ak-blue2: #1A44B0;
-	--ak-blue3: #05A8DE;
-	--ak-blue4: #096F83;
-	--ak-blue5: #0b88b1;
-	--ak-blue6: #4ABEE6;
-	--ak-blue7: #42AAC6;
-	--ak-blue8: #1E2F89;
+	--ri-blue1: #41D2E5;
+	--ri-blue2: #1A44B0;
+	--ri-blue3: #05A8DE;
+	--ri-blue4: #096F83;
+	--ri-blue5: #0b88b1;
+	--ri-blue6: #4ABEE6;
+	--ri-blue7: #42AAC6;
+	--ri-blue8: #1E2F89;
 	
-	--ak-orange1: #E0790D;
-	--ak-yellow1: #ECC953;
+	--ri-orange1: #E0790D;
+	--ri-yellow1: #ECC953;
 
-	--ak-teal1: #163636;
-	--ak-teal2: #46B6B0;
+	--ri-teal1: #163636;
+	--ri-teal2: #46B6B0;
 
+	/* Arknights Theme */
 
+	// Top Navigation Bar
+	--ri-nav: var(--ri-black1);
+	--ri-nav-h: var(--ri-gray1);
 
+	--ri-nav-a: white;
+	--ri-nav-a-h: var(--ri-blue1);
+	--ri-nav-a-a: var(--ri-blue2);
+
+	--ri-indic: var(--ri-gray2);
+
+	// Footer
+	--ri-foot: var(--ri-black1);
+	--ri-foot-txt: white;
+
+	// Main Content
+	--ri-main: var(--ri-white1);
+	--ri-txt: var(--ri-black2);
+	--ri-header: var(--ri-blue8);
+
+	--ri-a: var(--ri-orange1);
+	--ri-a-h: var(--ri-yellow1);
+	--ri-a-a: var(--ri-blue4);
+
+	// Scrollbar Thumb
+	--ri-scroll: rgba(3,44,52,0.7); // blue4 w/ a = 0.7	
+	--ri-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
+	
+	// Navigation Tables
+	--ri-tbl: var(--ri-blue7);
+	--ri-tbl-h: var(--ri-blue4);
+	--ri-tbl-b: var(--ri-teal2);	//border
+	--ri-tbl-a: var(--ri-brown1);
+	--ri-tbl-a-h: var(--ri-white2);
+	--ri-tbl-a-a: var(--ri-brown2);
+	
+	// Sidebar Navigation
+	--ri-sd: white;
+	--ri-sd-hdr:var(--ri-gray5);
+	--ri-sd-hdr-h: var(--ri-blue2);
+	--ri-sd-hdr-a: var(--ri-blue1);
+
+	--ri-sd-itm: white;
+	--ri-sd-itm-h: var(--ri-teal2);
+	--ri-sd-itm-brdr: var(--ri-gold1);
+
+	--ri-sd-a: var(--ri-gray5);
+	--ri-sd-a-h: white;
+	--ri-sd-a-a: var(--ri-violet1);
+
+	--ri-sd-scroll: #161616;				//out of order
+	--ri-sd-scroll-h: var(--ri-brown5);
+	
+	// Dialogue Bubbles
+	--ri-bub-L: var(--ri-violet3);
+	--ri-bub-L-txt: var(--ri-white1);
+	--ri-bub-R: var(--ri-violet2);
+	--ri-bub-R-txt: var(--ri-violet3);
 
 }
