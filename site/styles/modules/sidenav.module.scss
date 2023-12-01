@@ -80,7 +80,7 @@
 	}
 
 	// scroll settings
-	overflow-y: scroll;
+	overflow-y: auto;
 	&::-webkit-scrollbar {
         background-color: transparent;
 		width: 8px;
@@ -157,7 +157,7 @@
 		position: absolute;
 
 		// scroll settings
-		@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox TODO:
+		@include scrollbarColorsFF(--lyt-sd-scroll, --lyt-sd-scroll-h);	// for firefox TODO:
 		@include scrollbarColor($scroll);
 		padding-top: 5.25vh;
 
@@ -183,9 +183,13 @@
 
 /* Rhodes Island */
 .ri {
+	background-color: rgba(22,22,22,0.3);
+	padding: 3px;
 
 	.top {
 		background-color: var(--ri-sd);
+		justify-content: left;
+		padding: 8px;
 
 		h1 {
 			font-family: RobotoCondensed,sans-serif;
@@ -202,35 +206,50 @@
 	}
 
 	.bottom {
-		border: black solid 1px;
+		margin-top: 16px;
+		height: 81%;
 	}
 
 	.menu {
-		$scroll: #161616;
-		position: relative;
+		text-align: center;
+		$scroll: #323232;	// --ri-gray5
 
 		// scroll settings
-		@include scrollbarColorsFF(--lyt-scroll, --lyt-scroll-h);	// for firefox TODO:
+		@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);	// for firefox TODO:
 		@include scrollbarColor($scroll);
-		padding-top: 5.25vh;
+		
+		padding-left: 0;
+		padding-right: 0;
+
+		
+
+		button {
+			border: none;
+			margin-bottom: 10px;
+			margin-right: 8px;
+
+			font-family: RobotoCondensed, sans-serif;
+			font-size: 24px;
+			font-weight: bold;
+
+			@include btn-colors(--ri-sd-itm,--ri-sd-a,
+				--ri-sd-itm-h,--ri-sd-a-h,
+				--ri-sd-itm-h,--ri-sd-a-a);
+		}
 
 		a {
 			display: inline-block;
 
-			&:nth-child(2) {
-				background-color: red;
+			&:nth-child(4) > button {
+				@include btn-colors(--ri-blue6,--ri-sd,
+				--ri-blue5,--ri-yellow1,
+				--ri-blue5,--ri-orange1);
 			}
-		}
-
-		button {
-			border: none;
-			font-family: RobotoCondensed, sans-serif;
-			font-size: 16px;
-			font-weight: bold;
-
-			@include btn-colors(--lyt-sd-itm,--lyt-sd-a,
-				--lyt-sd-itm-h,--lyt-sd-a-h,
-				--lyt-sd-itm-h,--lyt-sd-a-a);
+			&:nth-child(6) > button, &:nth-child(5) > button {
+				@include btn-colors(--ri-gray5,--ri-sd,
+				--ri-gray5,--ri-yellow1,
+				--ri-gray5,--ri-orange1);
+			}
 		}
 	}
 }

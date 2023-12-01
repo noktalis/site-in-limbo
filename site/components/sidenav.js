@@ -17,6 +17,18 @@ export default function SideNav(){
 	let themeClass;
 	let link;
 
+	/* Figure out which theme to appear with */
+	switch(theme){
+		case "ri":
+			themeClass = sidenav.ri;
+			break;
+		case "lyt":
+			themeClass = sidenav.lyt;
+			break;
+		default:
+			themeClass = sidenav.lyt;
+	}
+	
 	/* Figure out which header link to use at top of side nav */
 	switch(fandomContext){
 		case "ak":
@@ -38,18 +50,6 @@ export default function SideNav(){
 		default:
 			fandom = "Navigation";
 			link = "/";
-	}
-
-	/* Figure out which theme to appear with */
-	switch(theme){
-		case "ri":
-			themeClass = sidenav.ri;
-			break;
-		case "lyt":
-			themeClass = sidenav.lyt;
-			break;
-		default:
-			themeClass = sidenav.lyt;
 	}
 
 	return(
@@ -137,6 +137,19 @@ function Menu(){
 		<div className={sidenav.menu}>
 			{/* Map each button's data to a LinkButton element */}
 			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
+			{/* <br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<p>hi</p> */}
 		</div>
 	);
 }
