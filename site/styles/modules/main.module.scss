@@ -65,9 +65,10 @@
 */
 .footer {
 	min-height: 8vh;	// maintains that the footer exists on the page w/o content
-
 	padding: 2vh;
 	text-align: center;
+	font-family: Mattilda, serif;
+	font-size: 18px;
 	p {
 		margin: 0;
 	}
@@ -113,6 +114,9 @@
 
 	.footer {
 		@include colors(--lyt-foot, --lyt-foot-txt);
+		a {
+			@include link-colors(--lyt-a,--lyt-a-h,--lyt-a-a);
+		}
 	}
 }
 
@@ -145,5 +149,8 @@
 
 	.footer {
 		@include colors(--ri-foot, --ri-foot-txt);
+		a {
+			@include link-colors(var(--ri-yellow1),var(--ri-orange1),var(--ri-blue1));
+		}
 	}
 }

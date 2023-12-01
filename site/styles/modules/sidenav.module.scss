@@ -215,13 +215,11 @@
 		$scroll: #323232;	// --ri-gray5
 
 		// scroll settings
-		@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);	// for firefox TODO:
+		@include scrollbarColorsFF(--ri-scroll, --ri-scroll-h);
 		@include scrollbarColor($scroll);
 		
 		padding-left: 0;
 		padding-right: 0;
-
-		
 
 		button {
 			border: none;
@@ -240,12 +238,12 @@
 		a {
 			display: inline-block;
 
-			&:nth-child(4) > button {
+			&:nth-last-child(3) > button {
 				@include btn-colors(--ri-blue6,--ri-sd,
 				--ri-blue5,--ri-yellow1,
 				--ri-blue5,--ri-orange1);
 			}
-			&:nth-child(6) > button, &:nth-child(5) > button {
+			&:nth-last-child(1) > button, &:nth-last-child(2) > button {
 				@include btn-colors(--ri-gray5,--ri-sd,
 				--ri-gray5,--ri-yellow1,
 				--ri-gray5,--ri-orange1);

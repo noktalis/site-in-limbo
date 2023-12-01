@@ -195,6 +195,8 @@
   min-height: 8vh;
   padding: 2vh;
   text-align: center;
+  font-family: Mattilda, serif;
+  font-size: 18px;
 }
 .footer p {
   margin: 0;
@@ -239,6 +241,15 @@
   background-color: var(--lyt-foot);
   color: var(--lyt-foot-txt);
 }
+.lyt .footer a {
+  color: --lyt-a;
+}
+.lyt .footer a:hover {
+  color: --lyt-a-h;
+}
+.lyt .footer a:active {
+  color: --lyt-a-a;
+}
 
 /* Rhodes Island */
 .ri {
@@ -274,4 +285,13 @@
 .ri .footer {
   background-color: var(--ri-foot);
   color: var(--ri-foot-txt);
+}
+.ri .footer a {
+  color: var(--ri-yellow1);
+}
+.ri .footer a:hover {
+  color: var(--ri-orange1);
+}
+.ri .footer a:active {
+  color: var(--ri-blue1);
 }
