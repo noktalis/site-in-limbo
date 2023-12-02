@@ -66,7 +66,7 @@
   --lyt-bub-L-txt: var(--lyt-white1);
   --lyt-bub-R: var(--lyt-violet2);
   --lyt-bub-R-txt: var(--lyt-violet3);
-  /* Arknights Colors */
+  /* Rhodes Island Colors */
   --ri-black1: #1D242D;
   --ri-black2: #15151E;
   --ri-gray1: #373F48;
@@ -88,7 +88,7 @@
   --ri-yellow1: #ECC953;
   --ri-teal1: #163636;
   --ri-teal2: #46B6B0;
-  /* Arknights Theme */
+  /* Rhodes Island Theme */
   --ri-nav: var(--ri-black1);
   --ri-nav-h: var(--ri-gray1);
   --ri-nav-a: white;
@@ -105,12 +105,12 @@
   --ri-a-a: var(--ri-blue4);
   --ri-scroll: rgba(11, 136, 177,0.7);
   --ri-scroll-h: rgba(11, 136, 177,0.9);
-  --ri-tbl: var(--ri-blue7);
-  --ri-tbl-h: var(--ri-blue4);
-  --ri-tbl-b: var(--ri-teal2);
-  --ri-tbl-a: var(--ri-brown1);
-  --ri-tbl-a-h: var(--ri-white2);
-  --ri-tbl-a-a: var(--ri-brown2);
+  --ri-tbl: var(--ri-blue6);
+  --ri-tbl-h: var(--ri-blue5);
+  --ri-tbl-av: var(--ri-teal1);
+  --ri-tbl-a: white;
+  --ri-tbl-a-h: var(--ri-yellow1);
+  --ri-tbl-a-a: var(--ri-orange1);
   --ri-sd: white;
   --ri-sd-hdr:var(--ri-gray5);
   --ri-sd-hdr-h: var(--ri-blue1);

@@ -84,8 +84,8 @@ function Content() {
 					btnTitle={"Genshin Haterisms"}
 					imgSide={"right"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/16bda86a2593c5dd6a39075c637b51dc/b31fedeeae4e5294-c9/s1280x1920/fa4df89433c93462b319fd07550482adeb0bc971.png"}
-					imgAlt={"Heizou about to inflict violence"}>
+					imgSrc={"https://64.media.tumblr.com/0a2df2569c943e61750d8015a4e48a2e/673c391823193445-72/s400x600/cddef75c45cc60741b962ee704be0f3a96e7c64a.png"}
+					imgAlt={"Wanderer pulling his eyelid down and sticking his tongue out in a taunt"}>
 						Shit List
 				</StickerButtonLink>
 				<StickerButtonLink
@@ -105,6 +105,24 @@ function Content() {
 					imgSrc={"https://64.media.tumblr.com/08645b101b77e9679c952cd0e9264324/549ae0728a253d2f-f0/s400x600/56b87645d3a228f09f084b891732d1072b52235a.png"}
 					imgAlt={"Empty page held by Layla"}>
 						AU Ideas
+				</StickerButtonLink>
+				<StickerButtonLink
+					href={"/genshin/coop/"}
+					btnTitle={"Genshin Coop Stories"}
+					imgSide={"left"}
+					imgSize={""}
+					imgSrc={"https://64.media.tumblr.com/f73fc9116a2f0b1508fa3946e99936e3/f337d4ed81dd2fb5-0f/s1280x1920/877d665e253c525cb7c5c0bd756dbc5b43b93f8f.png"}
+					imgAlt={"Kazuha sweatdropping as he eats Taiyaki"}>
+						Coop Stories
+				</StickerButtonLink>
+				<StickerButtonLink
+					href={"/genshin/takes/"}
+					btnTitle={"Genshin Cold Takes"}
+					imgSide={"right"}
+					imgSize={""}
+					imgSrc={"https://64.media.tumblr.com/1efcf9fa8458efffc2d0b721e2ed10f6/b31fedeeae4e5294-2e/s400x600/6a7181d2e9e7188e431858c5ba5c8779a9560498.png"}
+					imgAlt={"Heizou looking smug"}>
+						Hot (Cold) Takes
 				</StickerButtonLink>
 			</Nav2Col>
 		</div>

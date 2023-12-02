@@ -40,18 +40,31 @@
 /* Theming
  *	 Applied on the button element */
 
- /* Lynette */
+/* Lynette */
 .lyt {
-	@include colors(--lyt-tbl, --lyt-tbl-a);
 	border: 4px solid var(--lyt-tbl-b);
 	border-radius: 10px;						// friend shaped!
 	font-family: Mattilda, serif;
 	font-size: large;							// might have to adjust, nextjs font sizes are weird
 	font-weight: bold;
+	@include btn-colors(--lyt-tbl, --lyt-tbl-a,
+						--lyt-tbl-h, --lyt-tbl-a-h,
+						--lyt-tbl-h, --lyt-tbl-a-a);
+}
+
+/* Rhodes Island */
+.ri {
+	font-family: RobotoCondensed, serif;
+	font-size: 28px;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	border: none;
+	@include btn-colors(--ri-tbl, --ri-tbl-a,
+						--ri-tbl-h, --ri-tbl-a-h,
+						--ri-tbl-av, --ri-tbl-a-a);
 	&:hover, &:focus {
-		@include colors(--lyt-tbl-h, --lyt-tbl-a-h);
+		@include colors(--ri-tbl-h, --ri-tbl-a-h);
 	}
 	&:active {
-		color: var(--lyt-tbl-a-a);
+		color: var(--ri-tbl-a-a);
 	}
 }

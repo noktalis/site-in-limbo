@@ -37,20 +37,9 @@ function Content() {
 			<h1 style={{textAlign:"center"}}>Arknights</h1>
 			<h3 style={{textAlign:"center"}}>The gacha game I've been married to the longest and also has such good skins</h3>
 
-			<a>Testing!</a>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
+			<p>Arknights used to be my main gacha! But then I got burnt out from hyperfixation and started taking it casually heheh...</p>
 
-			<p>sdhfadsfdnfosdnf</p>
+			<p>It's a lot less time-intensive than Genshin to play, since most days I just let it run on my phone while I do other things, so I call it my "side hoe" gacha. I'm still pretty dedicated to it though! I love my Genshin blorbos, but in terms of gacha games as a whole I'd always choose Arknights over Genshin for a variety of reasons... most of which are because Hypergryph is a lot more generous to F2P Arknights players.</p>
 
 			<Nav2Col>
 				<StickerButtonLink
@@ -63,13 +52,13 @@ function Content() {
 						Friend ID
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/ak/friend_id/"}
-					btnTitle={"Support Units"}
+					href={"/ak/skins/"}
+					btnTitle={"Arknights Skins Tier List"}
 					imgSide={"righter"}
 					imgSize={""}
 					imgSrc={"https://64.media.tumblr.com/9353554dcd39efa572cf1654198a25d9/c16e3361993a1d61-db/s1280x1920/4d43f6c4e30fb5663aeb5930b060e0057bb8ac44.png"}
 					imgAlt={"Xiao eating almond tofu"}>
-						Support Units
+						Skins Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/ak/waifu/"}
