@@ -13,4 +13,4 @@ Misc category:
 	gacha culture essays
 
 Mondstadt theme:
-	string of flags divider
+	jean colors for topnav, footer, sticker btns

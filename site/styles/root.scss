@@ -187,4 +187,51 @@
 	// --ri-bub-R: var(--ri-violet2);
 	// --ri-bub-R-txt: var(--ri-violet3);
 
+
+	/* Mondstadt Colors */
+	--mon-teal1: #11666F;
+	--mon-teal2: #389F98;
+	--mon-teal3: #42B69C;
+	--mon-teal4: #69C8B3;
+	--mon-teal5: #5AB5B3;
+	--mon-teal6: #a1ffeb;
+
+	--mon-green1: #84CA9A;
+	--mon-green2: #91CF99;
+	--mon-green3: #3AA789;
+	--mon-green4: #2A8479;
+	--mon-green5: #c3ffcb;
+
+	--mon-blue1: #549FDE;
+
+	--mon-red1: #EF9572;
+	--mon-red2: #D04C3E;
+
+	/* Mondstadt Theme */
+
+	// Navigation Tables
+	--mon-tbl: var(--mon-green4);
+	--mon-tbl-h: var(--mon-green3);
+	--mon-tbl-b: var(--mon-green2);	//border
+	--mon-tbl-a: var(--mon-green5);
+	--mon-tbl-a-h: var(--mon-red1);
+	--mon-tbl-a-a: var(--mon-red2);
+	
+	// Sidebar Navigation
+	--mon-sd: var(--mon-blue1);
+	--mon-sd-hdr: white;
+	--mon-sd-hdr-h: var(--mon-green2);
+	--mon-sd-hdr-a: var(--mon-red1);
+
+	--mon-sd-itm: white;
+	--mon-sd-itm-h: var(--mon-green2);
+
+	--mon-sd-a: var(--mon-teal2);
+	--mon-sd-a-h: white;
+	--mon-sd-a-a: var(--mon-red2);
+
+	// --mon-gray5, #323232
+	--mon-sd-scroll: rgba(255, 255, 255,0.7);
+	--mon-sd-scroll-h: rgba(255, 255, 255,0.9);
+
 }

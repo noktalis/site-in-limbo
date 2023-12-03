@@ -21,6 +21,9 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 
 	/* Theme determines the button and sticker's appearance */
 	switch(theme){
+		case "mond":
+			themeClass = style.mond;
+			break;
 		case "ri":
 			themeClass = style.ri;
 			break;

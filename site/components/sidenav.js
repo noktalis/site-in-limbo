@@ -86,11 +86,11 @@ export default function SideNav(){
  * @returns 
  */
 function Divider(){
-	const fandom = useContext(FandomContext);
+	const theme = useContext(ThemeContext);
 	let path;
 
-	switch(fandom) {
-		case "genshin":
+	switch(theme) {
+		case "lyt":
 			path = "/images/lynette_teacup_segment.png";
 			break;
 		default:

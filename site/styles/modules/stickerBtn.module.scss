@@ -62,3 +62,15 @@
 						--ri-tbl-h, --ri-tbl-a-h,
 						--ri-tbl-av, --ri-tbl-a-a);
 }
+
+/* Mondstadt */
+.mond {
+	border: 4px solid var(--mon-tbl-b);
+	border-radius: 10px;						// friend shaped!
+	font-family: Mattilda, serif;
+	font-size: large;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	@include btn-colors(--mon-tbl, --mon-tbl-a,
+						--mon-tbl-h, --mon-tbl-a-h,
+						--mon-tbl-h, --mon-tbl-a-a);
+}
