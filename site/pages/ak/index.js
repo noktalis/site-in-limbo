@@ -39,7 +39,7 @@ function Content() {
 
 			<p>Arknights used to be my main gacha! But then I got burnt out from hyperfixation and started taking it casually heheh...</p>
 
-			<p>It's a lot less time-intensive than Genshin to play, since most days I just let it run on my phone while I do other things, so I call it my "side hoe" gacha. I'm still pretty dedicated to it though! I love my Genshin blorbos, but in terms of gacha games as a whole I'd always choose Arknights over Genshin for a variety of reasons... most of which are because Hypergryph is a lot more generous to F2P Arknights players.</p>
+			<p>It's a lot less time-intensive than Genshin to play, since most days I just let it run on my phone while I do other things, so I call it my "side hoe" gacha. I'm still pretty dedicated to logging in everyday though! I love my Genshin blorbos, but in terms of gacha games as a whole I'd always choose Arknights over Genshin for a variety of reasons... most of which are because Hypergryph is a lot more generous to F2P players.</p>
 
 			<Nav2Col>
 				<StickerButtonLink

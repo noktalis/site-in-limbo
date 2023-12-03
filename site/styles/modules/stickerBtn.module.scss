@@ -61,10 +61,4 @@
 	@include btn-colors(--ri-tbl, --ri-tbl-a,
 						--ri-tbl-h, --ri-tbl-a-h,
 						--ri-tbl-av, --ri-tbl-a-a);
-	&:hover, &:focus {
-		@include colors(--ri-tbl-h, --ri-tbl-a-h);
-	}
-	&:active {
-		color: var(--ri-tbl-a-a);
-	}
 }

@@ -123,8 +123,4 @@
   --ri-sd-a-a: var(--ri-orange1);
   --ri-sd-scroll: rgba(50, 50, 50,0.7);
   --ri-sd-scroll-h: rgba(50, 50, 50,0.7);
-  --ri-bub-L: var(--ri-violet3);
-  --ri-bub-L-txt: var(--ri-white1);
-  --ri-bub-R: var(--ri-violet2);
-  --ri-bub-R-txt: var(--ri-violet3);
 }

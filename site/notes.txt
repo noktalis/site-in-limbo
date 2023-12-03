@@ -1,0 +1,16 @@
+Adding a theme:
+	layout.js & background.module.scss
+
+	topnav.js & topnav.module.scss
+	main.js
+		main.module.scss
+		dialogue.module.scss
+		stickerBtn.module.scss
+	sidenav.js & sidenav.module.scss
+
+
+Misc category:
+	gacha culture essays
+
+Mondstadt theme:
+	string of flags divider

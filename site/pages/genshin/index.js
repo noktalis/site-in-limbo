@@ -15,7 +15,7 @@ import StickerButtonLink from '/components/stickerbtnlink';
 export default function Home(){
 	return (
 		<FandomContext.Provider value='genshin'>
-		<ThemeContext.Provider value='lyt'>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Genshin Home</title>
 				<link rel="icon" href="/ventiico.png" />

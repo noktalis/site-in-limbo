@@ -252,6 +252,73 @@
 	}
 }
 
+/* Mondstadt */
+.mond {
+	--gray: #333333;
+
+	// .nav
+	border-radius: 30px 5px 5px 30px;
+	
+	.top {
+		background-color: var(--lyt-main);
+		border-bottom: var(--lyt-gold1) solid 5px;
+		border-radius: 25px 0 0 0;
+
+		h1 {
+			font-family: Handlee,sans-serif;
+			margin: 0 auto;
+		}
+		a {
+			@include link-colors(var(--lyt-sd-hdr),var(--lyt-sd-hdr-h),var(--lyt-sd-hdr-a));
+		}
+	}
+
+	.divider {
+		position: absolute;
+		z-index: 60;		
+	}
+
+	.bottom {
+		position: relative;
+		background-color: var(--gray);
+		border-radius: 0 0px 0px 25px;
+		.bottom_extra {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			border-radius: 0 0px 0px 25px;
+		}
+	}
+
+	.menu {
+		$scroll: #161616;
+		position: absolute;
+
+		// scroll settings
+		@include scrollbarColorsFF(--lyt-sd-scroll, --lyt-sd-scroll-h);	// for firefox TODO:
+		@include scrollbarColor($scroll);
+		padding-top: 5.25vh;
+
+		a {
+			display: flex;
+		}
+
+		button {
+			width: 100%;
+			border: var(--lyt-sd-itm-brdr) solid 4px;
+			border-radius: 10px;
+
+			font-family: Mattilda, ComicSans, sans-serif;
+			font-size: 16px;
+			font-weight: bold;
+
+			@include btn-colors(--lyt-sd-itm,--lyt-sd-a,
+				--lyt-sd-itm-h,--lyt-sd-a-h,
+				--lyt-sd-itm-h,--lyt-sd-a-a);
+		}
+	}
+}
+
 /* Template/Test */
 .test {
 	//.nav

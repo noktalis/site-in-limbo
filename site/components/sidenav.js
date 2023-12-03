@@ -17,8 +17,14 @@ export default function SideNav(){
 	let themeClass;
 	let link;
 
+	let bottom_extra;
+
 	/* Figure out which theme to appear with */
 	switch(theme){
+		case "mond":
+			themeClass = sidenav.mond;
+			bottom_extra = <img className={sidenav.bottom_extra} src="/images/windwheel_asters.svg"></img>;
+			break;
 		case "ri":
 			themeClass = sidenav.ri;
 			break;
@@ -66,6 +72,8 @@ export default function SideNav(){
 
 				{/* Changes based on fandom */}
 				<Menu/>
+
+				{bottom_extra}
 			</div>
 			
 			

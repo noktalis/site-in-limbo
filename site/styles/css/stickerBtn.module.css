@@ -83,10 +83,3 @@
   background-color: var(--ri-tbl-av);
   color: var(--ri-tbl-a-a);
 }
-.ri:hover, .ri:focus {
-  background-color: var(--ri-tbl-h);
-  color: var(--ri-tbl-a-h);
-}
-.ri:active {
-  color: var(--ri-tbl-a-a);
-}
