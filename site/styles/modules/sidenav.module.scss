@@ -174,9 +174,9 @@
 			font-size: 16px;
 			font-weight: bold;
 
-			@include btn-colors(--lyt-sd-itm,--lyt-sd-a,
-				--lyt-sd-itm-h,--lyt-sd-a-h,
-				--lyt-sd-itm-h,--lyt-sd-a-a);
+			@include btn-colors(var(--lyt-sd-itm),var(--lyt-sd-a),
+				var(--lyt-sd-itm-h),var(--lyt-sd-a-h),
+				var(--lyt-sd-itm-h),var(--lyt-sd-a-a));
 		}
 	}
 }
@@ -230,23 +230,23 @@
 			font-size: 24px;
 			font-weight: bold;
 
-			@include btn-colors(--ri-sd-itm,--ri-sd-a,
-				--ri-sd-itm-h,--ri-sd-a-h,
-				--ri-sd-itm-h,--ri-sd-a-a);
+			@include btn-colors(var(--ri-sd-itm),var(--ri-sd-a),
+				var(--ri-sd-itm-h),var(--ri-sd-a-h),
+				var(--ri-sd-itm-h),var(--ri-sd-a-a));
 		}
 
 		a {
 			display: inline-block;
 
 			&:nth-last-child(3) > button {
-				@include btn-colors(--ri-blue6,--ri-sd,
-				--ri-blue5,--ri-yellow1,
-				--ri-blue5,--ri-orange1);
+				@include btn-colors(var(--ri-blue6),var(--ri-sd),
+				var(--ri-blue5),var(--ri-yellow1),
+				var(--ri-blue5),var(--ri-orange1));
 			}
 			&:nth-last-child(1) > button, &:nth-last-child(2) > button {
-				@include btn-colors(--ri-gray5,--ri-sd,
-				--ri-gray5,--ri-yellow1,
-				--ri-gray5,--ri-orange1);
+				@include btn-colors(var(--ri-gray5),var(--ri-sd),
+				var(--ri-gray5),var(--ri-yellow1),
+				var(--ri-gray5),var(--ri-orange1));
 			}
 		}
 	}
@@ -316,9 +316,9 @@
 			font-size: 18px;
 			font-weight: bold;
 
-			@include btn-colors(--mon-sd-itm,--mon-sd-a,
-				--mon-sd-itm-h,--mon-sd-a-h,
-				--mon-sd-itm-h,--mon-sd-a-a);
+			@include btn-colors(var(--mon-sd-itm),var(--mon-sd-a),
+				var(--mon-sd-itm-h),var(--mon-sd-a-h),
+				var(--mon-sd-itm-h),var(--mon-sd-a-a));
 		}
 
 		a {

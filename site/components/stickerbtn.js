@@ -21,15 +21,15 @@ export default function StickerButton({btnTitle, imgSide, imgSrc, imgAlt, imgSiz
 
 	/* Theme determines the button and sticker's appearance */
 	switch(theme){
-		case "mond":
-			themeClass = style.mond;
+		case "lyt":
+			themeClass = style.lyt;
 			break;
 		case "ri":
 			themeClass = style.ri;
 			break;
-		case "lyt":
+		case "mond":
 		default:
-			themeClass = style.lyt;
+			themeClass = style.mond;
 	}
 	
 	return (

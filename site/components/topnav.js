@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LinkButton from './linkbtn';
-import topnav from "/styles/modules/topnav.module.scss";
+import topnav from "../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
@@ -14,12 +14,15 @@ export default function TopNav() {
 	let themeClass;
 
 	switch(theme){
+		case "lyt":
+			themeClass = topnav.lyt;
+			break;
 		case "ri":
 			themeClass = topnav.ri;
 			break;
-		case "lyt":
+		case "mond":
 		default:
-			themeClass = topnav.lyt;
+			themeClass = topnav.mond;
 	}
 
 	return (

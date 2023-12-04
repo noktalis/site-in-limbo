@@ -15,7 +15,7 @@ import style from "/styles/modules/etc.module.scss";
 export default function Template(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value='lyt'>
+		<ThemeContext.Provider value=''>
 			<Head>
 				<title>404: Not Found</title>
 				<link rel="icon" href="/ventiico.png" />

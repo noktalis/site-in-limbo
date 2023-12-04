@@ -21,18 +21,16 @@ export default function SideNav(){
 
 	/* Figure out which theme to appear with */
 	switch(theme){
-		case "mond":
-			themeClass = sidenav.mond;
-			bottom_extra = <img className={sidenav.bottom_extra} src="/images/windwheel_asters.svg"></img>;
-			break;
 		case "ri":
 			themeClass = sidenav.ri;
 			break;
 		case "lyt":
 			themeClass = sidenav.lyt;
 			break;
+		case "mond":
 		default:
-			themeClass = sidenav.lyt;
+			themeClass = sidenav.mond;
+			bottom_extra = <img className={sidenav.bottom_extra} src="/images/windwheel_asters.svg"></img>;
 	}
 	
 	/* Figure out which header link to use at top of side nav */

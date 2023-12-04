@@ -269,3 +269,26 @@
 .ri .indicator {
   background-color: var(--ri-indic);
 }
+
+/* Mondstadt */
+.mond {
+  background-color: var(--mon-nav);
+}
+.mond .buttons button {
+  border-radius: 10px;
+  background-color: var(--mon-nav);
+  color: var(--mon-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.mond .buttons button:hover {
+  background-color: var(--mon-nav-h);
+  color: var(--mon-nav-a-h);
+}
+.mond .buttons button:active {
+  background-color: var(--mon-nav-h);
+  color: var(--mon-nav-a-a);
+}
+.mond .indicator {
+  background-color: var(--mon-indic);
+}

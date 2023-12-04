@@ -295,3 +295,48 @@
 .ri .footer a:active {
   color: var(--ri-blue1);
 }
+
+/* Mondstadt */
+.mond {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+}
+.mond::-webkit-scrollbar-thumb {
+  background-color: rgba(28, 62, 78, 0.7);
+}
+.mond::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(28, 62, 78, 0.9);
+}
+.mond .main {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--mon-txt);
+}
+.mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
+  color: var(--mon-header);
+}
+.mond .main a {
+  color: var(--mon-a);
+}
+.mond .main a:hover {
+  color: var(--mon-a-h);
+}
+.mond .main a:active {
+  color: var(--mon-a-a);
+}
+.mond .footer {
+  background-color: var(--mon-foot);
+  color: var(--mon-foot-txt);
+}
+.mond .footer a {
+  color: var(--mon-yellow1);
+}
+.mond .footer a:hover {
+  color: var(--mon-orange1);
+}
+.mond .footer a:active {
+  color: var(--mon-blue1);
+}

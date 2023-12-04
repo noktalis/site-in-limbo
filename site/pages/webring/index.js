@@ -15,7 +15,7 @@ import Webring from '../../components/webring';
 export default function Page(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value='lyt'>
+		<ThemeContext.Provider value=''>
 			<Head>
 				<title>The Weebring</title>
 				<link rel="icon" href="/ventiico.png" />

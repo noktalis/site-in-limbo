@@ -16,11 +16,11 @@
 }
 
 .left {
-	@include colors(--lyt-bub-L, --lyt-bub-L-txt);
+	@include colors(var(--lyt-bub-L), var(--lyt-bub-L-txt));
 }
 
 .right {
-	@include colors(--lyt-bub-R, --lyt-bub-R-txt);
+	@include colors(var(--lyt-bub-R), var(--lyt-bub-R-txt));
 	align-self: flex-end;
 	text-align: right;
 }

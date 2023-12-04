@@ -100,7 +100,7 @@
 
 	.main {
 		// Background & text color
-		@include colors(--lyt-main, --lyt-txt);
+		@include colors(var(--lyt-main), var(--lyt-txt));
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
@@ -113,7 +113,7 @@
 	}
 
 	.footer {
-		@include colors(--lyt-foot, --lyt-foot-txt);
+		@include colors(var(--lyt-foot), var(--lyt-foot-txt));
 		a {
 			@include link-colors(--lyt-a,--lyt-a-h,--lyt-a-a);
 		}
@@ -135,7 +135,7 @@
 
 	.main {
 		// Background & text color
-		@include colors(--ri-main, --ri-txt);
+		@include colors(var(--ri-main), var(--ri-txt));
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
@@ -148,9 +148,44 @@
 	}
 
 	.footer {
-		@include colors(--ri-foot, --ri-foot-txt);
+		@include colors(var(--ri-foot), var(--ri-foot-txt));
 		a {
 			@include link-colors(var(--ri-yellow1),var(--ri-orange1),var(--ri-blue1));
+		}
+	}
+}
+
+/* Mondstadt */
+.mond {
+	/* 	Note about $scroll: update with variable manually
+	 * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+	 *		do not take CSS variables so the color must be copied
+	 * 		from root.scss manually
+	*/
+	$scroll: #1C3E4E;
+
+	// Scrollbar Settings
+	@include scrollbarColorsFF(--mon-sd-scroll, --mon-sd-scroll-h);	// for firefox
+	@include scrollbarColor($scroll);
+
+	.main {
+		// Background & text color
+		@include colors(rgba(255,255,255,0.5), var(--mon-txt));
+
+		// Header colors
+		h1,h2,h3,h4,h5,h6 {
+			color: var(--mon-header);
+		}
+
+		a {
+			@include link-colors(var(--mon-a), var(--mon-a-h), var(--mon-a-a));
+		}
+	}
+
+	.footer {
+		@include colors(var(--mon-foot), var(--mon-foot-txt));
+		a {
+			@include link-colors(var(--mon-yellow1),var(--mon-orange1),var(--mon-blue1));
 		}
 	}
 }

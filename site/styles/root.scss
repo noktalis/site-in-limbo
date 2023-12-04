@@ -203,19 +203,59 @@
 	--mon-green5: #c3ffcb;
 
 	--mon-blue1: #549FDE;
+	--mon-blue2: #3F4354;
+	--mon-blue3: #12222E;
+	--mon-blue4: #336FA2;
+	--mon-blue5: #194971;
+	--mon-blue6: #3E768A;
+	--mon-blue7: #1C3E4E;
 
 	--mon-red1: #EF9572;
 	--mon-red2: #D04C3E;
 
+	--mon-gold1: #D5B784;
+	--mon-gold2: #CEBF8B;
+	--mon-gold3: #9D896B;
+
+	--mon-yellow1: #FFDD5F;
+
 	/* Mondstadt Theme */
 
+	// Top Navigation Bar
+	--mon-nav: var(--mon-blue7);
+	--mon-nav-h: var(--mon-blue6);
+
+	--mon-nav-a: var(--mon-gold2);
+	--mon-nav-a-h: var(--mon-green5);
+	--mon-nav-a-a: var(--mon-gold3);
+
+	--mon-indic: var(--mon-teal1);
+
+	// Footer
+	--mon-foot: var(--mon-blue7);
+	--mon-foot-txt: white;
+
+	// Main Content
+	--mon-main: white;
+	--mon-txt: var(--mon-blue3);
+	--mon-header: var(--mon-teal1);
+
+	--mon-a: var(--mon-orange1);
+	--mon-a-h: var(--mon-yellow1);
+	--mon-a-a: var(--mon-blue4);
+
+	// Scrollbar Thumb
+	// #0b88b1
+	--mon-scroll: rgba(11, 136, 177,0.7); // blue5 w/ a = 0.7	
+	--mon-scroll-h: rgba(11, 136, 177,0.9);// blue5 w/ a = 0.9
+
 	// Navigation Tables
-	--mon-tbl: var(--mon-green4);
-	--mon-tbl-h: var(--mon-green3);
-	--mon-tbl-b: var(--mon-green2);	//border
-	--mon-tbl-a: var(--mon-green5);
-	--mon-tbl-a-h: var(--mon-red1);
-	--mon-tbl-a-a: var(--mon-red2);
+	--mon-tbl: var(--mon-blue5);
+	--mon-tbl-h: var(--mon-blue4);
+	--mon-tbl-b: var(--mon-gold1);	//border
+	--mon-tbl-a: var(--mon-gold2);
+	--mon-tbl-a-h: var(--mon-gold1);
+	--mon-tbl-a-a: var(--mon-green3);
 	
 	// Sidebar Navigation
 	--mon-sd: var(--mon-blue1);

@@ -47,9 +47,9 @@
 	font-family: Mattilda, serif;
 	font-size: large;							// might have to adjust, nextjs font sizes are weird
 	font-weight: bold;
-	@include btn-colors(--lyt-tbl, --lyt-tbl-a,
-						--lyt-tbl-h, --lyt-tbl-a-h,
-						--lyt-tbl-h, --lyt-tbl-a-a);
+	@include btn-colors(var(--lyt-tbl), var(--lyt-tbl-a),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-h),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-a));
 }
 
 /* Rhodes Island */
@@ -58,9 +58,9 @@
 	font-size: 28px;							// might have to adjust, nextjs font sizes are weird
 	font-weight: bold;
 	border: none;
-	@include btn-colors(--ri-tbl, --ri-tbl-a,
-						--ri-tbl-h, --ri-tbl-a-h,
-						--ri-tbl-av, --ri-tbl-a-a);
+	@include btn-colors(var(--ri-tbl), var(--ri-tbl-a),
+							var(--ri-tbl-h), var(--ri-tbl-a-h),
+							var(--ri-tbl-av), var(--ri-tbl-a-a));
 }
 
 /* Mondstadt */
@@ -70,7 +70,7 @@
 	font-family: Mattilda, serif;
 	font-size: large;							// might have to adjust, nextjs font sizes are weird
 	font-weight: bold;
-	@include btn-colors(--mon-tbl, --mon-tbl-a,
-						--mon-tbl-h, --mon-tbl-a-h,
-						--mon-tbl-h, --mon-tbl-a-a);
+	@include btn-colors(var(--mon-tbl), var(--mon-tbl-a),
+							var(--mon-tbl-h), var(--mon-tbl-a-h),
+							var(--mon-tbl-h), var(--mon-tbl-a-a));
 }

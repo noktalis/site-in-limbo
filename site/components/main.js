@@ -12,6 +12,9 @@ export default function Main({children}){
 	let themeClass;
 
 	switch(theme){
+		case "mond":
+			themeClass = format.mond;
+			break;
 		case "ri":
 			themeClass = format.ri;
 			break;
