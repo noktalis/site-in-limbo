@@ -118,10 +118,10 @@ function Menu(){
 			path = "/json/nav_gi.json";
 			break;
 		case "ak":
-			path = "json/nav_ak.json";
+			path = "/json/nav_ak.json";
 			break;
 		default:
-			path = "json/nav_default.json";
+			path = "/json/nav_default.json";
 	}
 
 	/* Fetch the data */

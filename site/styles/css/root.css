@@ -135,6 +135,7 @@
   --mon-green3: #3AA789;
   --mon-green4: #2A8479;
   --mon-green5: #c3ffcb;
+  --mon-green6: #dcffe1;
   --mon-blue1: #549FDE;
   --mon-blue2: #3F4354;
   --mon-blue3: #12222E;
@@ -160,9 +161,9 @@
   --mon-main: white;
   --mon-txt: var(--mon-blue3);
   --mon-header: var(--mon-teal1);
-  --mon-a: var(--mon-orange1);
+  --mon-a: var(--mon-green6);
   --mon-a-h: var(--mon-yellow1);
-  --mon-a-a: var(--mon-blue4);
+  --mon-a-a: var(--mon-blue1);
   --mon-scroll: rgba(11, 136, 177,0.7);
   --mon-scroll-h: rgba(11, 136, 177,0.9);
   --mon-tbl: var(--mon-blue5);

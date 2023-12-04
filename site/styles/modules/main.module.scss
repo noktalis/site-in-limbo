@@ -186,7 +186,7 @@
 	.footer {
 		@include colors(var(--mon-foot), var(--mon-foot-txt));
 		a {
-			@include link-colors(var(--mon-yellow1),var(--mon-orange1),var(--mon-blue1));
+			@include link-colors(var(--mon-yellow1),var(--mon-red1),var(--mon-red2));
 		}
 	}
 }

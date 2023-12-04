@@ -336,8 +336,8 @@
   color: var(--mon-yellow1);
 }
 .mond .footer a:hover {
-  color: var(--mon-orange1);
+  color: var(--mon-red1);
 }
 .mond .footer a:active {
-  color: var(--mon-blue1);
+  color: var(--mon-red2);
 }

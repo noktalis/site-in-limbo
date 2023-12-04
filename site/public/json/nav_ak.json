@@ -11,9 +11,9 @@
 			"href": "/ak/skins/"
 		},
 		{
-			"title": "Waifus",
-			"text": "Waifus",
-			"href": "/ak/waifu/"
+			"title": "Operator Wishlist",
+			"text": "Wishlist",
+			"href": "/ak/wish/"
 		},
 		{
 			"title": "Arknights Ships",
@@ -21,9 +21,14 @@
 			"href": "/ak/ships/"
 		},
 		{
-			"title": "Operator Wishlist",
-			"text": "Wishlist",
-			"href": "/ak/wish/"
+			"title": "Waifus",
+			"text": "Waifus",
+			"href": "/ak/waifu/"
+		},
+		{
+			"title": "Xue's Vigna Shrine",
+			"text": "Xue's Vigna Shrine",
+			"href": "/ak/vigna/"
 		},
 		{
 			"title": "Story Highlights",

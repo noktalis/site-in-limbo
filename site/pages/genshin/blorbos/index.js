@@ -17,7 +17,7 @@ import { Bubble } from '/components/dialogue';
 export default function Page(){
 	return (
 		<FandomContext.Provider value='genshin'>
-		<ThemeContext.Provider value='lyt'>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Genshin Blorbos</title>
 				<link rel="icon" href="/ventiico.png" />

@@ -13,7 +13,7 @@ import NavCol from '/components/navCol';
 export default function Home(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Home</title>
 				<link rel="icon" href="/ventiico.png" />

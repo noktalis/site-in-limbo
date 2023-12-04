@@ -15,7 +15,7 @@ import Webring from '../../components/webring';
 export default function Page(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>The Weebring</title>
 				<link rel="icon" href="/ventiico.png" />
@@ -34,7 +34,7 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			<h1>The Weebring</h1>
+			<h1 style={{textAlign:"center"}}>The Weebring</h1>
 			<p>Behold... the webring, Weebring!!!</p>
 			<p>
 				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found at <b>Weebring Home</b>, just click the link below to navigate!
