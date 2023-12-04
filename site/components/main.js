@@ -2,8 +2,6 @@ import format from "../styles/modules/main.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 
-// TODO: themes
-
 /**
  * Main container that holds actual content for users at the center of the page
  * @param {Components} children - contents to be held inside 
@@ -14,6 +12,12 @@ export default function Main({children}){
 	let themeClass;
 
 	switch(theme){
+		case "mond":
+			themeClass = format.mond;
+			break;
+		case "ri":
+			themeClass = format.ri;
+			break;
 		case "lyt":
 		default:
 			themeClass = format.lyt;
@@ -37,9 +41,21 @@ export default function Main({children}){
  * Footer theme is handled by container in <Main>
  */
 export function Footer(){
+	const theme = useContext(ThemeContext);
+	let child;
+
+	switch(theme){
+		case "ri":
+			child = <span>
+						<a href="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png">Background</a> from <a href="https://aceship.github.io/AN-EN-Tags/akgallery.html">Aceship</a>!
+					</span>;
+			break;
+		default:
+			child = <p>:3</p>;
+	}
 	return (
 		<div className={format.footer}>
-			<p>:3</p>
+			{child}
 		</div>
 	);
 }

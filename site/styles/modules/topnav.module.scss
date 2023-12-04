@@ -118,7 +118,9 @@
 
 	.buttons button {
 		border-radius: 15px;
-		@include btn-colors(--lyt-nav, --lyt-nav-a,--lyt-nav-h,--lyt-nav-a-h,--lyt-nav-h, --lyt-nav-a-a);
+		@include btn-colors(var(--lyt-nav), var(--lyt-nav-a),
+								var(--lyt-nav-h), var(--lyt-nav-a-h),
+								var(--lyt-nav-h), var(--lyt-nav-a-a));
 		font-size: 20px;
 		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 	}
@@ -128,7 +130,38 @@
 	}
 }
 
-/* Arknights */
-.ak {
-	
+/* Rhodes Island */
+.ri {
+	background-color: var(--ri-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--ri-nav), var(--ri-nav-a),
+								var(--ri-nav-h), var(--ri-nav-a-h),
+								var(--ri-nav-h), var(--ri-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--ri-indic);
+	}
+}
+
+/* Mondstadt */
+.mond {
+	background-color: var(--mon-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--mon-nav), var(--mon-nav-a),
+								var(--mon-nav-h), var(--mon-nav-a-h),
+								var(--mon-nav-h), var(--mon-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--mon-indic);
+	}
 }

@@ -49,18 +49,56 @@
  *	 Applied on the button element */
 /* Lynette */
 .lyt {
-  background-color: var(--lyt-tbl);
-  color: var(--lyt-tbl-a);
   border: 4px solid var(--lyt-tbl-b);
   border-radius: 10px;
   font-family: Mattilda, serif;
   font-size: large;
   font-weight: bold;
+  background-color: var(--lyt-tbl);
+  color: var(--lyt-tbl-a);
 }
-.lyt:hover, .lyt:focus {
+.lyt:hover {
   background-color: var(--lyt-tbl-h);
   color: var(--lyt-tbl-a-h);
 }
 .lyt:active {
+  background-color: var(--lyt-tbl-h);
   color: var(--lyt-tbl-a-a);
+}
+
+/* Rhodes Island */
+.ri {
+  font-family: RobotoCondensed, serif;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: var(--ri-tbl);
+  color: var(--ri-tbl-a);
+}
+.ri:hover {
+  background-color: var(--ri-tbl-h);
+  color: var(--ri-tbl-a-h);
+}
+.ri:active {
+  background-color: var(--ri-tbl-av);
+  color: var(--ri-tbl-a-a);
+}
+
+/* Mondstadt */
+.mond {
+  border: 4px solid var(--mon-tbl-b);
+  border-radius: 10px;
+  font-family: Mattilda, serif;
+  font-size: large;
+  font-weight: bold;
+  background-color: var(--mon-tbl);
+  color: var(--mon-tbl-a);
+}
+.mond:hover {
+  background-color: var(--mon-tbl-h);
+  color: var(--mon-tbl-a-h);
+}
+.mond:active {
+  background-color: var(--mon-tbl-h);
+  color: var(--mon-tbl-a-a);
 }

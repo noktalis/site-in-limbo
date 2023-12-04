@@ -1,0 +1,34 @@
+{
+	"buttons":[
+		{
+			"title": "Friend ID",
+			"text": "Friend ID",
+			"href": "/ak/friend_id/"
+		},
+		{
+			"title": "Arknights Skins Tier List",
+			"text": "Skins Tier List",
+			"href": "/ak/skins/"
+		},
+		{
+			"title": "Waifus",
+			"text": "Waifus",
+			"href": "/ak/waifu/"
+		},
+		{
+			"title": "Arknights Ships",
+			"text": "Ships",
+			"href": "/ak/ships/"
+		},
+		{
+			"title": "Operator Wishlist",
+			"text": "Wishlist",
+			"href": "/ak/wish/"
+		},
+		{
+			"title": "Story Highlights",
+			"text": "Story Highlights",
+			"href": "/ak/story/"
+		}
+	]
+}

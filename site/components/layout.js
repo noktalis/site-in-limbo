@@ -16,12 +16,15 @@ export default function Layout({children}){
 	let themeClass;
 
 	switch(theme){
-		case "test":
-			themeClass = background.test;
-			break;
 		case "lyt":
-		default:
 			themeClass = background.lyt;
+			break;
+		case "ri":
+			themeClass = background.ri;
+			break;
+		case "mond":
+		default:
+			themeClass = background.mond;
 	}
 
 	return(

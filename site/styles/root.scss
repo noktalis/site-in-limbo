@@ -16,13 +16,15 @@
 	--lyt-brown5: #5A3619;
 	--lyt-brown6: #381508;
 
+	--lyt-gold1: #9D9286;
+
 	--lyt-blue1: #22374D;
 	--lyt-blue2: #426476;
 	--lyt-blue3: #375468;
 	--lyt-blue4: #032C34;
 	--lyt-blue5: #075969;
 	--lyt-blue6: #096F83;
-	--lyt-blut7: #064D5B;
+	--lyt-blue7: #064D5B;
 
 	--lyt-violet1: #A5A5BD;
 	--lyt-violet2: #DBB1EF;
@@ -34,8 +36,6 @@
 	
 	/*	Lynette Theme */
 
-	--lyt-bg: var(--lyt-teal1);
-
 	// Top Navigation Bar
 	--lyt-nav: var(--lyt-blue1);
 	--lyt-nav-h: var(--lyt-blue2);
@@ -46,6 +46,7 @@
 
 	--lyt-indic: var(--lyt-blue2);
 
+	// Footer
 	--lyt-foot: var(--lyt-blue3);
 	--lyt-foot-txt: var(--lyt-white2);
 
@@ -59,33 +60,35 @@
 	--lyt-a-a: var(--lyt-blue6);
 
 	// Scrollbar Thumb
+	// --lyt-blue4, #032C34;
 	--lyt-scroll: rgba(3,44,52,0.7); // blue4 w/ a = 0.7	
 	--lyt-scroll-h: rgba(3,44,52,0.9);// blue4 w/ a = 0.9
 	
 	// Navigation Tables
-	--lyt-tbl: var(--lyt-blut7);
+	--lyt-tbl: var(--lyt-blue7);
 	--lyt-tbl-h: var(--lyt-blue4);
-	--lyt-tbl-b: var(--lyt-teal2);
+	--lyt-tbl-b: var(--lyt-teal2);	//border
 	--lyt-tbl-a: var(--lyt-brown1);
 	--lyt-tbl-a-h: var(--lyt-white2);
 	--lyt-tbl-a-a: var(--lyt-brown2);
 	
 	// Sidebar Navigation
-	--lyt-sd: var(--lyt-brown3);
-	--lyt-sd-hdr:var(--lyt-brown6);
-	--lyt-sd-hdr-h: var(--lyt-brown5);
-	--lyt-sd-hr: var(--lyt-brown5);
+	--lyt-sd: var(--lyt-white1);
+	--lyt-sd-hdr:var(--lyt-blue5);
+	--lyt-sd-hdr-h: var(--lyt-blue6);
+	--lyt-sd-hdr-a: var(--lyt-blue4);
 
-	--lyt-sd-itm: var(--lyt-brown4);
-	--lyt-sd-itm-h: var(--lyt-brown6);
-	--lyt-sd-itm-brdr: var(--lyt-brown5);
+	--lyt-sd-itm: var(--lyt-blue6);
+	--lyt-sd-itm-h: var(--lyt-teal2);
+	--lyt-sd-itm-brdr: var(--lyt-gold1);
 
 	--lyt-sd-a: var(--lyt-white1);
 	--lyt-sd-a-h: white;
 	--lyt-sd-a-a: var(--lyt-violet1);
 
-	--lyt-sd-scroll: var(--lyt-brown4);
-	--lyt-sd-scroll-h: var(--lyt-brown5);
+	// #161616
+	--lyt-sd-scroll: rgba(22,22,22,0.7);				//out of order
+	--lyt-sd-scroll-h: rgba(22,22,22,0.9);
 	
 	// Dialogue Bubbles
 	--lyt-bub-L: var(--lyt-violet3);
@@ -93,36 +96,182 @@
 	--lyt-bub-R: var(--lyt-violet2);
 	--lyt-bub-R-txt: var(--lyt-violet3);
 
-	/* Arknights Colors */
-	--ak-black1: #1D242D;	// blue tint
-	--ak-black2: #15151E;	// blue tint
 
-	--ak-gray1: #373F48;
-	--ak-gray2: #B5BCD3;
-	--ak-gray3: #37455E;	// more blue than gray1
-	--ak-gray4: #254958;
-	--ak-gray5: #DDDDDD;
-	--ak-gray6: #323232;
-	--ak-gray7: #BFC0C1;
+	/* Rhodes Island Colors */
+	--ri-black1: #1D242D;	// blue tint
+	--ri-black2: #15151E;	// blue tint
 
-	--ak-white1: #F2ECE7;	// orange tint
+	--ri-gray1: #373F48;
+	--ri-gray2: #B5BCD3;
+	--ri-gray3: #37455E;	// more blue than gray1
+	--ri-gray4: #254958;
+	--ri-gray5: #323232;
+	--ri-gray6: #BFC0C1;
 
-	--ak-blue1: #41D2E5;
-	--ak-blue2: #1A44B0;
-	--ak-blue3: #05A8DE;
-	--ak-blue4: #096F83;
-	--ak-blue5: #0b88b1;
-	--ak-blue6: #4ABEE6;
-	--ak-blue7: #42AAC6;
-	--ak-blue8: #1E2F89;
+	--ri-white1: #DDDDDD;
+
+	--ri-blue1: #41D2E5;
+	--ri-blue2: #1A44B0;
+	--ri-blue3: #05A8DE;
+	--ri-blue4: #096F83;
+	--ri-blue5: #0b88b1;
+	--ri-blue6: #4ABEE6;
+	--ri-blue7: #42AAC6;
+	--ri-blue8: #1E2F89;
 	
-	--ak-orange1: #E0790D;
-	--ak-yellow1: #ECC953;
+	--ri-orange1: #E0790D;
+	--ri-yellow1: #ECC953;
 
-	--ak-teal1: #163636;
-	--ak-teal2: #46B6B0;
+	--ri-teal1: #163636;
+	--ri-teal2: #46B6B0;
+
+	/* Rhodes Island Theme */
+
+	// Top Navigation Bar
+	--ri-nav: var(--ri-black1);
+	--ri-nav-h: var(--ri-gray1);
+
+	--ri-nav-a: white;
+	--ri-nav-a-h: var(--ri-blue1);
+	--ri-nav-a-a: var(--ri-blue2);
+
+	--ri-indic: var(--ri-gray2);
+
+	// Footer
+	--ri-foot: var(--ri-black1);
+	--ri-foot-txt: white;
+
+	// Main Content
+	--ri-main: var(--ri-white1);
+	--ri-txt: var(--ri-black2);
+	--ri-header: var(--ri-blue8);
+
+	--ri-a: var(--ri-orange1);
+	--ri-a-h: var(--ri-yellow1);
+	--ri-a-a: var(--ri-blue4);
+
+	// Scrollbar Thumb
+	// #0b88b1
+	--ri-scroll: rgba(11, 136, 177,0.7); // blue5 w/ a = 0.7	
+	--ri-scroll-h: rgba(11, 136, 177,0.9);// blue5 w/ a = 0.9
+	
+	// Navigation Tables
+	--ri-tbl: var(--ri-blue6);
+	--ri-tbl-h: var(--ri-blue5);
+	--ri-tbl-av: var(--ri-teal1); // active
+	--ri-tbl-a: white;
+	--ri-tbl-a-h: var(--ri-yellow1);
+	--ri-tbl-a-a: var(--ri-orange1);
+	
+	// Sidebar Navigation
+	--ri-sd: white;
+	--ri-sd-hdr:var(--ri-gray5);
+	--ri-sd-hdr-h: var(--ri-blue1);
+	--ri-sd-hdr-a: var(--ri-blue2);
+
+	--ri-sd-itm: white;
+	--ri-sd-itm-h: var(--ri-gray6);
+	--ri-sd-itm-brdr: var(--ri-gold1);
+
+	--ri-sd-a: var(--ri-gray5);
+	--ri-sd-a-h: white;
+	--ri-sd-a-a: var(--ri-orange1);
+
+	// --ri-gray5, #323232
+	--ri-sd-scroll: rgba(50, 50, 50,0.7);				//out of order
+	--ri-sd-scroll-h: rgba(50, 50, 50,0.7);
+	
+	// Dialogue Bubbles
+	// --ri-bub-L: var(--ri-violet3);
+	// --ri-bub-L-txt: var(--ri-white1);
+	// --ri-bub-R: var(--ri-violet2);
+	// --ri-bub-R-txt: var(--ri-violet3);
 
 
+	/* Mondstadt Colors */
+	--mon-teal1: #11666F;
+	--mon-teal2: #389F98;
+	--mon-teal3: #42B69C;
+	--mon-teal4: #69C8B3;
+	--mon-teal5: #5AB5B3;
+	--mon-teal6: #a1ffeb;
 
+	--mon-green1: #84CA9A;
+	--mon-green2: #91CF99;
+	--mon-green3: #3AA789;
+	--mon-green4: #2A8479;
+	--mon-green5: #c3ffcb;
+
+	--mon-blue1: #549FDE;
+	--mon-blue2: #3F4354;
+	--mon-blue3: #12222E;
+	--mon-blue4: #336FA2;
+	--mon-blue5: #194971;
+	--mon-blue6: #3E768A;
+	--mon-blue7: #1C3E4E;
+
+	--mon-red1: #EF9572;
+	--mon-red2: #D04C3E;
+
+	--mon-gold1: #D5B784;
+	--mon-gold2: #CEBF8B;
+	--mon-gold3: #9D896B;
+
+	--mon-yellow1: #FFDD5F;
+
+	/* Mondstadt Theme */
+
+	// Top Navigation Bar
+	--mon-nav: var(--mon-blue7);
+	--mon-nav-h: var(--mon-blue6);
+
+	--mon-nav-a: var(--mon-gold2);
+	--mon-nav-a-h: var(--mon-green5);
+	--mon-nav-a-a: var(--mon-gold3);
+
+	--mon-indic: var(--mon-teal1);
+
+	// Footer
+	--mon-foot: var(--mon-blue7);
+	--mon-foot-txt: white;
+
+	// Main Content
+	--mon-main: white;
+	--mon-txt: var(--mon-blue3);
+	--mon-header: var(--mon-teal1);
+
+	--mon-a: var(--mon-orange1);
+	--mon-a-h: var(--mon-yellow1);
+	--mon-a-a: var(--mon-blue4);
+
+	// Scrollbar Thumb
+	// #0b88b1
+	--mon-scroll: rgba(11, 136, 177,0.7); // blue5 w/ a = 0.7	
+	--mon-scroll-h: rgba(11, 136, 177,0.9);// blue5 w/ a = 0.9
+
+	// Navigation Tables
+	--mon-tbl: var(--mon-blue5);
+	--mon-tbl-h: var(--mon-blue4);
+	--mon-tbl-b: var(--mon-gold1);	//border
+	--mon-tbl-a: var(--mon-gold2);
+	--mon-tbl-a-h: var(--mon-gold1);
+	--mon-tbl-a-a: var(--mon-green3);
+	
+	// Sidebar Navigation
+	--mon-sd: var(--mon-blue1);
+	--mon-sd-hdr: white;
+	--mon-sd-hdr-h: var(--mon-green2);
+	--mon-sd-hdr-a: var(--mon-red1);
+
+	--mon-sd-itm: white;
+	--mon-sd-itm-h: var(--mon-green2);
+
+	--mon-sd-a: var(--mon-teal2);
+	--mon-sd-a-h: white;
+	--mon-sd-a-a: var(--mon-red2);
+
+	// --mon-gray5, #323232
+	--mon-sd-scroll: rgba(255, 255, 255,0.7);
+	--mon-sd-scroll-h: rgba(255, 255, 255,0.9);
 
 }

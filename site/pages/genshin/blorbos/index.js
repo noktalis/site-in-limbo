@@ -38,7 +38,7 @@ function Content() {
 		<div>
 			{/* Dialogue about how I explain blorbos */}
 			<Dialogue>
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					i like that you don't even elaborate on Why they are blorbos
 				</Bubble>
 
@@ -49,10 +49,10 @@ function Content() {
 					i did not choose for them to move into my head rent free, they just did.
 				</Bubble>
 
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					me archiving my ten million billion essays n thoughts to my neocities vs. you
 				</Bubble>
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					"these are my blorbos"
 				</Bubble>
 
@@ -60,7 +60,7 @@ function Content() {
 					no thoughts, head empty, only blorbos
 				</Bubble>
 
-				<Bubble speaker="hua">
+				<Bubble speaker="xue">
 					"i will not elaborate on why i like them"
 				</Bubble>
 			</Dialogue>
@@ -108,7 +108,7 @@ function Content() {
 				I don't know what to say, they packed up and escaped to move into an apartment together.
 			</p>
 			<p>
-				(They were probably sick of me torturing them in AU's)
+				(They were probably sick of me torturing them in AUs)
 			</p>
 			<Nav2Col>
 				<StickerButtonLink
@@ -136,11 +136,12 @@ function Content() {
 			{/* Honorable Mentions */}
 			<h1 style={{textAlign:"center"}}>Honorable Mentions</h1>
 			<p>
-				They never quite reach Blorbo Status&trade; but I did have some thoughts about them for a while! 
+				They never quite reach Blorbo Status&trade; but I did have some Thoughts about them for a while! 
 			</p>
 			<p>
-				Except Wanderer, who I would still hate if he were real, where most of the thoughts were along the lines of "Damn, I hope Nahida gives him therapy" and "Hell yeah he's getting Therapy&trade;!!" AND THEN SHE SENT HIM TO SCHOOL UNDER THE NAME HATTIE AND I LAUGHED MY ASS OFF LMAOOOO
+				Except Wanderer, who I would still hate if he were real, where most of the thoughts were crack and somewhere along the lines of "Damn, I hope Nahida gives him therapy" and "Hell yeah he's getting Therapy&trade;" AND THEN SHE SENT HIM TO SCHOOL UNDER THE NAME HATTIE AND I LAUGHED MY ASS OFF LMAOOOO
 			</p>
+
 			<Nav2Col>
 				<StickerButtonLink
 					href={"/genshin/blorbos/furina"}

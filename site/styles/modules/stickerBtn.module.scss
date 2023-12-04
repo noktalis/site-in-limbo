@@ -40,18 +40,37 @@
 /* Theming
  *	 Applied on the button element */
 
- /* Lynette */
+/* Lynette */
 .lyt {
-	@include colors(--lyt-tbl, --lyt-tbl-a);
 	border: 4px solid var(--lyt-tbl-b);
 	border-radius: 10px;						// friend shaped!
 	font-family: Mattilda, serif;
 	font-size: large;							// might have to adjust, nextjs font sizes are weird
 	font-weight: bold;
-	&:hover, &:focus {
-		@include colors(--lyt-tbl-h, --lyt-tbl-a-h);
-	}
-	&:active {
-		color: var(--lyt-tbl-a-a);
-	}
+	@include btn-colors(var(--lyt-tbl), var(--lyt-tbl-a),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-h),
+							var(--lyt-tbl-h), var(--lyt-tbl-a-a));
+}
+
+/* Rhodes Island */
+.ri {
+	font-family: RobotoCondensed, serif;
+	font-size: 28px;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	border: none;
+	@include btn-colors(var(--ri-tbl), var(--ri-tbl-a),
+							var(--ri-tbl-h), var(--ri-tbl-a-h),
+							var(--ri-tbl-av), var(--ri-tbl-a-a));
+}
+
+/* Mondstadt */
+.mond {
+	border: 4px solid var(--mon-tbl-b);
+	border-radius: 10px;						// friend shaped!
+	font-family: Mattilda, serif;
+	font-size: large;							// might have to adjust, nextjs font sizes are weird
+	font-weight: bold;
+	@include btn-colors(var(--mon-tbl), var(--mon-tbl-a),
+							var(--mon-tbl-h), var(--mon-tbl-a-h),
+							var(--mon-tbl-h), var(--mon-tbl-a-a));
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LinkButton from './linkbtn';
-import topnav from "/styles/modules/topnav.module.scss";
+import topnav from "../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
@@ -14,8 +14,15 @@ export default function TopNav() {
 	let themeClass;
 
 	switch(theme){
-		default:
+		case "lyt":
 			themeClass = topnav.lyt;
+			break;
+		case "ri":
+			themeClass = topnav.ri;
+			break;
+		case "mond":
+		default:
+			themeClass = topnav.mond;
 	}
 
 	return (
@@ -66,6 +73,8 @@ export default function TopNav() {
 	);
 }
 
+// TODO: indicator theming
+
 /**Image in the left corner of the top navigation bar INDICATING theme of the page
  * @returns  */
 function Indicator() {
@@ -74,27 +83,26 @@ function Indicator() {
 	let path = "/images/";
 	let altText;
 
-	// Determines which image to use as indicator
+	/* Determines which image to use as indicator */
 	switch(fandom){
 		case "ak":
-			path += "bagpipe_potatoes.png";
+			path += "ak/bagpipe_potatoes.png";
 			altText += "Bagpipe with potatoes";
 			break;
 		case "genshin":
 			path = "https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj";
 			altText += "Lynette sipping tea";
 			break;
-		case "test":
 		case "hsr":
 			path = "https://64.media.tumblr.com/c6084b85a6c9949935cc323f4bab7642/c5a5a3383c4c5c89-73/s540x810/04c17256455d5697f857132543afb1180d195033.png";
 			altText += "Yanqing being smug";
 			break;
-		case "test":
 		default:
 			path += "anemo.png";
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 
+	/* Toggles the presence of the buttons in the top navigation bar */
 	function toggleMenu() {
 		let nav = document.getElementById("nav");
 		let menu = document.getElementById("navBtns");
