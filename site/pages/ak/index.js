@@ -4,6 +4,7 @@ import { ThemeContext } from '/components/ThemeContext';
 import { FandomContext } from '/components/FandomContext';
 import Nav2Col from '/components/nav2Col';
 import StickerButtonLink from '/components/stickerbtnlink';
+import style from '/styles/modules/main.module.scss';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -47,8 +48,8 @@ function Content() {
 					btnTitle={"Friend ID"}
 					imgSide={"lefter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/2b1bd2bf6fa42a5df7e3b2469c503bd6/77331089143a31ce-af/s1280x1920/d61d2161abb25e3b85be353f7514b4096339b4c4.png"}
-					imgAlt={"Venti, amazed"}>
+					imgSrc={"/images/ak/saileach_pat.png"}
+					imgAlt={"Saileach patting a rainbow dragon on the head"}>
 						Friend ID
 				</StickerButtonLink>
 				<StickerButtonLink
@@ -56,44 +57,53 @@ function Content() {
 					btnTitle={"Arknights Skins Tier List"}
 					imgSide={"righter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/9353554dcd39efa572cf1654198a25d9/c16e3361993a1d61-db/s1280x1920/4d43f6c4e30fb5663aeb5930b060e0057bb8ac44.png"}
-					imgAlt={"Xiao eating almond tofu"}>
+					imgSrc={"/images/ak/elysium_think.png"}
+					imgAlt={"Elysium pondering mischief"}>
 						Skins Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/ak/waifu/"}
-					btnTitle={"Arknights Waifus"}
+					href={"/ak/wish/"}
+					btnTitle={"Operator Wishlist"}
 					imgSide={"left"}
-					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/96430863df291e66baec879d4d5a5f48/2efd9f400ea04908-c3/s400x600/cc3364ab0478254cfcf0543150ec36b692d25bea.pnj"}
-					imgAlt={"Lynette clapping"}>
-						Waifus
+					imgSize={"big"}
+					imgSrc={"/images/ak/liskarm_tired.png"}
+					imgAlt={"Liskarm having none of Franka's mischief"}>
+						Wishlist
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/ak/ships/"}
 					btnTitle={"Arknights Ships"}
 					imgSide={"right"}
-					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/16bda86a2593c5dd6a39075c637b51dc/b31fedeeae4e5294-c9/s1280x1920/fa4df89433c93462b319fd07550482adeb0bc971.png"}
-					imgAlt={"Heizou about to inflict violence"}>
+					imgSize={"big"}
+					imgSrc={"/images/ak/franka_heart.png"}
+					imgAlt={"Franka winking at Liskarm with finger guns"}>
 						Ships
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/ak/wish/"}
-					btnTitle={"Operator Wishlist"}
+					href={"/ak/waifu/"}
+					btnTitle={"Arknights Waifus"}
 					imgSide={"lefter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/f4e85995735d44f06033052e6bb42116/673c391823193445-75/s400x600/768852549c00e066e7fa9339ef5adffa0494c1f5.png"}
-					imgAlt={""}>
-						Wishlist
+					imgSrc={"/images/ak/phantom_boop.png"}
+					imgAlt={"Miss Christine bopping Phantom on the eyes"}>
+						Waifus
+				</StickerButtonLink>
+				<StickerButtonLink
+					href={"/ak/vigna/"}
+					btnTitle={"Xue's Vigna Shrine"}
+					imgSide={"righter"}
+					imgSize={"big"}
+					imgSrc={"/images/ak/vigna_nom.png"}
+					imgAlt={"Vigna going nom"}>
+						<span className={style.xue}>Xue's</span> Vigna Shrine
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/ak/story/"}
 					btnTitle={"Story Highlights"}
-					imgSide={"righter"}
+					imgSide={"left"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/08645b101b77e9679c952cd0e9264324/549ae0728a253d2f-f0/s400x600/56b87645d3a228f09f084b891732d1072b52235a.png"}
-					imgAlt={"Empty page held by Layla"}>
+					imgSrc={"/images/ak/zima_judge.png"}
+					imgAlt={"Zima inspecting a Clue 4"}>
 						Story Highlights
 				</StickerButtonLink>
 			</Nav2Col>

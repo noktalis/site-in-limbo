@@ -148,6 +148,7 @@
   /* Styles scrollbar on the side of main and footer */
   height: 89.5vh;
   overflow-y: auto;
+  overflow-x: hidden;
   /* Scrollbar settings */
 }
 .container::-webkit-scrollbar {
