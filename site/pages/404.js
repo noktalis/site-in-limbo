@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '/components/layout';
-import { ThemeContext } from '/components/ThemeContext';
-import { FandomContext } from '/components/FandomContext';
-import style from "/styles/modules/etc.module.scss";
+import Layout from '../components/pageFormat/layout';
+import { ThemeContext } from '../components/pageFormat/ThemeContext';
+import { FandomContext } from '../components/pageFormat/FandomContext';
+import style from "../styles/modules/etc.module.scss";
 
 /**
  * Defines elements of a page at the highest level, including:

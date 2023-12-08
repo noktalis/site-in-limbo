@@ -1,4 +1,4 @@
-import format from "../styles/modules/container.module.scss";
+import format from "../../styles/modules/container.module.scss";
 import Main from "./main";
 import SideNav from "./sidenav";
 

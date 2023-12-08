@@ -1,5 +1,5 @@
 import LinkButton from "../linkbtn";
-import sidenav from "../styles/modules/sidenav.module.scss";
+import sidenav from "../../styles/modules/sidenav.module.scss";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { FandomContext } from "./FandomContext";

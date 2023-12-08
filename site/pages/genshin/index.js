@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Layout from '/components/layout';
-import { ThemeContext } from '/components/ThemeContext';
-import { FandomContext } from '/components/FandomContext';
-import Nav2Col from '/components/nav2Col';
-import StickerButtonLink from '/components/stickerbtnlink';
+import Layout from '../../components/pageFormat/layout';
+import { ThemeContext } from '../../components/pageFormat/ThemeContext';
+import { FandomContext } from '../../components/pageFormat/FandomContext';
+import Nav2Col from '../../components/nav2Col';
+import StickerButtonLink from '../../components/stickerbtnlink';
 
 /**
  * Defines elements of a page at the highest level, including:

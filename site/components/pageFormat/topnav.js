@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import LinkButton from '../linkbtn';
-import topnav from "../styles/modules/topnav.module.scss";
+import topnav from "../../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';

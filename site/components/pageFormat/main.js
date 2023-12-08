@@ -1,4 +1,4 @@
-import format from "../styles/modules/main.module.scss";
+import format from "../../styles/modules/main.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 

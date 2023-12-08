@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '/components/layout';
-import { ThemeContext } from '/components/ThemeContext';
-import { FandomContext } from '/components/FandomContext';
-import StickerButtonLink from '/components/stickerbtnlink';
-import NavCol from '/components/navCol';
+import Layout from '../components/pageFormat/layout';
+import { ThemeContext } from '../components/pageFormat/ThemeContext';
+import { FandomContext } from '../components/pageFormat/FandomContext';
+import StickerButtonLink from '../components/stickerbtnlink';
+import NavCol from '../components/navCol';
 
 /**
  * Home page of website

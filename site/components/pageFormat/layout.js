@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import TopNav from "./topnav";
 import Container from "./container";
-import background from "../styles/modules/background.module.scss";
+import background from "../../styles/modules/background.module.scss";
 
 /**
  * Layout of the page
