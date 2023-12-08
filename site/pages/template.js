@@ -15,7 +15,7 @@ export default function Page(){
 		// TODO: change fandom
 		<FandomContext.Provider value=''>
 		{/* // TODO: change page theme */}
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				{/* TODO: change page title */}
 				<title>Template</title>

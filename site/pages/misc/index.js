@@ -15,7 +15,7 @@ import NavCol from '../../components/navCol';
 export default function Page(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Misc.</title>
 				<link rel="icon" href="/ventiico.png" />

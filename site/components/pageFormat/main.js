@@ -12,15 +12,15 @@ export default function Main({children}){
 	let themeClass;
 
 	switch(theme){
-		case "mond":
-			themeClass = format.mond;
+		case "lyt":
+			themeClass = format.lyt;
 			break;
 		case "ri":
 			themeClass = format.ri;
 			break;
-		case "lyt":
+		case "mond":
 		default:
-			themeClass = format.lyt;
+			themeClass = format.mond;
 	}
 
 	return(

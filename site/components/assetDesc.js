@@ -1,4 +1,4 @@
-
+import format from "../styles/modules/assetDesc.module.scss";
 
 
 /**A component that holds an image and a description of the image on the side
@@ -20,7 +20,7 @@ export default function AssetDescription({align, imgSrc, children}){
  */
 export function LeftDescription({imgSrc, children}){
 	return(
-		<div>
+		<div className={format.container}>
 			<img src={imgSrc}/>
 			<hr/>
 			<div>
@@ -34,9 +34,9 @@ export function LeftDescription({imgSrc, children}){
  * 
  * @param {*} children - child elements to be placed inside the component
  */
-export function RightDescription({imgSrc, children}){
+export function RightDescription({format, children}){
 	return (
-		<div>
+		<div className={style.container}>
 			<div>
 				{children}
 			</div>

@@ -183,6 +183,23 @@
 		a {
 			@include link-colors(var(--mon-a), var(--mon-a-h), var(--mon-a-a));
 		}
+
+		> div > hr {
+			border: none;
+			border-top: var(--mon-green3) double 3px;
+			color: var(--mon-green4);
+			overflow: visible;
+			text-align: center;
+			height: 5px;
+			&:after {
+				background: transparent;
+				content: '✽';
+				padding: 0 4px;
+				position: relative;
+				top: -16px;
+				border-radius: 20px
+			}
+		}
 	}
 
 	.footer {
