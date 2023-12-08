@@ -34,6 +34,8 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
+			<h1 style={{textAlign:"center"}}>Miscellaneous</h1>
+
 			<NavCol>
 				<StickerButtonLink
 					href="/misc/assets/"

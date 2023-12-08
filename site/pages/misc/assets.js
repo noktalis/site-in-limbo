@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Layout from '/components/layout';
 import { ThemeContext } from '/components/ThemeContext';
 import { FandomContext } from '/components/FandomContext';
+import AssetDescription from '/components/assetDesc';
+import { LeftDescription, RightDescription } from '../../components/assetDesc';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -32,7 +34,20 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			<h1>Asset Source Acknowledgements</h1>
+			<h1 style={{textAlign:"center"}}>Asset Source Acknowledgements</h1>
+
+			<h2 style={{textAlign:"center"}}>Arknights</h2>
+
+			<AssetDescription
+				align="left"
+				imgSrc="/images/ak/thorns_spiky.png">Testing</AssetDescription>
+
+
+			<h2 style={{textAlign:"center"}}>Genshin</h2>
+
+			
+
+
 		</div>
 	);
 }
