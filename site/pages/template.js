@@ -10,7 +10,7 @@ import { FandomContext } from '/components/FandomContext';
  * 		- page content (See Content() below)
  * @returns 
  */
-export default function Template(){
+export default function Page(){
 	return (
 		// TODO: change fandom
 		<FandomContext.Provider value=''>

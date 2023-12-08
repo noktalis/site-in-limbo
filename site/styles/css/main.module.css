@@ -242,13 +242,13 @@
   color: var(--lyt-foot-txt);
 }
 .lyt .footer a {
-  color: --lyt-a;
+  color: var(--lyt-a);
 }
 .lyt .footer a:hover {
-  color: --lyt-a-h;
+  color: var(--lyt-a-h);
 }
 .lyt .footer a:active {
-  color: --lyt-a-a;
+  color: var(--lyt-a-a);
 }
 
 /* Rhodes Island */

@@ -116,7 +116,7 @@
 	.footer {
 		@include colors(var(--lyt-foot), var(--lyt-foot-txt));
 		a {
-			@include link-colors(--lyt-a,--lyt-a-h,--lyt-a-a);
+			@include link-colors(var(--lyt-a),var(--lyt-a-h),var(--lyt-a-a));
 		}
 	}
 }

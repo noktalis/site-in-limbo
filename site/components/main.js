@@ -46,13 +46,17 @@ export function Footer(){
 
 	switch(theme){
 		case "ri":
-			child = <span>
-						<a href="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png">Background</a> from <a href="https://aceship.github.io/AN-EN-Tags/akgallery.html">Aceship</a>!
-					</span>;
+			child = 
+				<span>
+					<a href="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png">Background</a> from <a href="https://aceship.github.io/AN-EN-Tags/akgallery.html">Aceship</a>!
+				</span>;
 			break;
 		case "mond":
 		default:
-			child = <span>Windwheel Asters are from <a className={format.xue} href="https://sincerelyandyourstruly.neocities.org">Xue</a>!</span>;
+			child = 
+				<span>
+					Windwheel Asters are from <a className={format.xue} href="https://sincerelyandyourstruly.neocities.org">Xue</a>!
+				</span>;
 	}
 	return (
 		<div className={format.footer}>
