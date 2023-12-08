@@ -39,12 +39,12 @@ function Content() {
 			<NavCol>
 				<StickerButtonLink
 					href="/misc/assets/"
-					btnTitle="Asset Source Acknowledgements"
+					btnTitle="Resource Acknowledgements"
 					imgSide=""
 					imgSize=""
 					imgSrc=""
 					imgAlt="">
-						Asset Acknowledgements
+						Resource Acknowledgements
 				</StickerButtonLink>
 			</NavCol>
 		</div>

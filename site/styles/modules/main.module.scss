@@ -49,8 +49,8 @@
 		margin: 20px 0 20px 0;
 	}
 	hr {
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -173,7 +173,7 @@
 
 	.main {
 		// Background & text color
-		@include colors(rgba(255,255,255,0.5), var(--mon-txt));
+		@include colors(rgba(255,255,255,0.3), var(--mon-txt));
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {

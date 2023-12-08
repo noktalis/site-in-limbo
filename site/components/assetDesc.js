@@ -34,9 +34,9 @@ export function LeftDescription({imgSrc, children}){
  * 
  * @param {*} children - child elements to be placed inside the component
  */
-export function RightDescription({format, children}){
+export function RightDescription({imgSrc, children}){
 	return (
-		<div className={style.container}>
+		<div className={format.container}>
 			<div>
 				{children}
 			</div>

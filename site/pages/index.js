@@ -38,6 +38,9 @@ function Content() {
 			<p>
 				Okay, now that I've kicked those guys out, the rest of you are either my friends and/or internet strangers. I'm Nat and this is where I keep <em>some</em> of my brainrot and unhinged cringe :D! If you want to see the rest, like my (slightly more detailed) opinions on ships, AU's I've collaboratively created with my friend Xue, and my deepest, darkest, most hateriness rambling, I highly recommend you check out <Link target="_blank" href={"https://sincerelyandyourstruly.neocities.org"}>Xue's site</Link>!
 			</p>
+
+			<hr/>
+
 			<h1 style={{textAlign:"center"}}>Coming Soon (Eventually)</h1>
 			<p>
 				Some of these pages probably don't exist yet, whoops! Which ones? That's for you to find out. Go! Explore! Be freeeee!
@@ -54,7 +57,7 @@ function Content() {
 						Trope Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/genshin/blorbos/"}
 					btnTitle={"Genshin Blorbo Shrines"}
 					imgSide={"righter"}
 					imgSize={""}
@@ -63,7 +66,7 @@ function Content() {
 						Genshin Blorbo Shrines
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/ak/story/"}
 					btnTitle={"Arknights story moments that keep me up at night"}
 					imgSide={"lefter"}
 					imgSize={""}

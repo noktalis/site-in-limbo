@@ -176,8 +176,8 @@
   margin: 20px 0 20px 0;
 }
 .main hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* Voices that may appear in content */
@@ -313,7 +313,7 @@
   background-color: rgba(28, 62, 78, 0.9);
 }
 .mond .main {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   color: var(--mon-txt);
 }
 .mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
