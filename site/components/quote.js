@@ -2,6 +2,8 @@ import style from "../styles/modules/quote.module.scss";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 
+// TODO: docs
+
 export default function Quote({quote, speaker}) {
 	let theme = useContext(ThemeContext);
 	let themeClass;
@@ -22,6 +24,5 @@ export default function Quote({quote, speaker}) {
 				{speaker}
 			</div>
 		</div>
-		
 	);
 }

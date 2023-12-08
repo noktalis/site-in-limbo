@@ -3,6 +3,7 @@ import Layout from '/components/layout';
 import { ThemeContext } from '/components/ThemeContext';
 import { FandomContext } from '/components/FandomContext';
 import Quote from '/components/quote';
+import DetailsList from '../../components/detailsList';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -32,11 +33,14 @@ export default function Page(){
  */
 function Content() {
 	let quote = "Sometimes it takes a real man to become the best girl.";
-	let speaker = <p>&ndash;Gigguk explaining why 'waifu' is an umbrella term that includes 	husbandos</p>;
+	let speaker = <p>&ndash;Gigguk explaining why 'waifu' is an umbrella term that includes husbandos</p>;
 
 	return (
 		<div>
+			<h1 style={{textAlign:'center'}}>Waifus</h1>
 			<Quote quote={quote} speaker={speaker}/>
+
+			<DetailsList path={"/json/ak_waifus.json"}></DetailsList>
 		</div>
 	);
 }

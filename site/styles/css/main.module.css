@@ -150,6 +150,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   /* Scrollbar settings */
+  font-size: 20px;
 }
 .container::-webkit-scrollbar {
   background-color: transparent;
@@ -165,7 +166,6 @@
 .main {
   padding: 2vh;
   font-family: Mattilda, serif;
-  font-size: 18px;
 }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
   margin: 1vh 0 auto;
@@ -197,7 +197,6 @@
   padding: 2vh;
   text-align: center;
   font-family: Mattilda, serif;
-  font-size: 18px;
 }
 .footer p {
   margin: 0;
@@ -271,9 +270,6 @@
   background-color: var(--ri-main);
   color: var(--ri-txt);
 }
-.ri .main h1, .ri .main h2, .ri .main h3, .ri .main h4, .ri .main h5, .ri .main h6 {
-  color: var(--ri-header);
-}
 .ri .main a {
   color: var(--ri-a);
 }
@@ -282,6 +278,9 @@
 }
 .ri .main a:active {
   color: var(--ri-a-a);
+}
+.ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {
+  color: var(--ri-header);
 }
 .ri .footer {
   background-color: var(--ri-foot);

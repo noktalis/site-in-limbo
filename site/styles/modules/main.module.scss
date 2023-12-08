@@ -31,6 +31,8 @@
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
     }
+
+	font-size: 20px;
 }
 
 /*
@@ -39,7 +41,6 @@
 .main {
 	padding: 2vh;
 	font-family: Mattilda, serif;
-	font-size: 18px;
 	h1,h2,h3,h4,h5,h6 {
 		margin: 1vh 0 auto;
 		font-family:Handlee, 'Handlee', cursive;
@@ -69,7 +70,6 @@
 	padding: 2vh;
 	text-align: center;
 	font-family: Mattilda, serif;
-	font-size: 18px;
 	p {
 		margin: 0;
 	}
@@ -138,13 +138,15 @@
 		// Background & text color
 		@include colors(var(--ri-main), var(--ri-txt));
 
-		// Header colors
-		h1,h2,h3,h4,h5,h6 {
-			color: var(--ri-header);
-		}
-
 		a {
 			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
+		}
+	}
+
+	.main > div {
+		// Header colors
+		> h1, > h2, > h3, > h4, > h5, > h6 {
+			color: var(--ri-header);
 		}
 	}
 

@@ -1,0 +1,48 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+
+	details {
+		display: block;
+		width: 80%;
+		padding: 10px;
+		margin: 10px;
+	}
+
+	summary {
+		margin-bottom: 8px;	// centers the lil arrow dropdown thing
+	}
+
+	hr {
+		border: 2px solid;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0 auto;
+	}
+}
+
+.summaryContainer {
+	display: inline-flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+/* Theming 
+ *	Applied alongside .container
+*/
+
+/* Rhodes Island */
+.ri {
+	
+	details{
+		background-color: white;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
+		color: var(--ri-gray5);
+	}
+}
