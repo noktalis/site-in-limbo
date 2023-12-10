@@ -3,7 +3,7 @@
  *		Each class refers to a different theme
 */
 .lyt {
-  background-image: url("../../public/images/lynette_pattern.svg");
+  background-image: url("../../public/images/genshin/lynette_pattern.svg");
   background-size: 23%;
   height: 100vh;
 }

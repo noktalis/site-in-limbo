@@ -104,7 +104,7 @@ function Content() {
 
 			<AssetDescription
 				align="right"
-				imgSrc="/images/windblumeWindwheel.svg">
+				imgSrc="/images/genshin/windblumeWindwheel.svg">
 					<p>
 						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className='xue'>Xue</span></a>!
 					</p>
