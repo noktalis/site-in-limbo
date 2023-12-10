@@ -40,7 +40,7 @@ function Content() {
 			<h1 style={{textAlign:'center'}}>Waifus</h1>
 			<Quote quote={quote} speaker={speaker}/>
 
-			<DetailsList path={"/json/ak_waifus.json"}></DetailsList>
+			<DetailsList path={"/json/ak_waifus.json"} arrayKey={"waifus"}></DetailsList>
 		</div>
 	);
 }

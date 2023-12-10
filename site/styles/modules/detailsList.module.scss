@@ -1,3 +1,4 @@
+// TODO: comments
 .container {
 	display: flex;
 	flex-direction: column;
@@ -7,12 +8,17 @@
 	details {
 		display: block;
 		width: 80%;
-		padding: 10px;
+		padding: 0 12px;
 		margin: 10px;
+
+		hr{
+			margin: 0 auto;
+		}
 	}
 
 	summary {
 		margin-bottom: 8px;	// centers the lil arrow dropdown thing
+		position: relative;
 	}
 
 	hr {
@@ -25,9 +31,19 @@
 }
 
 .summaryContainer {
+	// position: absolute;
 	display: inline-flex;
 	align-items: center;
 	padding-left: 10px;
+
+	$vertical-padding: 13px;
+	padding-top: $vertical-padding;
+	padding-bottom: $vertical-padding;
+}
+
+.textContainer {
+	padding: 12px;
+	white-space: pre-wrap;
 }
 
 /* Theming 
@@ -39,6 +55,16 @@
 	
 	details{
 		background-color: white;
+
+		summary::marker {
+			color: var(--ri-blue2);
+		}
+
+		&[open] {
+			summary::marker {
+				color: var(--ri-blue1);
+			}
+		}
 	}
 
 	h1,h2,h3,h4,h5,h6 {

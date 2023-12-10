@@ -7,11 +7,15 @@
 .container details {
   display: block;
   width: 80%;
-  padding: 10px;
+  padding: 0 12px;
   margin: 10px;
+}
+.container details hr {
+  margin: 0 auto;
 }
 .container summary {
   margin-bottom: 8px;
+  position: relative;
 }
 .container hr {
   border: 2px solid;
@@ -24,6 +28,13 @@
   display: inline-flex;
   align-items: center;
   padding-left: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.textContainer {
+  padding: 12px;
+  white-space: pre-wrap;
 }
 
 /* Theming 
@@ -32,6 +43,12 @@
 /* Rhodes Island */
 .ri details {
   background-color: white;
+}
+.ri details summary::marker {
+  color: var(--ri-blue2);
+}
+.ri details[open] summary::marker {
+  color: var(--ri-blue1);
 }
 .ri h1, .ri h2, .ri h3, .ri h4, .ri h5, .ri h6 {
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;

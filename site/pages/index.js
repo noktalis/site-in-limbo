@@ -48,7 +48,7 @@ function Content() {
 
 			<NavCol>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/misc/tropes/"}
 					btnTitle={"Trope Tier List"}
 					imgSide={"lefter"}
 					imgSize={""}
@@ -75,7 +75,7 @@ function Content() {
 						Arknights moments that keep me up at night
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/star_rail/"}
 					btnTitle={"Honkai: Star Rail"}
 					imgSide={"righter"}
 					imgSize={""}

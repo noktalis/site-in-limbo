@@ -1,6 +1,6 @@
 import style from "../styles/modules/quote.module.scss";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 
 // TODO: docs
 

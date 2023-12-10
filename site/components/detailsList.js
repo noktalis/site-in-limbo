@@ -1,8 +1,8 @@
 import { useContext, useState, useEffect } from "react";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 import style from "../styles/modules/detailsList.module.scss";
 
-export default function DetailsList({path}) {
+export default function DetailsList({path, arrayKey}) {
 	const [list, setList] = useState([{name:"",text:""}]);
 	const theme = useContext(ThemeContext);
 	let themeClass;
@@ -26,9 +26,9 @@ export default function DetailsList({path}) {
 			/* Fetch request */
 			const response = await fetch(path);
 			const obj = await response.json();
-			const data = obj.entries;	// array of data
+			const data = obj.waifus;	// array of data
 
-			console.log(data);
+			console.log(obj);
 			setList(data);
 		}
 		fetchData()
@@ -45,7 +45,9 @@ export default function DetailsList({path}) {
 						</div>
 					</summary>
 					<hr/>
-					{text}
+					<div className={style.textContainer}>
+						{text}
+					</div>
 				</details>)}
 		</div>
 	);
