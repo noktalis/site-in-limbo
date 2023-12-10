@@ -41,6 +41,10 @@ function Content() {
 			<Quote quote={quote} speaker={speaker}/>
 
 			<DetailsList path={"/json/ak_waifus.json"} arrayKey={"waifus"}></DetailsList>
+			<br/>
+
+			<h1 style={{textAlign:'center'}}>Waifu-Adjacent Favorites</h1>
+			<DetailsList path={"/json/ak_waifus.json"} arrayKey={"adjacent"}></DetailsList>
 		</div>
 	);
 }

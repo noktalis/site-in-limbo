@@ -13,10 +13,6 @@
 .container details hr {
   margin: 0 auto;
 }
-.container summary {
-  margin-bottom: 8px;
-  position: relative;
-}
 .container hr {
   border: 2px solid;
 }
@@ -28,12 +24,17 @@
   display: inline-flex;
   align-items: center;
   padding-left: 10px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.summaryContainer img {
+  max-width: 70px;
+  margin-left: 15px;
 }
 
 .textContainer {
   padding: 12px;
+  padding-bottom: 15px;
   white-space: pre-wrap;
 }
 
@@ -53,4 +54,8 @@
 .ri h1, .ri h2, .ri h3, .ri h4, .ri h5, .ri h6 {
   font-family: "RobotoCondensed", RobotoCondensed, sans-serif;
   color: var(--ri-gray5);
+}
+.ri .summaryContainer img {
+  background-color: var(--ri-gray6);
+  border-radius: 40px;
 }

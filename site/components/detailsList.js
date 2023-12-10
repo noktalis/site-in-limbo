@@ -26,7 +26,7 @@ export default function DetailsList({path, arrayKey}) {
 			/* Fetch request */
 			const response = await fetch(path);
 			const obj = await response.json();
-			const data = obj.waifus;	// array of data
+			const data = obj[arrayKey];	// array of data
 
 			console.log(obj);
 			setList(data);
@@ -37,11 +37,13 @@ export default function DetailsList({path, arrayKey}) {
 
 	return (
 		<div className={`${style.container} ${themeClass}`}>
-			{list.map(({name, text}) => 
-				<details>
+			{list.map(({name, text, img}) => 
+				<details title={name}>
 					<summary>
 						<div className={style.summaryContainer}>
 							<h2>{name}</h2>
+							<img
+								src={img}/>
 						</div>
 					</summary>
 					<hr/>

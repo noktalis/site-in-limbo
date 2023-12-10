@@ -16,11 +16,6 @@
 		}
 	}
 
-	summary {
-		margin-bottom: 8px;	// centers the lil arrow dropdown thing
-		position: relative;
-	}
-
 	hr {
 		border: 2px solid;
 	}
@@ -31,18 +26,23 @@
 }
 
 .summaryContainer {
-	// position: absolute;
 	display: inline-flex;
 	align-items: center;
 	padding-left: 10px;
 
-	$vertical-padding: 13px;
+	$vertical-padding: 10px;
 	padding-top: $vertical-padding;
 	padding-bottom: $vertical-padding;
+
+	img {
+		max-width: 70px;
+		margin-left: 15px;
+	}
 }
 
 .textContainer {
 	padding: 12px;
+	padding-bottom: 15px;
 	white-space: pre-wrap;
 }
 
@@ -70,5 +70,10 @@
 	h1,h2,h3,h4,h5,h6 {
 		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
 		color: var(--ri-gray5);
+	}
+
+	.summaryContainer img {
+		background-color: var(--ri-gray6);
+		border-radius: 40px;
 	}
 }
