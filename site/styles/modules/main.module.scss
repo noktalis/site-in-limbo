@@ -21,6 +21,7 @@
 	// Scroll the container rather than the page
 	height: 89.5vh;
 	overflow-y: auto;
+	overflow-x: hidden;
 
 	/* Scrollbar settings */
 	&::-webkit-scrollbar {
@@ -30,6 +31,8 @@
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
     }
+
+	font-size: 20px;
 }
 
 /*
@@ -38,7 +41,6 @@
 .main {
 	padding: 2vh;
 	font-family: Mattilda, serif;
-	font-size: 18px;
 	h1,h2,h3,h4,h5,h6 {
 		margin: 1vh 0 auto;
 		font-family:Handlee, 'Handlee', cursive;
@@ -47,8 +49,8 @@
 		margin: 20px 0 20px 0;
 	}
 	hr {
-		margin-top: 15px;
-		margin-bottom: 15px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -68,7 +70,6 @@
 	padding: 2vh;
 	text-align: center;
 	font-family: Mattilda, serif;
-	font-size: 18px;
 	p {
 		margin: 0;
 	}
@@ -115,7 +116,7 @@
 	.footer {
 		@include colors(var(--lyt-foot), var(--lyt-foot-txt));
 		a {
-			@include link-colors(--lyt-a,--lyt-a-h,--lyt-a-a);
+			@include link-colors(var(--lyt-a),var(--lyt-a-h),var(--lyt-a-a));
 		}
 	}
 }
@@ -137,13 +138,15 @@
 		// Background & text color
 		@include colors(var(--ri-main), var(--ri-txt));
 
-		// Header colors
-		h1,h2,h3,h4,h5,h6 {
-			color: var(--ri-header);
-		}
-
 		a {
 			@include link-colors(var(--ri-a), var(--ri-a-h), var(--ri-a-a));
+		}
+	}
+
+	.main > div {
+		// Header colors
+		> h1, > h2, > h3, > h4, > h5, > h6 {
+			color: var(--ri-header);
 		}
 	}
 
@@ -170,7 +173,7 @@
 
 	.main {
 		// Background & text color
-		@include colors(rgba(255,255,255,0.5), var(--mon-txt));
+		@include colors(rgba(255,255,255,0.3), var(--mon-txt));
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
@@ -180,12 +183,29 @@
 		a {
 			@include link-colors(var(--mon-a), var(--mon-a-h), var(--mon-a-a));
 		}
+
+		> div > hr {
+			border: none;
+			border-top: var(--mon-green3) double 3px;
+			color: var(--mon-green4);
+			overflow: visible;
+			text-align: center;
+			height: 5px;
+			&:after {
+				background: transparent;
+				content: '✽';
+				padding: 0 4px;
+				position: relative;
+				top: -16px;
+				border-radius: 20px
+			}
+		}
 	}
 
 	.footer {
 		@include colors(var(--mon-foot), var(--mon-foot-txt));
 		a {
-			@include link-colors(var(--mon-yellow1),var(--mon-orange1),var(--mon-blue1));
+			@include link-colors(var(--mon-yellow1),var(--mon-red1),var(--mon-red2));
 		}
 	}
 }

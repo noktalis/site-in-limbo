@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Layout from '/components/layout';
-import { ThemeContext } from '/components/ThemeContext';
-import { FandomContext } from '/components/FandomContext';
-import StickerButtonLink from '/components/stickerbtnlink';
-import NavCol from '/components/navCol';
+import Layout from '../components/pageFormat/layout';
+import { ThemeContext } from '../components/pageFormat/ThemeContext';
+import { FandomContext } from '../components/pageFormat/FandomContext';
+import StickerButtonLink from '../components/stickerbtnlink';
+import NavCol from '../components/navCol';
 
 /**
  * Home page of website
@@ -13,7 +13,7 @@ import NavCol from '/components/navCol';
 export default function Home(){
 	return (
 		<FandomContext.Provider value=''>
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				<title>Home</title>
 				<link rel="icon" href="/ventiico.png" />
@@ -38,6 +38,9 @@ function Content() {
 			<p>
 				Okay, now that I've kicked those guys out, the rest of you are either my friends and/or internet strangers. I'm Nat and this is where I keep <em>some</em> of my brainrot and unhinged cringe :D! If you want to see the rest, like my (slightly more detailed) opinions on ships, AU's I've collaboratively created with my friend Xue, and my deepest, darkest, most hateriness rambling, I highly recommend you check out <Link target="_blank" href={"https://sincerelyandyourstruly.neocities.org"}>Xue's site</Link>!
 			</p>
+
+			<hr/>
+
 			<h1 style={{textAlign:"center"}}>Coming Soon (Eventually)</h1>
 			<p>
 				Some of these pages probably don't exist yet, whoops! Which ones? That's for you to find out. Go! Explore! Be freeeee!
@@ -45,7 +48,7 @@ function Content() {
 
 			<NavCol>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/misc/tropes/"}
 					btnTitle={"Trope Tier List"}
 					imgSide={"lefter"}
 					imgSize={""}
@@ -54,7 +57,7 @@ function Content() {
 						Trope Tier List
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/genshin/blorbos/"}
 					btnTitle={"Genshin Blorbo Shrines"}
 					imgSide={"righter"}
 					imgSize={""}
@@ -63,7 +66,7 @@ function Content() {
 						Genshin Blorbo Shrines
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/ak/story/"}
 					btnTitle={"Arknights story moments that keep me up at night"}
 					imgSide={"lefter"}
 					imgSize={""}
@@ -72,7 +75,7 @@ function Content() {
 						Arknights moments that keep me up at night
 				</StickerButtonLink>
 				<StickerButtonLink
-					href={"/error/"}
+					href={"/star_rail/"}
 					btnTitle={"Honkai: Star Rail"}
 					imgSide={"righter"}
 					imgSize={""}

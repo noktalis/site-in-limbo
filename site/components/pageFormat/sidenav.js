@@ -1,5 +1,5 @@
-import LinkButton from "./linkbtn";
-import sidenav from "../styles/modules/sidenav.module.scss";
+import LinkButton from "../linkbtn";
+import sidenav from "../../styles/modules/sidenav.module.scss";
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { FandomContext } from "./FandomContext";
@@ -30,7 +30,7 @@ export default function SideNav(){
 		case "mond":
 		default:
 			themeClass = sidenav.mond;
-			bottom_extra = <img className={sidenav.bottom_extra} src="/images/windwheel_asters.svg"></img>;
+			bottom_extra = <img className={sidenav.bottom_extra} src="/images/genshin/windwheel_asters.svg"></img>;
 	}
 	
 	/* Figure out which header link to use at top of side nav */
@@ -89,7 +89,7 @@ function Divider(){
 
 	switch(theme) {
 		case "lyt":
-			path = "/images/lynette_teacup_segment.png";
+			path = "/images/genshin/lynette_teacup_segment.png";
 			break;
 		default:
 			path = "";
@@ -118,10 +118,10 @@ function Menu(){
 			path = "/json/nav_gi.json";
 			break;
 		case "ak":
-			path = "json/nav_ak.json";
+			path = "/json/nav_ak.json";
 			break;
 		default:
-			path = "json/nav_default.json";
+			path = "/json/nav_default.json";
 	}
 
 	/* Fetch the data */

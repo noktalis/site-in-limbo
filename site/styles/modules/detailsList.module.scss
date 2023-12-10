@@ -1,0 +1,79 @@
+// TODO: comments
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+
+	details {
+		display: block;
+		width: 80%;
+		padding: 0 12px;
+		margin: 10px;
+
+		hr{
+			margin: 0 auto;
+		}
+	}
+
+	hr {
+		border: 2px solid;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0 auto;
+	}
+}
+
+.summaryContainer {
+	display: inline-flex;
+	align-items: center;
+	padding-left: 10px;
+
+	$vertical-padding: 10px;
+	padding-top: $vertical-padding;
+	padding-bottom: $vertical-padding;
+
+	img {
+		max-width: 70px;
+		margin-left: 15px;
+	}
+}
+
+.textContainer {
+	padding: 12px;
+	padding-bottom: 15px;
+	white-space: pre-wrap;
+}
+
+/* Theming 
+ *	Applied alongside .container
+*/
+
+/* Rhodes Island */
+.ri {
+	
+	details{
+		background-color: white;
+
+		summary::marker {
+			color: var(--ri-blue2);
+		}
+
+		&[open] {
+			summary::marker {
+				color: var(--ri-blue1);
+			}
+		}
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family: 'RobotoCondensed',RobotoCondensed,sans-serif;
+		color: var(--ri-gray5);
+	}
+
+	.summaryContainer img {
+		background-color: var(--ri-gray6);
+		border-radius: 40px;
+	}
+}

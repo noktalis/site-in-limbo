@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  *	CUSTOM FONTS
  *
@@ -148,7 +149,9 @@
   /* Styles scrollbar on the side of main and footer */
   height: 89.5vh;
   overflow-y: auto;
+  overflow-x: hidden;
   /* Scrollbar settings */
+  font-size: 20px;
 }
 .container::-webkit-scrollbar {
   background-color: transparent;
@@ -164,7 +167,6 @@
 .main {
   padding: 2vh;
   font-family: Mattilda, serif;
-  font-size: 18px;
 }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
   margin: 1vh 0 auto;
@@ -174,8 +176,8 @@
   margin: 20px 0 20px 0;
 }
 .main hr {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* Voices that may appear in content */
@@ -196,7 +198,6 @@
   padding: 2vh;
   text-align: center;
   font-family: Mattilda, serif;
-  font-size: 18px;
 }
 .footer p {
   margin: 0;
@@ -242,13 +243,13 @@
   color: var(--lyt-foot-txt);
 }
 .lyt .footer a {
-  color: --lyt-a;
+  color: var(--lyt-a);
 }
 .lyt .footer a:hover {
-  color: --lyt-a-h;
+  color: var(--lyt-a-h);
 }
 .lyt .footer a:active {
-  color: --lyt-a-a;
+  color: var(--lyt-a-a);
 }
 
 /* Rhodes Island */
@@ -270,9 +271,6 @@
   background-color: var(--ri-main);
   color: var(--ri-txt);
 }
-.ri .main h1, .ri .main h2, .ri .main h3, .ri .main h4, .ri .main h5, .ri .main h6 {
-  color: var(--ri-header);
-}
 .ri .main a {
   color: var(--ri-a);
 }
@@ -281,6 +279,9 @@
 }
 .ri .main a:active {
   color: var(--ri-a-a);
+}
+.ri .main > div > h1, .ri .main > div > h2, .ri .main > div > h3, .ri .main > div > h4, .ri .main > div > h5, .ri .main > div > h6 {
+  color: var(--ri-header);
 }
 .ri .footer {
   background-color: var(--ri-foot);
@@ -312,7 +313,7 @@
   background-color: rgba(28, 62, 78, 0.9);
 }
 .mond .main {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   color: var(--mon-txt);
 }
 .mond .main h1, .mond .main h2, .mond .main h3, .mond .main h4, .mond .main h5, .mond .main h6 {
@@ -327,6 +328,22 @@
 .mond .main a:active {
   color: var(--mon-a-a);
 }
+.mond .main > div > hr {
+  border: none;
+  border-top: var(--mon-green3) double 3px;
+  color: var(--mon-green4);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.mond .main > div > hr:after {
+  background: transparent;
+  content: "✽";
+  padding: 0 4px;
+  position: relative;
+  top: -16px;
+  border-radius: 20px;
+}
 .mond .footer {
   background-color: var(--mon-foot);
   color: var(--mon-foot-txt);
@@ -335,8 +352,8 @@
   color: var(--mon-yellow1);
 }
 .mond .footer a:hover {
-  color: var(--mon-orange1);
+  color: var(--mon-red1);
 }
 .mond .footer a:active {
-  color: var(--mon-blue1);
+  color: var(--mon-red2);
 }

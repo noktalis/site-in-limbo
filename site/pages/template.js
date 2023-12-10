@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Layout from '/components/layout';
-import { ThemeContext } from '/components/ThemeContext';
-import { FandomContext } from '/components/FandomContext';
+import Layout from '../components/pageFormat/layout';
+import { ThemeContext } from '../components/pageFormat/ThemeContext';
+import { FandomContext } from '../components/pageFormat/FandomContext';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -10,12 +10,12 @@ import { FandomContext } from '/components/FandomContext';
  * 		- page content (See Content() below)
  * @returns 
  */
-export default function Template(){
+export default function Page(){
 	return (
 		// TODO: change fandom
 		<FandomContext.Provider value=''>
 		{/* // TODO: change page theme */}
-		<ThemeContext.Provider value=''>
+		<ThemeContext.Provider value='mond'>
 			<Head>
 				{/* TODO: change page title */}
 				<title>Template</title>

@@ -108,7 +108,7 @@
 	--ri-gray5: #323232;
 	--ri-gray6: #BFC0C1;
 
-	--ri-white1: #DDDDDD;
+	--ri-white1: #EEEEEE;
 
 	--ri-blue1: #41D2E5;
 	--ri-blue2: #1A44B0;
@@ -201,6 +201,8 @@
 	--mon-green3: #3AA789;
 	--mon-green4: #2A8479;
 	--mon-green5: #c3ffcb;
+	--mon-green6: #dcffe1;
+	--mon-green7: #b1ffbb;
 
 	--mon-blue1: #549FDE;
 	--mon-blue2: #3F4354;
@@ -240,9 +242,9 @@
 	--mon-txt: var(--mon-blue3);
 	--mon-header: var(--mon-teal1);
 
-	--mon-a: var(--mon-orange1);
+	--mon-a: var(--mon-green7);
 	--mon-a-h: var(--mon-yellow1);
-	--mon-a-a: var(--mon-blue4);
+	--mon-a-a: var(--mon-blue1);
 
 	// Scrollbar Thumb
 	// #0b88b1

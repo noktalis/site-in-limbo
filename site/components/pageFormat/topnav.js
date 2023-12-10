@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import LinkButton from './linkbtn';
-import topnav from "../styles/modules/topnav.module.scss";
+import LinkButton from '../linkbtn';
+import topnav from "../../styles/modules/topnav.module.scss";
 import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
@@ -98,7 +98,7 @@ function Indicator() {
 			altText += "Yanqing being smug";
 			break;
 		default:
-			path += "anemo.png";
+			path += "genshin/anemo.png";
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 

@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Layout from '../../components/pageFormat/layout';
 import { ThemeContext } from '../../components/pageFormat/ThemeContext';
 import { FandomContext } from '../../components/pageFormat/FandomContext';
-import style from "../../styles/modules/main.module.scss";
-import Webring from '../../components/webring';
+import StickerButtonLink from '../../components/stickerbtnlink';
+import NavCol from '../../components/navCol';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -17,7 +17,7 @@ export default function Page(){
 		<FandomContext.Provider value=''>
 		<ThemeContext.Provider value='mond'>
 			<Head>
-				<title>The Weebring</title>
+				<title>Misc.</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
@@ -34,15 +34,19 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			<h1 style={{textAlign:"center"}}>The Weebring</h1>
-			<p>Behold... the webring, Weebring!!!</p>
-			<p>
-				<span className={style.xue}>Xue</span> put this together and is the main admin of the ring! An index of all the sites in the WeebRing can be found at <b>Weebring Home</b>, just click the link below to navigate!
-			</p>
-			<p>
-				(By the way, this page in particular is probably buggy as hell, so if the information here doesn't look quite right, take a screenshot and inform <span className={style.xue}>Xue</span> through their <a href='https://sincerelyandyourstruly.neocities.org/ask/' target='_blank'>askbox</a> so I can hear about it from our telepathic link.)
-			</p>
-			<Webring></Webring>
+			<h1 style={{textAlign:"center"}}>Miscellaneous</h1>
+
+			<NavCol>
+				<StickerButtonLink
+					href="/misc/assets/"
+					btnTitle="Resource Acknowledgements"
+					imgSide=""
+					imgSize=""
+					imgSrc=""
+					imgAlt="">
+						Resource Acknowledgements
+				</StickerButtonLink>
+			</NavCol>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import style from "../styles/modules/stickerBtn.module.scss";
-import { ThemeContext } from "./ThemeContext";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 import { useContext } from "react";
 
 /**A button with a Sticker on the side

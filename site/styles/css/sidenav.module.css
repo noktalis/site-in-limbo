@@ -415,7 +415,7 @@
   z-index: 60;
   width: 100%;
   height: 25px;
-  background-image: url("../../public/images/mond_flags.svg");
+  background-image: url("../../public/images/genshin/mond_flags.svg");
   background-repeat: repeat-x;
   background-size: 20%;
 }
