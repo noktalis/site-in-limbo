@@ -48,7 +48,7 @@ function Content() {
 					btnTitle={"Friend ID"}
 					imgSide={"lefter"}
 					imgSize={""}
-					imgSrc={"/images/ak/saileach_pat.png"}
+					imgSrc={"/images/ak/stickers/saileach_pat.png"}
 					imgAlt={"Saileach patting a rainbow dragon on the head"}>
 						Friend ID
 				</StickerButtonLink>
@@ -57,7 +57,7 @@ function Content() {
 					btnTitle={"Arknights Skins Tier List"}
 					imgSide={"righter"}
 					imgSize={""}
-					imgSrc={"/images/ak/elysium_think.png"}
+					imgSrc={"/images/ak/stickers/elysium_think.png"}
 					imgAlt={"Elysium pondering mischief"}>
 						Skins Tier List
 				</StickerButtonLink>
@@ -66,7 +66,7 @@ function Content() {
 					btnTitle={"Operator Wishlist"}
 					imgSide={"left"}
 					imgSize={"big"}
-					imgSrc={"/images/ak/liskarm_tired.png"}
+					imgSrc={"/images/ak/stickers/liskarm_tired.png"}
 					imgAlt={"Liskarm having none of Franka's mischief"}>
 						Wishlist
 				</StickerButtonLink>
@@ -75,7 +75,7 @@ function Content() {
 					btnTitle={"Arknights Ships"}
 					imgSide={"right"}
 					imgSize={"big"}
-					imgSrc={"/images/ak/franka_heart.png"}
+					imgSrc={"/images/ak/stickers/franka_heart.png"}
 					imgAlt={"Franka winking at Liskarm with finger guns"}>
 						Ships
 				</StickerButtonLink>
@@ -84,7 +84,7 @@ function Content() {
 					btnTitle={"Arknights Waifus"}
 					imgSide={"lefter"}
 					imgSize={""}
-					imgSrc={"/images/ak/phantom_boop.png"}
+					imgSrc={"/images/ak/stickers/phantom_boop.png"}
 					imgAlt={"Miss Christine bopping Phantom on the eyes"}>
 						Waifus
 				</StickerButtonLink>
@@ -93,7 +93,7 @@ function Content() {
 					btnTitle={"Xue's Vigna Shrine"}
 					imgSide={"righter"}
 					imgSize={"big"}
-					imgSrc={"/images/ak/vigna_nom.png"}
+					imgSrc={"/images/ak/stickers/vigna_nom.png"}
 					imgAlt={"Vigna going nom"}>
 						<span className={style.xue}>Xue's</span> Vigna Shrine
 				</StickerButtonLink>
@@ -102,7 +102,7 @@ function Content() {
 					btnTitle={"Story Highlights"}
 					imgSide={"left"}
 					imgSize={""}
-					imgSrc={"/images/ak/zima_judge.png"}
+					imgSrc={"/images/ak/stickers/zima_judge.png"}
 					imgAlt={"Zima inspecting a Clue 4"}>
 						Story Highlights
 				</StickerButtonLink>
