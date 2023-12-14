@@ -1,4 +1,5 @@
 import { useContext, useState, useEffect } from "react";
+import style from "../styles/modules/tierlist.module.scss";
 
 /**Creates a tier list based on data from a given JSON file
  * 
@@ -45,7 +46,7 @@ export default function TierList({path}){
 	},[])
 
 	return (
-		<div>
+		<div className={`${style.container}`}>
 			{data.tiers.map(({tier,content}) => <Tier type={type} letter={tier} list={content}/>)}
 		</div>
 	);
@@ -66,11 +67,11 @@ export function Tier({type, letter, list}){
 	let Item = ItemTypes[type];
 
 	return(
-		<div>
-			<div>
+		<div className={`${style.tierContainer}`}>
+			<div className={`${style.tierLetter}`}>
 				{letter}
 			</div>
-			<div>
+			<div className={`${style.tierContent}`}>
 				{list.map(({attributes}) => <Item attributes={attributes}/>)}
 			</div>
 		</div>
@@ -82,10 +83,17 @@ function VO({attributes}){
 	let char = attributes.character;
 	let lang = attributes.lang;
 
+	let src = char.split(" ").join("");
+	src = `/images/genshin/icons/${src}.png`
 
+	let alt = char + "'s Portrait";
+	
 	return(
-		<div>
-			{char} {lang}
+		<div className={style.vo}>
+			<img src={src} alt={alt}/>
+			<div>
+				{lang}
+			</div>
 		</div>
 	);
 }
