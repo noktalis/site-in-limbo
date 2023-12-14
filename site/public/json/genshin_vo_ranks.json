@@ -6,8 +6,10 @@
 			"tier":"S",
 			"content":[
 				{
-					"character":"Aether",
-					"lang":"JP"
+					"attributes": {
+						"character":"Aether",
+						"lang":"JP"
+					}
 				}
 			]
 		},
@@ -15,8 +17,10 @@
 			"tier":"A",
 			"content":[
 				{
-					"character":"Aether",
-					"lang":"JP"
+					"attributes": {
+						"character":"Lumine",
+						"lang":"JP"
+					}
 				}
 			]
 		}

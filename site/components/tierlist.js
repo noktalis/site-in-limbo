@@ -1,5 +1,4 @@
 import { useContext, useState, useEffect } from "react";
-import { RankContext } from "../components/pageFormat/RankContext";
 
 /**Creates a tier list based on data from a given JSON file
  * 
@@ -9,8 +8,20 @@ import { RankContext } from "../components/pageFormat/RankContext";
 export default function TierList({path}){
 
 	/* Initial state before asyncronously fetching data */
-	const [tiers, setTiers] = useState([ {"type":"","tiers":[]} ]);
-	let type = "";
+	const [data, setData] = useState( 
+		{	type:"vo",
+			tiers:[{
+				tier:"S",
+				content:[{
+					attributes: {
+						character:"Placeholder",
+						lang:"JP"
+					}
+				}]
+			}]
+		}
+	);
+	let type = data.type;
 
 	/* Fetch the data */
 	useEffect(() => {
@@ -22,11 +33,9 @@ export default function TierList({path}){
 
 			/* Check that data is for a tier list */
 			if(format == "tierlist"){
-				const list = obj.tiers;
 				type = obj.type;
-
-				console.log(list);
-				setTiers(list);
+				console.log(obj);
+				setData(obj);	
 			} else {
 				throw new Error ("JSON data is invalid for tierlist format.");
 			}
@@ -35,32 +44,49 @@ export default function TierList({path}){
 		.catch(console.error);
 	},[])
 
-
 	return (
-		<RankContext.Provider value={type}>
-			<div>
-				{tiers.map(({tier,content}) => <Tier tier={tier} list={content}/>)}
-			</div>
-		</RankContext.Provider>
+		<div>
+			{data.tiers.map(({tier,content}) => <Tier type={type} letter={tier} list={content}/>)}
+		</div>
 	);
 }
 
+/**
+ * 
+ * @param {String} type 	- the type of items being ranked
+ * @param {String} letter 	- the letter representing the tier
+ * @param {Object[]} list	- a list of items belonging in the tier (array = yellow[], items = purple {})
+ * @returns 
+ */
+export function Tier({type, letter, list}){
+	const ItemTypes = {
+		"vo": VO
+	};
 
-export function Tier({tier, list}){
-	let itemType = useContext(RankContext);
-	console.log(`${tier}: ${list[0].character}`);
+	let Item = ItemTypes[type];
 
 	return(
 		<div>
 			<div>
-				{/* {tier} */}
+				{letter}
 			</div>
 			<div>
-				{/* children */}
+				{list.map(({attributes}) => <Item attributes={attributes}/>)}
 			</div>
 		</div>
 	);
 }
 
 
+function VO({attributes}){
+	let char = attributes.character;
+	let lang = attributes.lang;
+
+
+	return(
+		<div>
+			{char} {lang}
+		</div>
+	);
+}
 
