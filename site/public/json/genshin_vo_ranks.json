@@ -1,0 +1,24 @@
+{
+	"format":"tierlist",
+	"type":"vo",
+	"tiers":[
+		{
+			"tier":"S",
+			"content":[
+				{
+					"character":"Aether",
+					"lang":"JP"
+				}
+			]
+		},
+		{
+			"tier":"A",
+			"content":[
+				{
+					"character":"Aether",
+					"lang":"JP"
+				}
+			]
+		}
+	]
+}
