@@ -25,24 +25,44 @@
 }
 
 // Sticker positioning
-.left { 
-	left: -2%; 
-}
-.lefter { 
-	left: -7%; 
-}
-.right { 
-	right: -2%; 
-}
-.righter { 
-	right: -7%; 
-}
+.left { left: -2%; }
+.lefter { left: -7%; }
+.right { right: -2%; }
+.righter { right: -7%; }
 
 // Size adjustments
 .big { transform: scale(1.2); }
 .bigger { transform: scale(1.3); }
 .small { transform: scale(0.85); }
 .smaller { transform: scale(0.7); }
+
+
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+	.sticker {
+		transform: scale(0.7);
+		top: -35px;
+	}
+	.left { left: -13%; }
+	.lefter { left: -13%; }
+	.right { right: -13%; }
+	.righter { right: -13%; }
+}
+@media (max-width: 400px) {
+	.sticker {
+		transform: scale(0.5);
+		top: -55px;
+	}
+	.left { left: -28%; }
+	.lefter { left: -28%; }
+	.right { right: -28%; }
+	.righter { right: -28%; }
+	.button {
+		padding: 12px;
+	}
+}
+
 
 
 /* Theming
