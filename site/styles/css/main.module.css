@@ -304,7 +304,8 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
+  scrollbar-width: thin;
 }
 .mond::-webkit-scrollbar-thumb {
   background-color: rgba(28, 62, 78, 0.7);
