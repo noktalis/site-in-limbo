@@ -108,7 +108,7 @@ function Divider(){
  * @returns 
  */
 function Menu(){
-	const [links, setLinks] = useState([{title:"",text:"",href:""}]);
+	const [links, setLinks] = useState([{title:"",text:"",href:"",key:""}]);
 
 	/* Figure out which set of button data to fetch based on fandom */
 	let fandom = useContext(FandomContext);
@@ -142,20 +142,8 @@ function Menu(){
 	return (
 		<div className={sidenav.menu}>
 			{/* Map each button's data to a LinkButton element */}
-			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
-			{/* <br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>hi</p> */}
+			{links.map(({title, text, href, key}) => 
+			<LinkButton path={href} title={title} key={key}>{text}</LinkButton>)}
 		</div>
 	);
 }

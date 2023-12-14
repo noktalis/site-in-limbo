@@ -3,32 +3,38 @@
 		{
 			"title": "Home",
 			"text": "Home",
-			"href": "/"
+			"href": "/",
+			"key":"nav-1"
 		},
 		{
 			"title": "Arknights",
 			"text": "Arknights",
-			"href": "/ak/"
+			"href": "/ak/",
+			"key":"nav-2"
 		},
 		{
 			"title": "Genshin Impact",
 			"text": "Genshin",
-			"href": "/genshin/"
+			"href": "/genshin/",
+			"key":"nav-3"
 		},
 		{
 			"title": "Honkai: Star Rail",
 			"text": "Star\u00A0Rail",
-			"href": "/star_rail/"
+			"href": "/star_rail/",
+			"key":"nav-4"
 		},
 		{
 			"title": "Webring",
 			"text": "Webing",
-			"href": "/webring/"
+			"href": "/webring/",
+			"key":"nav-5"
 		},
 		{
 			"title": "Mischellaneous",
 			"text": "Misc.",
-			"href": "/misc/"
+			"href": "/misc/",
+			"key":"nav-6"
 		}
 	]
 }
