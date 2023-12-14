@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import style from "../styles/modules/tierlist.module.scss";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 
 /**Creates a tier list based on data from a given JSON file
  * 
@@ -7,6 +8,14 @@ import style from "../styles/modules/tierlist.module.scss";
  * @returns 
  */
 export default function TierList({path}){
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch (theme) {
+		case "mond":	
+		default:
+			themeClass = style.mond;
+	}
 
 	/* Initial state before asyncronously fetching data */
 	const [data, setData] = useState( 
@@ -46,24 +55,24 @@ export default function TierList({path}){
 	},[])
 
 	return (
-		<div className={`${style.container}`}>
+		<div className={`${style.container} ${themeClass}`}>
 			{data.tiers.map(({tier,content}) => <Tier type={type} letter={tier} list={content}/>)}
 		</div>
 	);
 }
 
-/**
+/**A tier within the tierlist
  * 
  * @param {String} type 	- the type of items being ranked
  * @param {String} letter 	- the letter representing the tier
- * @param {Object[]} list	- a list of items belonging in the tier (array = yellow[], items = purple {})
+ * @param {Object[]} list	- a list of items ranked into the tier
  * @returns 
  */
 export function Tier({type, letter, list}){
+	// Select item Component type based on @param type
 	const ItemTypes = {
 		"vo": VO
 	};
-
 	let Item = ItemTypes[type];
 
 	return(
@@ -78,20 +87,30 @@ export function Tier({type, letter, list}){
 	);
 }
 
-
+/**An item to represent a Voice Over being ranked in the tierlist
+ * 
+ * @param {Object} attributes 	- holds the necessary data for the component 
+ * @param {String} character	- the character of the voice over
+ * @param {String} lang			- the language of the voice over
+ * 
+ * @returns 
+ */
 function VO({attributes}){
-	let char = attributes.character;
-	let lang = attributes.lang;
+	// Extract data from attributes
+	const char = attributes.character;
+	const lang = attributes.lang;
 
+	// Image source
 	let src = char.split(" ").join("");
 	src = `/images/genshin/icons/${src}.png`
 
-	let alt = char + "'s Portrait";
+	const alt = char + "'s Portrait";	// Image alternative text
+	const title = char + " " + lang;	// Item title
 	
 	return(
-		<div className={style.vo}>
+		<div className={style.vo} title={title}>
 			<img src={src} alt={alt}/>
-			<div>
+			<div className={style.lang}>
 				{lang}
 			</div>
 		</div>

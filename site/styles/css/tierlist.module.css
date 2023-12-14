@@ -25,38 +25,66 @@
   justify-content: center;
   align-items: center;
   padding: 2vh;
-  font-size: 30px;
-  font-weight: bold;
 }
 
-.container > .tierContainer:first-child > .tierLetter {
-  background-color: #eee;
-}
-.container > .tierContainer:nth-child(2) > .tierLetter {
-  background-color: #ccc;
-}
-
+/* Styles the items and content within a tier */
 .tierContent {
   padding: 2vh;
+  padding-right: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
+/* Tierlist item types */
+/* Voice Over item */
 .vo {
   position: relative;
+  margin-right: 2vh;
 }
 .vo img {
   max-width: 80px;
 }
-.vo > div {
+.vo .lang {
   position: absolute;
   bottom: 0px;
   right: 0px;
   min-width: 28px;
   min-height: 28px;
-  background-color: white;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+/* Theming
+ * 		Applied alongside .container
+*/
+/* Mondstadt */
+.mond .tierContainer:first-child > .tierLetter, .mond .tierContainer:first-child .vo > .lang {
+  background-color: var(--mon-red2);
+  color: white;
+}
+.mond .tierContainer:nth-child(2) > .tierLetter, .mond .tierContainer:nth-child(2) .vo > .lang {
+  background-color: var(--mon-red1);
+  color: white;
+}
+.mond .tierContainer:nth-child(3) > .tierLetter, .mond .tierContainer:nth-child(3) .vo > .lang {
+  background-color: var(--mon-yellow1);
+  color: black;
+}
+.mond .tierContainer:nth-child(4) > .tierLetter, .mond .tierContainer:nth-child(4) .vo > .lang {
+  background-color: var(--mon-green5);
+  color: black;
+}
+.mond .tierContainer:nth-child(5) > .tierLetter, .mond .tierContainer:nth-child(5) .vo > .lang {
+  background-color: var(--mon-green3);
+  color: white;
+}
+.mond .tierLetter {
+  font-size: 28px;
+  font-weight: bold;
+}
+.mond .vo img {
+  border-radius: 15px;
 }

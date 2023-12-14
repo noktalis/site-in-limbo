@@ -7,8 +7,56 @@
 			"content":[
 				{
 					"attributes": {
-						"character":"Hu Tao",
-						"lang":"CN"
+						"character":"Cyno",
+						"lang":"EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Wriothesley",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Albedo",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Kazuha",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Ayaka",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "CN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "JP"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "EN"
+					}
+				},
+				{
+					"attributes": {
+						"character":"Beidou",
+						"lang": "KR"
 					}
 				}
 			]
@@ -22,6 +70,24 @@
 						"lang":"JP"
 					}
 				}
+			]
+		},
+		{
+			"tier":"B",
+			"content":[
+
+			]
+		},
+		{
+			"tier":"C",
+			"content":[
+				
+			]
+		},
+		{
+			"tier":"D",
+			"content":[
+				
 			]
 		}
 	]

@@ -1,6 +1,7 @@
+@use "../components/color-mixins" as *;
+
 /*	The container that holds the entire tierlist */
 .container {
-	// background-color: white;
 	padding: 2vh;
 	display: flex;
 	flex-direction: column;
@@ -29,36 +30,31 @@
 	justify-content: center;
 	align-items: center;
 	padding: 2vh;
-
-	// Content Styling
-	font-size: 30px;
-	font-weight: bold;
 }
 
-// Tier Coloring (temporary)
-.container > .tierContainer{
-	&:first-child > .tierLetter {
-		background-color: #eee;
-	}
-	&:nth-child(2) > .tierLetter {
-		background-color: #ccc;
-	}
-}
-
+/* Styles the items and content within a tier */
 .tierContent {
 	padding: 2vh;
+	padding-right: 0;
 	display: flex;
+	flex-wrap: wrap;
 }
 
+
+
+/* Tierlist item types */
+
+/* Voice Over item */
 .vo {
 	position: relative;
-
+	margin-right: 2vh;
+	
 	img {
 		max-width: 80px;
 	}
 	
-	// div indicates which language the voiceover is in
-	> div {
+	// Indicates which language the voiceover is in
+	.lang {
 		// Positioning the element
 		position: absolute;
 		bottom: 0px;
@@ -67,7 +63,6 @@
 		// Shape of element
 		min-width: 28px;
 		min-height: 28px;
-		background-color: white;
 		border-radius: 15px;
 
 		// Styling Contents
@@ -78,3 +73,38 @@
 	}
 }
 
+
+
+/* Theming
+ * 		Applied alongside .container
+*/
+
+/* Mondstadt */
+.mond {
+	.tierContainer{
+		&:first-child > .tierLetter, &:first-child .vo > .lang {
+			@include colors(var(--mon-red2),white);
+		}
+		&:nth-child(2) > .tierLetter, &:nth-child(2) .vo > .lang {
+			@include colors(var(--mon-red1),white);
+		}
+		&:nth-child(3) > .tierLetter, &:nth-child(3) .vo > .lang {
+			@include colors(var(--mon-yellow1),black);
+		}
+		&:nth-child(4) > .tierLetter, &:nth-child(4) .vo > .lang {
+			@include colors(var(--mon-green5),black);
+		}
+		&:nth-child(5) > .tierLetter, &:nth-child(5) .vo > .lang {
+			@include colors(var(--mon-green3),white);
+		}
+	}
+
+	.tierLetter {
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.vo img {
+		border-radius: 15px;
+	}
+}

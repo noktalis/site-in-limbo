@@ -34,7 +34,23 @@ function Content() {
 	return (
 		<div>
 			<h1 style={{textAlign:'center'}}>Voiceover Rankings</h1>
-			<TierList path="/json/genshin_vo_ranks.json"></TierList>
+			<h3 style={{textAlign:'center'}}>My very biased, very opinionated voiceover rankings in the 4 languages!</h3>
+			<p>
+				Just as a disclaimer, I believe that all the voice actors are super talented!!! What I don't like about some voiceovers usually comes down to not liking the direction and sound that each voiceover decided to go with, or thinking that the voiceover is somewhat out of character for my own interpretation of the character.
+			</p>
+
+			<TierList path="/json/genshin_vo_ranks.json"/>
+
+			<h2 style={{textAlign:'center'}}>Ranks Explained</h2>
+			<div style={{textAlign:'center'}}>
+				Scores are out of 10!<br/>
+				S: 9+<br/>
+				A: 8+<br/>
+				B: 7+<br/>
+				C: 6+<br/>
+				D: &lt; 5
+				
+			</div>
 		</div>
 	);
 }

@@ -141,7 +141,9 @@
   margin-right: 3vh;
   margin-top: 3vh;
   height: 70vh;
-  width: 65%;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
   display: flex;
   flex-direction: column;
 }
@@ -213,18 +215,7 @@
     width: 75%;
   }
 }
-@media (max-width: 1150px) {
-  .nav {
-    width: 80%;
-  }
-}
-@media (max-width: 970px) {
-  .nav {
-    width: 90%;
-    margin-right: 2vh;
-  }
-}
-@media (max-width: 850px) {
+@media (max-width: 650px) {
   .nav {
     display: none;
   }
