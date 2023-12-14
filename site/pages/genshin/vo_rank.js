@@ -38,6 +38,9 @@ function Content() {
 			<p>
 				Just as a disclaimer, I believe that all the voice actors are super talented!!! What I don't like about some voiceovers usually comes down to not liking the direction and sound that each voiceover decided to go with, or thinking that the voiceover is somewhat out of character for my own interpretation of the character.
 			</p>
+			<p>
+				Also! These are <em>mostly</em> based on their voicelines available in their profile. Unfortunately this <em>does</em> matter and there <em>will</em> be exceptions.
+			</p>
 
 			<TierList path="/json/genshin_vo_ranks.json"/>
 
