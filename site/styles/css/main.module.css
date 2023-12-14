@@ -147,11 +147,12 @@
   display: flex;
   flex-direction: column;
   /* Styles scrollbar on the side of main and footer */
-  height: 89.5vh;
+  height: 89.75vh;
   overflow-y: auto;
   overflow-x: hidden;
   /* Scrollbar settings */
   font-size: 20px;
+  min-width: 900px;
 }
 .container::-webkit-scrollbar {
   background-color: transparent;
@@ -187,15 +188,14 @@
 
 .xue {
   font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
 /*
  *	Footer at the bottom of the page below the main container
 */
 .footer {
-  min-height: 8vh;
-  padding: 2vh;
+  padding: 15px;
   text-align: center;
   font-family: Mattilda, serif;
 }
@@ -204,6 +204,16 @@
 }
 
 /* Mobile formatting */
+@media (max-width: 1250px) {
+  .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    font-size: 18px;
+  }
+}
 /*	Theming
  * 		Applied alongside .container
 */

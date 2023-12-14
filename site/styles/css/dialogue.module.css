@@ -169,5 +169,17 @@
 
 .xue {
   font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
-  font-size: 120%;
+  font-size: 1.2em;
+}
+
+/* Mobile Formatting */
+@media (max-width: 1000px) {
+  .container {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 14px;
+  }
 }

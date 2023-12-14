@@ -115,18 +115,16 @@ function Indicator() {
 		//Show menu
 		else {
 			menu.style.display = 'grid';
-			nav.style.gap = "2vh"; //returns room between indicator and buttons
+			nav.style.gap = "1vh"; //returns room between indicator and buttons
 		}
 	}
 
 	return (
-		<Image
+		<img
 			className={topnav.indicator}
 			id='indicator'
 
 			src={path}
-			width={64}
-			height={64}
 			alt={altText}
 			title="Toggle Menu"
 
