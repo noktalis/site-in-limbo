@@ -159,12 +159,13 @@ function Menu({extra_menu_src}){
 
 	return (
 		<div className={sidenav.menu}>
+			{/* Conditionally render extra menu buttons */}
+			{extra ? extra.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>) : ""}
+
+			{extra ? <hr/> : ""}
+
 			{/* Map each button's data to a LinkButton element */}
 			{links.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>)}
-
-			{/* Conditionally render extra menu buttons */}
-			{extra ? <hr/> : ""}
-			{extra ? extra.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>) : ""}
 		</div>
 	);
 }
