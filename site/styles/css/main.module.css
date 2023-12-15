@@ -151,6 +151,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   /* Scrollbar settings */
+  scrollbar-width: thin;
   font-size: 20px;
   min-width: 900px;
 }
@@ -315,7 +316,6 @@
    * 		from root.scss manually
   */
   scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
-  scrollbar-width: thin;
 }
 .mond::-webkit-scrollbar-thumb {
   background-color: rgba(28, 62, 78, 0.7);

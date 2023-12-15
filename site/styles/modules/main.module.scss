@@ -31,6 +31,7 @@
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
     }
+	scrollbar-width: thin;	// for firefox
 
 	font-size: 20px;
 	min-width: 900px;
@@ -175,7 +176,6 @@
 
 	// Scrollbar Settings
 	@include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);	// for firefox
-	scrollbar-width: thin;	// for firefox
 	@include scrollbarColor($scroll);
 
 	.main {

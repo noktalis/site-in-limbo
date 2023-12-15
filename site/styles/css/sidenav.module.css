@@ -190,6 +190,7 @@
   padding-left: 15px;
   padding-right: 15px;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 .menu a {
   text-decoration: none;
