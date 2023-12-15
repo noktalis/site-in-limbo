@@ -50,7 +50,7 @@ function Content() {
 
 			<AssetDescription
 				align="left"
-				imgSrc="/images/ak/thorns_spiky.png">
+				imgSrc="/images/ak/stickers/thorns_spiky.png">
 					<p>
 						An <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20'>edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie'>@asbestie</a>
 					</p>
@@ -61,29 +61,16 @@ function Content() {
 
 			<AssetDescription
 				align="right"
-				imgSrc="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png">
+				imgSrc="/images/ak/laterano_chapel.png">
 					<p>
-						A background from <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20'>edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie'>@asbestie</a>
-					</p>
-					<p>
-						sgfdg
+						A background from the Guiding Ahead Event. HD version from <a href='https://aceship.github.io/AN-EN-Tags/akgallery.html'>Aceship CG Gallery</a>.
 					</p>
 			</AssetDescription>
 
 			<h3 style={{textAlign:"center"}}>Official Stickers</h3>
 			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit'>Official Arknights Fankit</a>!</h4>
 
-			{/* TODO: sticker gallery */}
-			<Gallery>
-				<img src='/images/ak/bagpipe_potatoes.png' alt='Bagpipe with potatoes'/>
-				<img src='/images/ak/saileach_pat.png' alt='Saileach petting a rainbow dragon'/>
-				<img src='/images/ak/elysium_think.png' alt='Elysium pondering mischief'/>
-				<img src='/images/ak/liskarm_tired.png' alt="Liskarm having none of Franka's mischief"/>
-				<img src='/images/ak/franka_heart.png' alt='Franka winking at Liskarm with finger guns'/>
-				<img src='/images/ak/phantom_boop.png' alt='Miss Christine bopping Phantom on the eyes'/>
-				<img src='/images/ak/vigna_nom.png' alt='Vigna going nom'/>
-				<img src='/images/ak/zima_judge.png' alt='Zima inspecting a Clue 4'/>
-			</Gallery>
+			<Gallery path={"/json/misc/ak_stickers.json"}/>
 
 
 			<hr/> {/* Genshin Section */}

@@ -324,7 +324,6 @@
 
 		// scroll settings
 		@include scrollbarColorsFF(--mon-sd-scroll, --mon-sd-scroll-h);
-		scrollbar-width: thin;
 		@include scrollbarColor($scroll);
 
 		margin-top: 2px;

@@ -447,7 +447,6 @@
 }
 .mond .menu {
   scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
-  scrollbar-width: thin;
   margin-top: 2px;
   padding-top: 3vh;
   padding-bottom: 80px;
