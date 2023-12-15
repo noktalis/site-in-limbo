@@ -22,7 +22,7 @@ export default function Page(){
 				<title>Genshin Blorbos</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
-			<Layout><Content/></Layout>
+			<Layout extra_menu_src="/json/nav_gi_blorbos.json"><Content/></Layout>
 		</ThemeContext.Provider>
 		</FandomContext.Provider>
 		
@@ -163,7 +163,7 @@ function Content() {
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/genshin/blorbos/wanderer"}
-					btnTitle={"Wanderer"}
+					btnTitle={"Hattie"}
 					imgSide={"left"}
 					imgSize={""}
 					imgSrc={"/images/genshin/emotes/scara_study.png"}

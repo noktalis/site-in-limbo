@@ -165,6 +165,42 @@
 				var(--lyt-sd-itm-h),var(--lyt-sd-a-h),
 				var(--lyt-sd-itm-h),var(--lyt-sd-a-a));
 		}
+
+		hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/lynette_teacup.png") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 18px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: white;
+				height: 2px;
+				top: 8px;
+			}
+			&:before {
+				left: 0;
+				right: 55%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 55%;
+				margin-left: 10px;
+			}
+		}
 	}
 }
 
@@ -286,7 +322,8 @@
 		$scroll: white;
 
 		// scroll settings
-		@include scrollbarColorsFF(--mon-scroll, --mon-scroll-h);
+		@include scrollbarColorsFF(--mon-sd-scroll, --mon-sd-scroll-h);
+		scrollbar-width: thin;
 		@include scrollbarColor($scroll);
 
 		margin-top: 2px;
@@ -311,6 +348,42 @@
 		a {
 			display: flex;
 			justify-content: center;
+		}
+
+		hr {
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/windblumeWindwheel.svg") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 18px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: white;
+				height: 2px;
+				top: 8px;
+			}
+			&:before {
+				left: 0;
+				right: 50%;
+				margin-right: 10px;
+			}
+			&:after {
+				right: 0;
+				left: 50%;
+				margin-left: 10px;
+			}
 		}
 	}
 }
@@ -344,7 +417,9 @@
 
 
 
-
+/* References 
+ * 	https://stackoverflow.com/questions/35610251/style-hr-with-image
+*/
 
 
 

@@ -283,6 +283,34 @@
   background-color: var(--lyt-sd-itm-h);
   color: var(--lyt-sd-a-a);
 }
+.lyt .menu hr {
+  position: relative;
+  background: url("/images/genshin/lynette_teacup.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.lyt .menu hr:before, .lyt .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.lyt .menu hr:before {
+  left: 0;
+  right: 55%;
+  margin-right: 10px;
+}
+.lyt .menu hr:after {
+  right: 0;
+  left: 55%;
+  margin-left: 10px;
+}
 
 /* Rhodes Island */
 .ri {
@@ -417,7 +445,8 @@
   width: 100%;
 }
 .mond .menu {
-  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
+  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+  scrollbar-width: thin;
   margin-top: 2px;
   padding-top: 3vh;
   padding-bottom: 80px;
@@ -451,6 +480,34 @@
   display: flex;
   justify-content: center;
 }
+.mond .menu hr {
+  position: relative;
+  background: url("/images/genshin/windblumeWindwheel.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.mond .menu hr:before, .mond .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.mond .menu hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 10px;
+}
+.mond .menu hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 10px;
+}
 
 /* Template/Test */
 .test {
@@ -474,3 +531,7 @@
 .test .bottom button {
   background-color: white;
 }
+
+/* References 
+ * 	https://stackoverflow.com/questions/35610251/style-hr-with-image
+*/

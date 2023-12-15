@@ -18,7 +18,7 @@ export default function Page(){
 				<title>Lynette | Genshin Blorbos</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
-			<Layout><Content/></Layout>
+			<Layout extra_menu_src="/json/nav_gi_blorbos.json"><Content/></Layout>
 		</ThemeContext.Provider>
 		</FandomContext.Provider>
 		
