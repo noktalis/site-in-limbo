@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../../components/pageFormat/layout';
 import { ThemeContext } from '../../components/pageFormat/ThemeContext';
 import { FandomContext } from '../../components/pageFormat/FandomContext';
+import style from '../../styles/modules/main.module.scss';
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -10,15 +11,12 @@ import { FandomContext } from '../../components/pageFormat/FandomContext';
  * 		- page content (See Content() below)
  * @returns 
  */
-export default function Template(){
+export default function Page(){
 	return (
-		// TODO: change fandom
 		<FandomContext.Provider value='ak'>
-		{/* // TODO: change page theme */}
 		<ThemeContext.Provider value='ri'>
 			<Head>
-				{/* TODO: change page title */}
-				<title>Template</title>
+				<title>Friend ID | Arknights</title>
 				<link rel="icon" href="/ventiico.png" />
 			</Head>
 			<Layout><Content/></Layout>
@@ -35,11 +33,15 @@ export default function Template(){
 function Content() {
 	return (
 		<div>
+			<div className={style.headerImg}>
+				<img src='/images/ak/profile.png'></img>
+			</div>
+			
 			<p>
 				If you're a stranger and managed to find this page, congrats! Feel free to add me in-game, my username is <b>Noktalis#1026</b>.
 			</p>
 			<p>
-				The most valuable waifu I own is my fucking-- potential 6 Bagpipe-- I swear I'm not a whale I don't have any other non-welfare 6*s at pot 6. She's maxed out, and I usually put her up regardless of whether a <abbr title="Continguency Contract">CC</abbr> season is going on.
+				The most valuable waifu I own is my fucking&ndash; potential 6 Bagpipe&ndash; I swear I'm not a whale I don't have any other non-welfare 6*s at pot 6. She's just. Bagpipe. Anyway, she's maxed out, and I usually put her up when there's a <abbr title="Continguency Contract">CC</abbr> season is going on, but nowadays she's not as important for CC so I might not bother unless requested.
 			</p>
 
 			<hr/>

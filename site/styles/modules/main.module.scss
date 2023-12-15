@@ -56,6 +56,15 @@
 	}
 }
 
+.headerImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		width: 100%
+	}
+}
+
 /* Voices that may appear in content */
 .nat {
 	@include nat-voice;

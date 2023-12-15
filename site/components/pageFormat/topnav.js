@@ -98,7 +98,7 @@ function Indicator() {
 			altText += "Yanqing being smug";
 			break;
 		default:
-			path += "genshin/anemo.png";
+			path += "genshin/anemo.svg";
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 

@@ -67,7 +67,7 @@ function Content() {
 					</p>
 			</AssetDescription>
 
-			<h3 style={{textAlign:"center"}}>Official Stickers</h3>
+			<h3 style={{textAlign:"center", paddingTop:'15px'}}>Official Stickers</h3>
 			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit'>Official Arknights Fankit</a>!</h4>
 
 			<Gallery path={"/json/misc/ak_stickers.json"}/>
@@ -83,7 +83,7 @@ function Content() {
 
 			<AssetDescription
 				align="left"
-				imgSrc="https://64.media.tumblr.com/ee06d35521aee1d641efcad7bb7aa535/8fc878786876778c-8a/s1280x1920/fa2d08768737e77ae64d3454b25565162c2629c9.png">
+				imgSrc="/images/genshin/jean_namecard.png">
 					<p>
 						<a href='https://genshin-impact.fandom.com/wiki/Jean/Gallery#Namecard'>Jean's Namecard</a>, HD version from <a href='https://genshinresource.tumblr.com/cardlist'>@genshinresource</a>
 					</p>

@@ -182,6 +182,15 @@
   margin-bottom: 40px;
 }
 
+.headerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerImg img {
+  width: 100%;
+}
+
 /* Voices that may appear in content */
 .nat {
   font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
