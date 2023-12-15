@@ -1,6 +1,7 @@
 .container {
 	display: grid;
 	grid-template-columns: repeat(7, minmax(0, 1fr));
+	padding: 5px;
 
 	img {
 		width: 100%;
@@ -27,4 +28,16 @@
 	.container {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
+}
+
+
+
+/* Theming
+ *		Applied alongside .container 
+ */
+
+/* Mondstadt */
+.mond {
+	background-color: rgba($color: white, $alpha: 0.2);
+	border-radius: 25px;
 }

@@ -1,8 +1,18 @@
 import format from "../styles/modules/gallery.module.scss";
-import { useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 
 export default function Gallery({path}){
+	const theme = useContext(ThemeContext);
 	const [images, setImages] = useState([{src:"",alt:""}]);
+
+	let themeClass;
+
+	switch (theme) {
+		case 'mond':
+		default:
+			themeClass = format.mond;
+	}
 
 	/* Fetch the data for main main */
 	useEffect(() => {
@@ -20,7 +30,7 @@ export default function Gallery({path}){
 	},[])
 
 	return(
-		<div className={format.container}>
+		<div className={`${format.container} ${themeClass}`}>
 			{images.map(({src,alt}, index) => <img src={src} alt={alt} key={index}/>)}
 		</div>
 	);

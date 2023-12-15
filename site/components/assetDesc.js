@@ -1,5 +1,6 @@
 import format from "../styles/modules/assetDesc.module.scss";
-
+import { useContext } from "react";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 
 /**A component that holds an image and a description of the image on the side
  * 
@@ -7,10 +8,19 @@ import format from "../styles/modules/assetDesc.module.scss";
  * @returns 
  */
 export default function AssetDescription({align, imgSrc, children}){
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch (theme) {
+		case "mond":
+		default:
+			themeClass = format.mond;
+	}
+
 	if (align == "left") {
-		return(<LeftDescription imgSrc={imgSrc}>{children}</LeftDescription>);
+		return(<LeftDescription imgSrc={imgSrc} themeClass={themeClass}>{children}</LeftDescription>);
 	} else {
-		return(<RightDescription imgSrc={imgSrc}>{children}</RightDescription>);
+		return(<RightDescription imgSrc={imgSrc} themeClass={themeClass}>{children}</RightDescription>);
 	}
 }
 
@@ -18,11 +28,10 @@ export default function AssetDescription({align, imgSrc, children}){
  * 
  * @param {*} children - child elements to be placed inside the component
  */
-export function LeftDescription({imgSrc, children}){
+export function LeftDescription({imgSrc, children, themeClass}){
 	return(
-		<div className={format.container}>
+		<div className={`${format.container} ${themeClass}`}>
 			<img src={imgSrc}/>
-			<hr/>
 			<div>
 				{children}
 			</div>
@@ -34,13 +43,12 @@ export function LeftDescription({imgSrc, children}){
  * 
  * @param {*} children - child elements to be placed inside the component
  */
-export function RightDescription({imgSrc, children}){
+export function RightDescription({imgSrc, children, themeClass}){
 	return (
-		<div className={format.container}>
+		<div className={`${format.container} ${themeClass}`}>
 			<div>
 				{children}
 			</div>
-			<hr/>
 			<img src={imgSrc}/>
 		</div>
 	);
