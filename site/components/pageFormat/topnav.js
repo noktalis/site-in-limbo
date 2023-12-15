@@ -90,7 +90,7 @@ function Indicator() {
 			altText += "Bagpipe with potatoes";
 			break;
 		case "genshin":
-			path = "https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj";
+			path += "genshin/emotes/lynette_sip.png";
 			altText += "Lynette sipping tea";
 			break;
 		case "hsr":
