@@ -12,7 +12,7 @@ import style from "../styles/modules/etc.module.scss";
  * 		- page content (See Content() below)
  * @returns 
  */
-export default function Template(){
+export default function Page(){
 	return (
 		<FandomContext.Provider value=''>
 		<ThemeContext.Provider value='mond'>
@@ -37,7 +37,7 @@ function Content() {
 			<h1>404: Page Not Found</h1>
 			<div className={style.jean}>
 				<Image 
-				src={"https://64.media.tumblr.com/5aac244535ca84f39be4fed8ed6f3e67/4332a45f5c476be1-c0/s1280x1920/a5c1e3b34f2cb30ddebda142c24398b083df6baf.png"}
+				src={"/images/genshin/emotes/jean_swet.png"}
 				fill={true}
 				sizes='100vw'
 				alt='Emote of Jean smiling nervously with a sweatdrop on her cheek'></Image>
