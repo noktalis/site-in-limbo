@@ -70,45 +70,41 @@ export default function WebringDisplay(){
 			<div className={format.prev}>
 				<a title={sites[prev].title} href={sites[prev].shortURL} className={format.link} target='_blank'>
 					Prev
+					<div className={format.imgContainer}>
+						<img src="https://sincerelyandyourstruly.neocities.org/images/icons/xiaoico.png"></img>
+					</div>
 				</a>
-				<div className={format.imgContainer}>
-					<img src="https://sincerelyandyourstruly.neocities.org/images/icons/xiaoico.png"></img>
+				<div className={format.desc}>
+					<h2>{sites[prev].title}</h2>
+					<h4>Run by {sites[prev].runBy}!</h4>
 				</div>
 			</div>
 
 			<div className={format.home}>
 				<a title={sites[home].title} href={sites[home].shortURL} className={format.link} target='_blank'>
 					Weebring Home
+					<div className={format.imgContainer}>
+						<img src="/ventiico.png"></img>
+					</div>
 				</a>
-				<div className={format.imgContainer}>
-					<img src="/ventiico.png"></img>
+				<div className={format.desc}>
+					<h4>Currently you're at</h4>
+					<h2>{sites[here].title}</h2>
 				</div>
 			</div>
 
 			<div className={format.next}>
 				<a title={sites[next].title} href={sites[next].shortURL} className={format.link} target='_blank'>
 					Next
+					<div className={format.imgContainer}>
+						<img src="https://betweenseasons.neocities.org/theme/images/icons/kazuico.png"></img>
+					</div>
 				</a>
-				<div className={format.imgContainer}>
-					<img src="https://betweenseasons.neocities.org/theme/images/icons/kazuico.png"></img>
+				<div className={format.desc}>
+					<h2>{sites[next].title}</h2>
+					<h4>Run by {sites[next].runBy}!</h4>
 				</div>
-			</div>
-
-			{/* Short descriptions under images */}
-			<div className={format.desc}>
-				<h2>{sites[prev].title}</h2>
-				<h4>Run by {sites[prev].runBy}!</h4>
-			</div>
-
-			<div className={format.desc}>
-				<h4>Currently you're at</h4>
-				<h2>{sites[here].title}</h2>
-			</div>
-
-			<div className={format.desc}>
-				<h2>{sites[next].title}</h2>
-				<h4>Run by {sites[next].runBy}!</h4>
-			</div>
+			</div>	
 		</div>
 	);
 }

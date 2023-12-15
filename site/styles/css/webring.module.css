@@ -137,7 +137,7 @@
 .container {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
-  grid-template-rows: 1fr auto;
+  grid-template-areas: "prev home next";
   margin-top: 10px;
   -moz-column-gap: 5vh;
        column-gap: 5vh;
@@ -157,15 +157,15 @@
 }
 
 .prev {
-  grid-column: 1;
+  grid-area: prev;
 }
 
 .home {
-  grid-column: 2;
+  grid-area: home;
 }
 
 .next {
-  grid-column: 3;
+  grid-area: next;
 }
 
 .imgContainer img {
@@ -182,4 +182,13 @@
 }
 .desc h1, .desc h2, .desc h3, .desc h4, .desc h5, .desc h6 {
   text-align: center;
+}
+
+/* Mobile Formatting */
+@media (max-width: 600px) {
+  .container {
+    grid-template-areas: "prev next" "home home";
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
 }
