@@ -32,33 +32,13 @@ export default function Page(){
 function Content() {
 	return (
 		<div>
-			{/* TODO: define page content */}
-			<h1>Header 1</h1>
-			<h6>Header 6</h6>
-			<p>Hello World!</p>
-			<hr></hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu nisl nunc mi ipsum faucibus vitae. Luctus accumsan tortor posuere ac ut consequat semper viverra nam. Et pharetra pharetra massa massa ultricies mi quis. Suspendisse potenti nullam ac tortor vitae purus. Libero nunc consequat interdum varius sit amet mattis.</p>
-			<ul>
-				<li>Item 2</li>
-				<li>Item 1</li>
-				<li>Item 4</li>
-				<li>Item 3</li>
-			</ul>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>hi</p>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>hi</p>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>hi</p>
+			<h1>She is beauty... She is grace...!!</h1>
+			<p>
+				And she slash the shit out of someone's face &lt;3
+			</p>
+			<p>
+				No thoughts, only admiring the pretty princely catgirl...
+			</p>
 		</div>
 	);
 }
