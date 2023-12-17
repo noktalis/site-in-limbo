@@ -5,7 +5,6 @@ import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
 
-// TODO: fix links later
 /**Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages
  * @returns  */
@@ -19,6 +18,9 @@ export default function TopNav() {
 			break;
 		case "ri":
 			themeClass = topnav.ri;
+			break;
+		case "fra":
+			themeClass = topnav.fra;
 			break;
 		case "mond":
 		default:
@@ -72,8 +74,6 @@ export default function TopNav() {
 		</div>
 	);
 }
-
-// TODO: indicator theming
 
 /**Image in the left corner of the top navigation bar INDICATING theme of the page
  * @returns  */

@@ -377,3 +377,64 @@
 .mond .footer a:active {
   color: var(--mon-red2);
 }
+
+/* Furina */
+.fra {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--fra-scroll) var(--fra-scroll-h);
+}
+.fra::-webkit-scrollbar-thumb {
+  background-color: rgba(158, 222, 250, 0.7);
+}
+.fra::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(158, 222, 250, 0.9);
+}
+.fra .main {
+  background-color: var(--fra-main);
+  color: var(--fra-txt);
+}
+.fra .main h1, .fra .main h2, .fra .main h3, .fra .main h4, .fra .main h5, .fra .main h6 {
+  color: var(--fra-header);
+}
+.fra .main a {
+  color: var(--fra-a);
+}
+.fra .main a:hover {
+  color: var(--fra-a-h);
+}
+.fra .main a:active {
+  color: var(--fra-a-a);
+}
+.fra .main > div > hr {
+  border: none;
+  border-top: var(--fra-green3) double 3px;
+  color: var(--fra-green4);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+.fra .main > div > hr:after {
+  background: transparent;
+  content: "✽";
+  padding: 0 4px;
+  position: relative;
+  top: -16px;
+  border-radius: 20px;
+}
+.fra .footer {
+  background-color: var(--fra-foot);
+  color: var(--fra-foot-txt);
+}
+.fra .footer a {
+  color: var(--fra-yellow1);
+}
+.fra .footer a:hover {
+  color: var(--fra-red1);
+}
+.fra .footer a:active {
+  color: var(--fra-red2);
+}

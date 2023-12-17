@@ -4,7 +4,7 @@
 */
 
 .lyt {
-	background-image: url("../../public/images/genshin/lynette_pattern.svg");
+	background-image: url("/images/genshin/lynette_pattern.svg");
 	background-size: 23%;
 	height: 100vh;
 }
@@ -16,10 +16,14 @@
 }
 
 .mond {
-	background-image: url("https://64.media.tumblr.com/ee06d35521aee1d641efcad7bb7aa535/8fc878786876778c-8a/s1280x1920/fa2d08768737e77ae64d3454b25565162c2629c9.png");
+	background-image: url("/images/genshin/jean_namecard.png");
 	background-repeat: no-repeat;
 	background-size: auto 100vh;
 }
 
-
+.fra {
+	background-image: url("/images/genshin/furina_skirt_pattern.png");
+	background-repeat: repeat-x;
+	background-position: 0% 55%;
+}
 

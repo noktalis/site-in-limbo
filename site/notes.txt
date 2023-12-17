@@ -15,5 +15,5 @@ Misc category:
 Mondstadt theme:
 	jean colors for topnav, footer, sticker btns
 
-Furina theme:
+Furina theme (fra):
 	https://dragaliareferencearchive.tumblr.com/post/733408835133374464/model-references-for-furina-genshin-impact 

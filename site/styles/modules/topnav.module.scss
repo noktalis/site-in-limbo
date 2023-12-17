@@ -172,3 +172,21 @@
 		background-color: var(--mon-indic);
 	}
 }
+
+/* Furina */
+.fra {
+	background-color: var(--fra-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--fra-nav), var(--fra-nav-a),
+								var(--fra-nav-h), var(--fra-nav-a-h),
+								var(--fra-nav-h), var(--fra-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--fra-indic);
+	}
+}

@@ -18,6 +18,9 @@ export default function Main({children}){
 		case "ri":
 			themeClass = format.ri;
 			break;
+		case "fra":
+			themeClass = format.fra;
+			break;
 		case "mond":
 		default:
 			themeClass = format.mond;

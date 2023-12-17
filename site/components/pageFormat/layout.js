@@ -22,6 +22,9 @@ export default function Layout({extra_menu_src,children}){
 		case "ri":
 			themeClass = background.ri;
 			break;
+		case "fra":
+			themeClass = background.fra;
+			break;
 		case "mond":
 		default:
 			themeClass = background.mond;

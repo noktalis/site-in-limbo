@@ -70,7 +70,7 @@ function Content() {
 
 			<h2>Misc. Tidbits/Rambling</h2>
 			<p>
-				I bothered me toward the start of Furina's quest when Paimon went "Oh, I thought you'd be more of a diva." Like???? You learned that she's been putting on an act for 500 exhausting years!!! Wipe the slate clean and treat her like you're meeting a whole new person because it was an <em>act</em>!!!
+				I bothered me toward the start of Furina's quest when Paimon went "Oh, I thought you'd be more of a diva." Like???? You learned that she's been putting on an act for 500 exhausting years!!! Wipe the slate clean and treat her like you're meeting a whole new person!! Because it was an <em>act</em>!!!
 			</p>
 
 		</div>

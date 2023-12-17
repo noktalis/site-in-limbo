@@ -298,3 +298,26 @@
 .mond .indicator {
   background-color: var(--mon-indic);
 }
+
+/* Furina */
+.fra {
+  background-color: var(--fra-nav);
+}
+.fra .buttons button {
+  border-radius: 10px;
+  background-color: var(--fra-nav);
+  color: var(--fra-nav-a);
+  font-size: 20px;
+  font-family: FridayOctoberTwelve, "Friday October Twelve", "Comic Sans", sans-serif;
+}
+.fra .buttons button:hover {
+  background-color: var(--fra-nav-h);
+  color: var(--fra-nav-a-h);
+}
+.fra .buttons button:active {
+  background-color: var(--fra-nav-h);
+  color: var(--fra-nav-a-a);
+}
+.fra .indicator {
+  background-color: var(--fra-indic);
+}
