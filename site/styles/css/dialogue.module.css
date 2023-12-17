@@ -149,14 +149,7 @@
   width: fit-content;
 }
 
-.left {
-  background-color: var(--lyt-bub-L);
-  color: var(--lyt-bub-L-txt);
-}
-
 .right {
-  background-color: var(--lyt-bub-R);
-  color: var(--lyt-bub-R-txt);
   align-self: flex-end;
   text-align: right;
 }
@@ -182,4 +175,26 @@
   .container {
     font-size: 14px;
   }
+}
+/* Theming 
+ *		Applied alongside .container
+ */
+/* Lynette */
+.lyt .left {
+  background-color: var(--lyt-bub-L);
+  color: var(--lyt-bub-L-txt);
+}
+.lyt .right {
+  background-color: var(--lyt-bub-R);
+  color: var(--lyt-bub-R-txt);
+}
+
+/* Mondstadt */
+.mond .left {
+  background-color: var(--mon-bub-L);
+  color: var(--mon-bub-L-txt);
+}
+.mond .right {
+  background-color: var(--mon-bub-R);
+  color: var(--mon-bub-R-txt);
 }

@@ -184,10 +184,10 @@
   --mon-sd-a-a: var(--mon-red2);
   --mon-sd-scroll: rgba(255, 255, 255,0.7);
   --mon-sd-scroll-h: rgba(255, 255, 255,0.9);
-  --mon-bub-L: var(--mon-violet3);
-  --mon-bub-L-txt: var(--mon-white1);
+  --mon-bub-L: var(--mon-teal1);
+  --mon-bub-L-txt: var(--mon-green6);
   --mon-bub-R: white;
-  --mon-bub-R-txt: var(--mon-violet3);
+  --mon-bub-R-txt: var(--mon-teal2);
   /* Furina Colors */
   --fra-blue1: #5E7FD7;
   --fra-blue7: #85DBFF;

@@ -1,4 +1,6 @@
 import format from "../styles/modules/dialogue.module.scss";
+import { useContext } from "react";
+import { ThemeContext } from "./pageFormat/ThemeContext";
 
 /**Container that holds dialogue bubbles
  * 
@@ -7,8 +9,20 @@ import format from "../styles/modules/dialogue.module.scss";
  * @returns 
  */
 export default function Dialogue({children}){
+	const theme = useContext(ThemeContext);
+	let themeClass;
+
+	switch (theme) {
+		case "lyt":
+			themeClass = format.lyt;
+			break;
+		case "mond":
+		default:
+			themeClass = format.mond;
+	}
+
 	return (
-		<div className={format.container}>
+		<div className={`${format.container} ${themeClass}`}>
 			{children}
 		</div>
 	);
