@@ -4,8 +4,14 @@ Adding a theme:
 	topnav.js & topnav.module.scss
 	main.js
 		main.module.scss
-		dialogue.module.scss
+
 		stickerBtn.module.scss
+
+		detailsList.module.scss
+		tierlist.module.scss
+		dialogue.module.scss
+		quote.module.scss
+		
 	sidenav.js & sidenav.module.scss
 
 

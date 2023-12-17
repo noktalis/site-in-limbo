@@ -509,6 +509,111 @@
   margin-left: 10px;
 }
 
+/* Furina */
+.fra {
+  background-color: #435399;
+  background-image: url("/images/genshin/furina_scale_pattern.svg");
+  background-size: 48%;
+  background-position: center;
+  border: solid 6px var(--fra-blue8);
+  border-radius: 30px 0px;
+  outline: solid 8px var(--fra-blue7);
+  outline-offset: 0px;
+}
+.fra .top {
+  justify-content: center;
+  padding: 8px;
+}
+.fra .top h1 {
+  font-family: BalsamiqSans, sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+}
+.fra .top a {
+  color: var(--fra-sd-hdr);
+}
+.fra .top a:hover {
+  color: var(--fra-sd-hdr-h);
+}
+.fra .top a:active {
+  color: var(--fra-sd-hdr-a);
+}
+.fra .divider {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+}
+.fra .bottom {
+  position: relative;
+  height: 83%;
+}
+.fra .bottom .bottom_extra {
+  width: 100%;
+}
+.fra .menu {
+  scrollbar-color: var(--fra-sd-scroll) var(--fra-sd-scroll-h);
+}
+.fra .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 217, 200, 0.7);
+}
+.fra .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(232, 217, 200, 0.9);
+}
+.fra .menu button {
+  border: 4px solid var(--fra-white1);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: "Comic Nue", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--fra-sd-itm);
+  color: var(--fra-sd-a);
+}
+.fra .menu button:hover {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-h);
+}
+.fra .menu button:active {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-a);
+}
+.fra .menu a {
+  display: flex;
+  justify-content: center;
+}
+.fra .menu hr {
+  position: relative;
+  background: url("/images/genshin/furina_skirt_symbol.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .menu hr:before, .fra .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--fra-gold1);
+  height: 2px;
+  top: 52%;
+}
+.fra .menu hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
+}
+.fra .menu hr:after {
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
+}
+
 /* Template/Test */
 .test {
   background-color: transparent;

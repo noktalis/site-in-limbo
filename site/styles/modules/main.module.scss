@@ -48,7 +48,7 @@
 		font-family:Handlee, 'Handlee', cursive;
 	}
 	p {
-		margin: 20px 0 20px 0;
+		margin: 10px 0 10px 0;
 	}
 	hr {
 		margin-top: 40px;
@@ -254,19 +254,38 @@
 		}
 
 		> div > hr {
-			border: none;
-			border-top: var(--fra-green3) double 3px;
-			color: var(--fra-green4);
-			overflow: visible;
-			text-align: center;
-			height: 5px;
+			position: relative;	// allows image and hr to coexist
+
+			// image
+			background: url("/images/genshin/furina_teardrop.png") no-repeat top center;
+			background-size: contain;
+			display: block;
+			height: 45px;	// won't appear without it
+
+			// spacing
+			margin: 0;
+			margin-bottom: 15px;
+			
+			border: 0;	// hide weird original hr
+
+			// make false hr that looks nicer
+			&:before, &:after {
+				content: '';
+				display: block;
+				position: absolute;
+				background: var(--fra-gold1);
+				height: 3px;
+				top: 50%;
+			}
+			&:before {
+				left: 0;
+				right: 52%;
+				margin-right: 10px;
+			}
 			&:after {
-				background: transparent;
-				content: '✽';
-				padding: 0 4px;
-				position: relative;
-				top: -16px;
-				border-radius: 20px
+				right: 0;
+				left: 52%;
+				margin-left: 10px;
 			}
 		}
 	}
@@ -274,7 +293,7 @@
 	.footer {
 		@include colors(var(--fra-foot), var(--fra-foot-txt));
 		a {
-			@include link-colors(var(--fra-yellow1),var(--fra-red1),var(--fra-red2));
+			@include link-colors(var(--fra-violet1),var(--fra-gold2),var(--fra-blue4));
 		}
 	}
 }

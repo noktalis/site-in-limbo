@@ -27,6 +27,9 @@ export default function SideNav({extra_menu_src}){
 		case "lyt":
 			themeClass = sidenav.lyt;
 			break;
+		case "fra":
+			themeClass = sidenav.fra;
+			break;
 		case "mond":
 		default:
 			themeClass = sidenav.mond;
@@ -71,7 +74,7 @@ export default function SideNav({extra_menu_src}){
 				{/* Changes based on fandom */}
 				<Menu extra_menu_src={extra_menu_src}/>
 
-				{bottom_extra}
+				{themeClass == sidenav.mond ? bottom_extra : ""}
 			</div>
 		</div>
 	);

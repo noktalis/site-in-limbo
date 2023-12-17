@@ -175,7 +175,7 @@
   font-family: Handlee, "Handlee", cursive;
 }
 .main p {
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 .main hr {
   margin-top: 40px;
@@ -410,31 +410,43 @@
   color: var(--fra-a-a);
 }
 .fra .main > div > hr {
-  border: none;
-  border-top: var(--fra-green3) double 3px;
-  color: var(--fra-green4);
-  overflow: visible;
-  text-align: center;
-  height: 5px;
+  position: relative;
+  background: url("/images/genshin/furina_teardrop.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 45px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .main > div > hr:before, .fra .main > div > hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--fra-gold1);
+  height: 3px;
+  top: 50%;
+}
+.fra .main > div > hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
 }
 .fra .main > div > hr:after {
-  background: transparent;
-  content: "✽";
-  padding: 0 4px;
-  position: relative;
-  top: -16px;
-  border-radius: 20px;
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
 }
 .fra .footer {
   background-color: var(--fra-foot);
   color: var(--fra-foot-txt);
 }
 .fra .footer a {
-  color: var(--fra-yellow1);
+  color: var(--fra-violet1);
 }
 .fra .footer a:hover {
-  color: var(--fra-red1);
+  color: var(--fra-gold2);
 }
 .fra .footer a:active {
-  color: var(--fra-red2);
+  color: var(--fra-blue4);
 }

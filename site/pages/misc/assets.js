@@ -4,6 +4,7 @@ import { ThemeContext } from '../../components/pageFormat/ThemeContext';
 import { FandomContext } from '../../components/pageFormat/FandomContext';
 import AssetDescription from '../../components/assetDesc';
 import Gallery from '../../components/gallery';
+import style from "/styles/modules/main.module.scss";
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -93,10 +94,13 @@ function Content() {
 				align="right"
 				imgSrc="/images/genshin/windblumeWindwheel.svg">
 					<p>
-						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className='xue'>Xue</span></a>!
+						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className={style.xue}>Xue</span></a>!
 					</p>
 					<p>
 						I recolored it to match the colors of windwheel asters and combined it with an in-game screenshot of grass to decorate the side navigation :3
+					</p>
+					<p>
+						The white version also pops up here and there as section dividers :)
 					</p>
 			</AssetDescription>
 

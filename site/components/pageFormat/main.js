@@ -60,7 +60,10 @@ export function Footer(){
 					Windwheel Asters are from <a className={format.xue} href="https://sincerelyandyourstruly.neocities.org">Xue</a>!
 				</span>;
 		default:
-			
+			child = 
+				<span>
+					Testing! <a href="">Testing!</a>
+				</span>
 	}
 	return (
 		<div className={format.footer}>

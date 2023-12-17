@@ -191,17 +191,23 @@
   /* Furina Colors */
   --fra-blue1: #5E7FD7;
   --fra-blue7: #85DBFF;
-  --fra-blue8: #3A4E8E;
+  --fra-blue8: #2D3E79;
   --fra-blue2: #1A1F3F;
   --fra-blue3: #171D50;
   --fra-blue5: #2C468E;
   --fra-blue6: #324076;
+  --fra-blue10: #A8EFFA;
   --fra-blue4: #9EDEFA;
   --fra-blue9: #3566AB;
-  --fra-white1: #E0DEDE;
+  --fra-violet1: #C2B1E9;
+  --fra-violet2: #708CDD;
+  --fra-violet3: #5971CB;
+  --fra-white1: #E0E0E0;
   --fra-black1: #171D2A;
   --fra-gold1: #D4CEC5;
   --fra-gold2: #BFAD96;
+  --fra-gold3: #E8D9C8;
+  --fra-gold4: #BBB3B6;
   /* Furina Theme */
   --fra-nav: var(--fra-black1);
   --fra-nav-h: var(--fra-blue3);
@@ -220,14 +226,14 @@
   --fra-scroll: rgba(158, 222, 250,0.7);
   --fra-scroll-h: rgba(158, 222, 250,0.9);
   --fra-sd: var(--fra-blue1);
-  --fra-sd-hdr: white;
-  --fra-sd-hdr-h: var(--fra-green2);
-  --fra-sd-hdr-a: var(--fra-red1);
-  --fra-sd-itm: white;
-  --fra-sd-itm-h: var(--fra-green2);
-  --fra-sd-a: var(--fra-teal2);
-  --fra-sd-a-h: white;
-  --fra-sd-a-a: var(--fra-red2);
+  --fra-sd-hdr: var(--fra-gold4);
+  --fra-sd-hdr-h: var(--fra-gold2);
+  --fra-sd-hdr-a: var(--fra-blue10);
+  --fra-sd-itm: var(--fra-violet3);
+  --fra-sd-itm-h: var(--fra-violet2);
+  --fra-sd-a: var(--fra-white1);
+  --fra-sd-a-h: var(--fra-blue10);
+  --fra-sd-a-a: var(--fra-gold2);
   --fra-sd-scroll: rgba(255, 255, 255,0.7);
   --fra-sd-scroll-h: rgba(255, 255, 255,0.9);
 }
