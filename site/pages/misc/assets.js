@@ -41,7 +41,7 @@ function Content() {
 				I fear being Perceived&trade; too much to directly ask any artists to use their art so I'm going to stick with the ones that say it's fine to use without asking as long as they're credited &lt;3
 			</p>
 			<p>
-				There's also a lot of official game assets, and I hope it goes without saying that I don't have any claim to them while making my silly lil site.
+				There's also a lot of official game assets, and I hope it goes without saying that I don't have any claim to them while making my silly lil fan site.
 			</p>
 
 
