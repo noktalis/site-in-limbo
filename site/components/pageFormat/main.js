@@ -59,6 +59,7 @@ export function Footer(){
 				<span>
 					Windwheel Asters are from <a className={format.xue} href="https://sincerelyandyourstruly.neocities.org">Xue</a>!
 				</span>;
+			break;
 		default:
 			child = 
 				<span>
