@@ -8,7 +8,7 @@ let prev = 0;
 let next = 0;
 let here = 0;
 
-const thisSite = "https://noktalis.github.io/webring/";	//TODO: change url
+const thisSite = "https://noktalis.github.io/webring/";
 
 /**Displays links and information about adjacent members in the webring,
  * along with a link to the webring home on xue's site.

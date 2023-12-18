@@ -1,4 +1,4 @@
-// TODO: comments
+/* Container that holds the entire details list section */
 .container {
 	display: flex;
 	flex-direction: column;
@@ -25,6 +25,9 @@
 	}
 }
 
+/* Container that holds content within each summary element
+ *		summaryContainer is used so that the arrow on the side doesn't get messed up
+ */
 .summaryContainer {
 	display: inline-flex;
 	align-items: center;
@@ -40,11 +43,17 @@
 	}
 }
 
+/* Container that holds content under the dropdown in each details element
+ * 		textContainer is used to distinguish the main content of each 
+ *		details element from the hr
+ */
 .textContainer {
 	padding: 12px;
 	padding-bottom: 15px;
 	white-space: pre-wrap;
 }
+
+
 
 /* Theming 
  *	Applied alongside .container

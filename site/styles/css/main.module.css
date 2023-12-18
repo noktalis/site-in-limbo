@@ -159,11 +159,8 @@
   font-weight: lighter;
   font-style: italic;
 }
-/*
- *	Styling for the main container of content and content within
-*/
-/*
- *	Contains main container and footer in center of page
+/* Styling for the main container of content and content within */
+/* Contains main container and footer in center of page
  * 	Scrollbar applied here
 */
 .container {
@@ -187,9 +184,7 @@
   border-radius: 50px;
 }
 
-/*
- *	Contains contents of the page that the user is looking for
-*/
+/* Contains contents of the page that the user is looking for */
 .main {
   padding: 2vh;
   font-family: Mattilda, serif;
@@ -207,6 +202,7 @@
   margin-bottom: 40px;
 }
 
+/* An image that may take up an entire section of the page */
 .headerImg {
   display: flex;
   justify-content: center;
@@ -226,9 +222,7 @@
   font-size: 1.2em;
 }
 
-/*
- *	Footer at the bottom of the page below the main container
-*/
+/* Footer at the bottom of the page below the main container */
 .footer {
   padding: 15px;
   text-align: center;

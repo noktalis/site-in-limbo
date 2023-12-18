@@ -1,12 +1,9 @@
 @use "../components/color-mixins" as *;
 @use "../components/fonts" as *;
 
-/*
- *	Styling for the main container of content and content within
-*/
+/* Styling for the main container of content and content within */
 
-/*
- *	Contains main container and footer in center of page
+/* Contains main container and footer in center of page
  * 	Scrollbar applied here
 */
 .container {
@@ -37,9 +34,7 @@
 	min-width: 900px;
 }
 
-/*
- *	Contains contents of the page that the user is looking for
-*/
+/* Contains contents of the page that the user is looking for */
 .main {
 	padding: 2vh;
 	font-family: Mattilda, serif;
@@ -57,7 +52,7 @@
 	}
 }
 
-// TODO: doc
+/* An image that may take up an entire section of the page */
 .headerImg {
 	display: flex;
 	justify-content: center;
@@ -75,9 +70,7 @@
 	@include xue-voice;
 }
 
-/*
- *	Footer at the bottom of the page below the main container
-*/
+/* Footer at the bottom of the page below the main container */
 .footer {
 	// min-height: 60px;	// maintains that the footer exists on the page w/o content
 	padding: 15px;
@@ -99,6 +92,8 @@
 		font-size: 18px;
 	}
 }
+
+
 
 /*	Theming
  * 		Applied alongside .container
@@ -235,7 +230,7 @@
 	 *		do not take CSS variables so the color must be copied
 	 * 		from root.scss manually
 	*/
-	$scroll: #9EDEFA;
+	$scroll: #9EDEFA; // --fra-blue4
 
 	// Scrollbar Settings
 	@include scrollbarColorsFF(--fra-scroll, --fra-scroll-h);	// for firefox
