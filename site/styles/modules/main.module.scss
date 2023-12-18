@@ -244,10 +244,13 @@
 	.main {
 		// Background & text color
 		@include colors(var(--fra-main), var(--fra-txt));
+		font-family: SweetIcedCoffee, serif;
+		font-size: 22px;
 
 		// Header colors
 		h1,h2,h3,h4,h5,h6 {
 			color: var(--fra-header);
+			font-family: GreatVibes, serif;
 		}
 
 		a {

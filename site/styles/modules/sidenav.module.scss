@@ -406,9 +406,8 @@
 		padding: 8px;
 
 		h1 {
-			// TODO: font
-			font-family: Handlee ,sans-serif;
-			font-size: 30px;
+			font-family: EdwardianScript ,sans-serif;
+			font-size: 36px;
 			margin: 0 auto;
 		}
 		a {
@@ -429,15 +428,7 @@
 
 	.bottom {
 		position: relative;
-		// margin-top: 4px;
 		height: 83%;
-
-		.bottom_extra {
-			// position: absolute;
-			// border-radius: 50px;
-			// bottom: -7%;
-			width: 100%;
-		}
 	}
 
 	.menu {
@@ -458,7 +449,7 @@
 			margin-bottom: 15px;
 			width: 100%;
 
-			font-family: 'Comic Nue', sans-serif;
+			font-family: Arinda, sans-serif;
 			font-size: 18px;
 			font-weight: bold;
 
