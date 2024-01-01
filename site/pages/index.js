@@ -52,7 +52,7 @@ function Content() {
 					btnTitle={"Trope Tier List"}
 					imgSide={"lefter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj"}
+					imgSrc={"/images/genshin/emotes/lynette_sip.png"}
 					imgAlt={"Lynette sipping tea"}>
 						Trope Tier List
 				</StickerButtonLink>
@@ -61,17 +61,16 @@ function Content() {
 					btnTitle={"Genshin Blorbo Shrines"}
 					imgSide={"righter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/651b585c99e86f7e60a948839e0e04c7/f76574c9be82fb98-0c/s400x600/932f33780e76d9e3fce74482a304e29bc4e66d4b.pnj"}
-					imgAlt={"Lyney soaking in applause and confetti"}>
+					imgSrc={"/images/genshin/emotes/lyney_applause.png"}>
 						Genshin Blorbo Shrines
 				</StickerButtonLink>
 				<StickerButtonLink
 					href={"/ak/story/"}
 					btnTitle={"Arknights story moments that keep me up at night"}
 					imgSide={"lefter"}
-					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/96430863df291e66baec879d4d5a5f48/2efd9f400ea04908-c3/s400x600/cc3364ab0478254cfcf0543150ec36b692d25bea.pnj"}
-					imgAlt={"Lynette clapping"}>
+					imgSize={"small"}
+					imgSrc={"/images/genshin/emotes/yanfei_scared.png"}
+					imgAlt={"Yanfei too scared to sleep"}>
 						Arknights moments that keep me up at night
 				</StickerButtonLink>
 				<StickerButtonLink
@@ -79,7 +78,7 @@ function Content() {
 					btnTitle={"Honkai: Star Rail"}
 					imgSide={"righter"}
 					imgSize={""}
-					imgSrc={"https://64.media.tumblr.com/f91d2f6f379a01df5f901b830b06b2e7/c5a5a3383c4c5c89-db/s540x810/8b32e0ab783d18efaa8d51fb6ff9515f873764f3.png"}
+					imgSrc={"/images/hsr/emotes/yanqing_sad.png"}
 					imgAlt={"Yanqing sad that he's broke"}>
 						A pinch of Star Rail content
 				</StickerButtonLink>

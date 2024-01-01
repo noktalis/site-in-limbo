@@ -9,7 +9,7 @@ import { FandomContext } from "./FandomContext";
  * 		Content changes based on the fandom
  * @returns 
  */
-export default function SideNav(){
+export default function SideNav({extra_menu_src}){
 	const theme = useContext(ThemeContext);
 	const fandomContext = useContext(FandomContext);
 
@@ -26,6 +26,9 @@ export default function SideNav(){
 			break;
 		case "lyt":
 			themeClass = sidenav.lyt;
+			break;
+		case "fra":
+			themeClass = sidenav.fra;
 			break;
 		case "mond":
 		default:
@@ -69,12 +72,10 @@ export default function SideNav(){
 				<Divider/>
 
 				{/* Changes based on fandom */}
-				<Menu/>
+				<Menu extra_menu_src={extra_menu_src}/>
 
-				{bottom_extra}
+				{themeClass == sidenav.mond ? bottom_extra : ""}
 			</div>
-			
-			
 		</div>
 	);
 }
@@ -107,8 +108,9 @@ function Divider(){
  * 
  * @returns 
  */
-function Menu(){
-	const [links, setLinks] = useState([{title:"",text:"",href:""}]);
+function Menu({extra_menu_src}){
+	const [links, setLinks] = useState([{title:"",text:"",href:"",key:""}]);
+	const [extra, setExtra] = useState();
 
 	/* Figure out which set of button data to fetch based on fandom */
 	let fandom = useContext(FandomContext);
@@ -124,7 +126,7 @@ function Menu(){
 			path = "/json/nav_default.json";
 	}
 
-	/* Fetch the data */
+	/* Fetch the data for main main */
 	useEffect(() => {
 		const fetchData = async() => {
 			/* Fetch request */
@@ -139,27 +141,39 @@ function Menu(){
 		.catch(console.error);
 	},[])
 
+	/* Check if there needs to be extra buttons in the menu */
+	if (extra_menu_src) {
+		/* Fetch the data */
+		useEffect(() => {
+			const fetchData = async() => {
+				/* Fetch request */
+				const response = await fetch(extra_menu_src);
+				const obj = await response.json();
+				const data = obj.buttons;	// array of button data
+
+				console.log(data);
+				setExtra(data);
+			}
+			fetchData()
+			.catch(console.error);
+		},[])
+		
+	}
+
 	return (
 		<div className={sidenav.menu}>
+			{/* Conditionally render extra menu buttons */}
+			{extra ? extra.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>) : ""}
+
+			{extra ? <hr/> : ""}
+
 			{/* Map each button's data to a LinkButton element */}
-			{links.map(({title, text, href}) => <LinkButton path={href} title={title}>{text}</LinkButton>)}
-			{/* <br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<p>hi</p> */}
+			{links.map(({title, text, href, key}) => <LinkButton path={href} title={title} key={key}>{text}</LinkButton>)}
 		</div>
 	);
 }
 
 /* References:
 	https://www.reddit.com/r/reactjs/comments/pknouj/comment/hc4wv8m/?utm_source=share&utm_medium=web2x&context=3
+	https://legacy.reactjs.org/docs/conditional-rendering.html
 */

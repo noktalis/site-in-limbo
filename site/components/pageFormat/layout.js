@@ -11,7 +11,7 @@ import background from "../../styles/modules/background.module.scss";
  * @param {*} children - child elements to be displayed as content 
  * @returns 
  */
-export default function Layout({children}){
+export default function Layout({extra_menu_src,children}){
 	const theme = useContext(ThemeContext);
 	let themeClass;
 
@@ -22,6 +22,9 @@ export default function Layout({children}){
 		case "ri":
 			themeClass = background.ri;
 			break;
+		case "fra":
+			themeClass = background.fra;
+			break;
 		case "mond":
 		default:
 			themeClass = background.mond;
@@ -30,7 +33,7 @@ export default function Layout({children}){
 	return(
 		<div className={themeClass}>
 			<TopNav></TopNav>
-			<Container>{children}</Container>
+			<Container extra_menu_src={extra_menu_src}>{children}</Container>
 		</div>
 	);
 }

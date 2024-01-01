@@ -9,6 +9,11 @@
   font-family: FridayOctoberTwelve;
   src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
 }
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
 /* 	Xue Voice: Dehasta */
 @font-face {
   font-family: Dehasta;
@@ -17,11 +22,6 @@
 @font-face {
   font-family: Dehasta;
   src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
-  font-style: italic;
-}
-@font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
   font-style: italic;
 }
 /* SaltyCheese
@@ -36,6 +36,24 @@
   font-family: Handlee;
   src: url("../../public/fonts/Handlee.woff2") format("woff2");
 }
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
 /* Matilda 
  *   For text in Main container */
 @font-face {
@@ -46,6 +64,12 @@
   font-family: Mattilda;
   src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
   font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
 }
 /* Roboto Condensed 
  *   For Arknights */
@@ -141,7 +165,9 @@
   margin-right: 3vh;
   margin-top: 3vh;
   height: 70vh;
-  width: 65%;
+  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
   display: flex;
   flex-direction: column;
 }
@@ -188,6 +214,7 @@
   padding-left: 15px;
   padding-right: 15px;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 .menu a {
   text-decoration: none;
@@ -208,23 +235,7 @@
 }
 
 /*	Mobile formatting */
-@media (max-width: 1250px) {
-  .nav {
-    width: 75%;
-  }
-}
-@media (max-width: 1150px) {
-  .nav {
-    width: 80%;
-  }
-}
-@media (max-width: 970px) {
-  .nav {
-    width: 90%;
-    margin-right: 2vh;
-  }
-}
-@media (max-width: 850px) {
+@media (max-width: 650px) {
   .nav {
     display: none;
   }
@@ -296,6 +307,34 @@
 .lyt .menu button:active {
   background-color: var(--lyt-sd-itm-h);
   color: var(--lyt-sd-a-a);
+}
+.lyt .menu hr {
+  position: relative;
+  background: url("/images/genshin/lynette_teacup.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.lyt .menu hr:before, .lyt .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.lyt .menu hr:before {
+  left: 0;
+  right: 55%;
+  margin-right: 10px;
+}
+.lyt .menu hr:after {
+  right: 0;
+  left: 55%;
+  margin-left: 10px;
 }
 
 /* Rhodes Island */
@@ -431,7 +470,7 @@
   width: 100%;
 }
 .mond .menu {
-  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
+  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
   margin-top: 2px;
   padding-top: 3vh;
   padding-bottom: 80px;
@@ -465,6 +504,142 @@
   display: flex;
   justify-content: center;
 }
+.mond .menu hr {
+  position: relative;
+  background: url("/images/genshin/windblumeWindwheel.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 18px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.mond .menu hr:before, .mond .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 8px;
+}
+.mond .menu hr:before {
+  left: 0;
+  right: 50%;
+  margin-right: 10px;
+}
+.mond .menu hr:after {
+  right: 0;
+  left: 50%;
+  margin-left: 10px;
+}
+
+/* Furina */
+.fra {
+  background-color: #435399;
+  background-image: url("/images/genshin/furina_scale_pattern.svg");
+  background-size: 48%;
+  background-position: center;
+  border: solid 6px var(--fra-blue8);
+  border-radius: 30px 0px;
+  outline: solid 8px var(--fra-blue7);
+  outline-offset: 0px;
+}
+.fra .top {
+  justify-content: center;
+  padding: 8px;
+}
+.fra .top h1 {
+  font-family: EdwardianScript, sans-serif;
+  font-size: 36px;
+  margin: 0 auto;
+}
+.fra .top a {
+  color: var(--fra-sd-hdr);
+}
+.fra .top a:hover {
+  color: var(--fra-sd-hdr-h);
+}
+.fra .top a:active {
+  color: var(--fra-sd-hdr-a);
+}
+.fra .divider {
+  position: absolute;
+  z-index: 60;
+  width: 100%;
+  height: 22px;
+  background-image: url("../../public/images/genshin/furina_gilded_trim.svg");
+  background-repeat: repeat-x;
+  background-size: 15%;
+  background-position: center;
+}
+.fra .bottom {
+  position: relative;
+  height: 83%;
+}
+.fra .menu {
+  scrollbar-color: var(--fra-sd-scroll) var(--fra-sd-scroll-h);
+  margin-top: 13px;
+  padding-top: 3vh;
+}
+.fra .menu::-webkit-scrollbar-thumb {
+  background-color: rgba(232, 217, 200, 0.7);
+}
+.fra .menu::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(232, 217, 200, 0.9);
+}
+.fra .menu button {
+  border: 4px solid var(--fra-white1);
+  border-left: 0;
+  border-right: 0;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-family: Arinda, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--fra-sd-itm);
+  color: var(--fra-sd-a);
+}
+.fra .menu button:hover {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-h);
+}
+.fra .menu button:active {
+  background-color: var(--fra-sd-itm-h);
+  color: var(--fra-sd-a-a);
+}
+.fra .menu a {
+  display: flex;
+  justify-content: center;
+}
+.fra .menu hr {
+  position: relative;
+  background: url("/images/genshin/furina_skirt_symbol.svg") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .menu hr:before, .fra .menu hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--fra-gold1);
+  height: 2px;
+  top: 52%;
+}
+.fra .menu hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
+}
+.fra .menu hr:after {
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
+}
 
 /* Template/Test */
 .test {
@@ -488,3 +663,7 @@
 .test .bottom button {
   background-color: white;
 }
+
+/* References 
+ * 	https://stackoverflow.com/questions/35610251/style-hr-with-image
+*/

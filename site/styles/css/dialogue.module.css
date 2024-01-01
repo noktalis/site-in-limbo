@@ -9,6 +9,11 @@
   font-family: FridayOctoberTwelve;
   src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
 }
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
 /* 	Xue Voice: Dehasta */
 @font-face {
   font-family: Dehasta;
@@ -17,11 +22,6 @@
 @font-face {
   font-family: Dehasta;
   src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
-  font-style: italic;
-}
-@font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
   font-style: italic;
 }
 /* SaltyCheese
@@ -36,6 +36,24 @@
   font-family: Handlee;
   src: url("../../public/fonts/Handlee.woff2") format("woff2");
 }
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
 /* Matilda 
  *   For text in Main container */
 @font-face {
@@ -46,6 +64,12 @@
   font-family: Mattilda;
   src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
   font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
 }
 /* Roboto Condensed 
  *   For Arknights */
@@ -149,14 +173,7 @@
   width: fit-content;
 }
 
-.left {
-  background-color: var(--lyt-bub-L);
-  color: var(--lyt-bub-L-txt);
-}
-
 .right {
-  background-color: var(--lyt-bub-R);
-  color: var(--lyt-bub-R-txt);
   align-self: flex-end;
   text-align: right;
 }
@@ -169,5 +186,39 @@
 
 .xue {
   font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
-  font-size: 120%;
+  font-size: 1.2em;
+}
+
+/* Mobile Formatting */
+@media (max-width: 1000px) {
+  .container {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    font-size: 14px;
+  }
+}
+/* Theming 
+ *		Applied alongside .container
+ */
+/* Lynette */
+.lyt .left {
+  background-color: var(--lyt-bub-L);
+  color: var(--lyt-bub-L-txt);
+}
+.lyt .right {
+  background-color: var(--lyt-bub-R);
+  color: var(--lyt-bub-R-txt);
+}
+
+/* Mondstadt */
+.mond .left {
+  background-color: var(--mon-bub-L);
+  color: var(--mon-bub-L-txt);
+}
+.mond .right {
+  background-color: var(--mon-bub-R);
+  color: var(--mon-bub-R-txt);
 }

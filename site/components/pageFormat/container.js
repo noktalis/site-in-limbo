@@ -11,10 +11,12 @@ import SideNav from "./sidenav";
  * @param {*} children - content to be held inside Main 
  * @returns 
  */
-export default function Container({children}){
+export default function Container({extra_menu_src,children}){
+	
+
 	return(
 		<div className={format.container}>
-			<SideNav></SideNav>
+			<SideNav extra_menu_src={extra_menu_src}></SideNav>
 			<Main>{children}</Main>
 		</div>
 	);

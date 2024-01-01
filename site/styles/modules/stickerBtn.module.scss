@@ -1,8 +1,6 @@
 @use "../components/color-mixins" as *;
 
-// TODO: documentations
-
-/* buttons for an in-page menu */
+/* Buttons for an in-page menu */
 .button {
 	position: relative;
 	
@@ -35,6 +33,34 @@
 .bigger { transform: scale(1.3); }
 .small { transform: scale(0.85); }
 .smaller { transform: scale(0.7); }
+
+
+
+/* Mobile Formatting */
+@media (max-width: 550px) {
+	.sticker {
+		transform: scale(0.7);
+		top: -35px;
+	}
+	.left { left: -13%; }
+	.lefter { left: -13%; }
+	.right { right: -13%; }
+	.righter { right: -13%; }
+}
+@media (max-width: 400px) {
+	.sticker {
+		transform: scale(0.5);
+		top: -50px;
+	}
+	.left { left: -28%; }
+	.lefter { left: -28%; }
+	.right { right: -28%; }
+	.righter { right: -28%; }
+	.button {
+		padding: 12px;
+	}
+}
+
 
 
 /* Theming

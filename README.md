@@ -30,11 +30,14 @@ Window terminal navigate commands:
 
 `dir`		Lists out the directory and all the files you can cd into
 
+To enter your empty folder do something like `cd C:/idk/stuff/youremptyfoldername`
 
-In the empty folder, run `git clone https://github.com/noktalis/fandom-site`
+Then, run `git clone https://github.com/noktalis/noktalis.github.io`
 
 
-By the way, I'm gonna change the url after I finish migrating everything over and the semester ends and I can come out of hiding. So that might break some things if you try to make changes to the repository after that. 
+~~By the way, I'm gonna change the url after I finish migrating everything over and the semester ends and I can come out of hiding. So that might break some things if you try to make changes to the repository after that.~~
+
+Okay I've changed the url! So things will definitely break at some point lol
 
 
 4. Navigate into the 'site' folder with cd
@@ -43,6 +46,7 @@ Okay now I'm pretty sure this part can't be done with Github Desktop lmao sorry
 
 The folder you created is the root of the repository, but the root of my app is the 'site' folder, so to speak. I *think* we have to run the next few commands in 'site' rather than the root, because things certainly didn't end well when I tried otherwise. 
 
+`cd site`
 
 5. Install dependencies
 

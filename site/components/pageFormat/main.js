@@ -18,6 +18,9 @@ export default function Main({children}){
 		case "ri":
 			themeClass = format.ri;
 			break;
+		case "fra":
+			themeClass = format.fra;
+			break;
 		case "mond":
 		default:
 			themeClass = format.mond;
@@ -56,8 +59,12 @@ export function Footer(){
 				<span>
 					Windwheel Asters are from <a className={format.xue} href="https://sincerelyandyourstruly.neocities.org">Xue</a>!
 				</span>;
+			break;
 		default:
-			
+			child = 
+				<span>
+					Testing! <a href="">Testing!</a>
+				</span>
 	}
 	return (
 		<div className={format.footer}>

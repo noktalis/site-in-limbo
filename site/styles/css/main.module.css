@@ -10,6 +10,11 @@
   font-family: FridayOctoberTwelve;
   src: url("../../public/fonts/FridayOctoberTwelve.woff2") format("woff2");
 }
+@font-face {
+  font-family: FridayOctoberTwelve;
+  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
+  font-style: italic;
+}
 /* 	Xue Voice: Dehasta */
 @font-face {
   font-family: Dehasta;
@@ -18,11 +23,6 @@
 @font-face {
   font-family: Dehasta;
   src: url("../../public/fonts/DehastaItalic.woff2") format("woff2");
-  font-style: italic;
-}
-@font-face {
-  font-family: FridayOctoberTwelve;
-  src: url("../../public/fonts/FridayOctoberTwelveItalic.woff2") format("woff2");
   font-style: italic;
 }
 /* SaltyCheese
@@ -37,6 +37,24 @@
   font-family: Handlee;
   src: url("../../public/fonts/Handlee.woff2") format("woff2");
 }
+/* Arinda
+ *   For TBD */
+@font-face {
+  font-family: Arinda;
+  src: url("../../public/fonts/Arinda.woff2") format("woff2");
+}
+/* Edwardian Script
+ *   For TBD */
+@font-face {
+  font-family: EdwardianScript;
+  src: url("../../public/fonts/EdwardianScriptITC.woff2") format("woff2");
+}
+/* Great Vibes
+ *   For TBD */
+@font-face {
+  font-family: GreatVibes;
+  src: url("../../public/fonts/GreatVibes-Regular.woff2") format("woff2");
+}
 /* Matilda 
  *   For text in Main container */
 @font-face {
@@ -47,6 +65,12 @@
   font-family: Mattilda;
   src: url("../../public/fonts/MattildaItalic.woff2") format("woff2");
   font-style: italic;
+}
+/* Sweet Iced Coffee
+ *   For Furina text */
+@font-face {
+  font-family: SweetIcedCoffee;
+  src: url("../../public/fonts/SweetIcedCoffee.woff2") format("woff2");
 }
 /* Roboto Condensed 
  *   For Arknights */
@@ -135,11 +159,8 @@
   font-weight: lighter;
   font-style: italic;
 }
-/*
- *	Styling for the main container of content and content within
-*/
-/*
- *	Contains main container and footer in center of page
+/* Styling for the main container of content and content within */
+/* Contains main container and footer in center of page
  * 	Scrollbar applied here
 */
 .container {
@@ -147,11 +168,13 @@
   display: flex;
   flex-direction: column;
   /* Styles scrollbar on the side of main and footer */
-  height: 89.5vh;
+  height: 89.75vh;
   overflow-y: auto;
   overflow-x: hidden;
   /* Scrollbar settings */
+  scrollbar-width: thin;
   font-size: 20px;
+  min-width: 900px;
 }
 .container::-webkit-scrollbar {
   background-color: transparent;
@@ -161,23 +184,32 @@
   border-radius: 50px;
 }
 
-/*
- *	Contains contents of the page that the user is looking for
-*/
+/* Contains contents of the page that the user is looking for */
 .main {
   padding: 2vh;
   font-family: Mattilda, serif;
 }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
   margin: 1vh 0 auto;
+  margin-bottom: 15px;
   font-family: Handlee, "Handlee", cursive;
 }
 .main p {
-  margin: 20px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 .main hr {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+/* An image that may take up an entire section of the page */
+.headerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerImg img {
+  width: 100%;
 }
 
 /* Voices that may appear in content */
@@ -187,15 +219,12 @@
 
 .xue {
   font-family: Dehasta, "Dehasta", "Dehasta Momentos", Helvetica, sans-serif;
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
-/*
- *	Footer at the bottom of the page below the main container
-*/
+/* Footer at the bottom of the page below the main container */
 .footer {
-  min-height: 8vh;
-  padding: 2vh;
+  padding: 15px;
   text-align: center;
   font-family: Mattilda, serif;
 }
@@ -204,6 +233,16 @@
 }
 
 /* Mobile formatting */
+@media (max-width: 1250px) {
+  .container {
+    min-width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    font-size: 18px;
+  }
+}
 /*	Theming
  * 		Applied alongside .container
 */
@@ -304,7 +343,7 @@
    *		do not take CSS variables so the color must be copied
    * 		from root.scss manually
   */
-  scrollbar-color: var(--mon-sd-scroll) var(--mon-sd-scroll-h);
+  scrollbar-color: var(--mon-scroll) var(--mon-scroll-h);
 }
 .mond::-webkit-scrollbar-thumb {
   background-color: rgba(28, 62, 78, 0.7);
@@ -356,4 +395,80 @@
 }
 .mond .footer a:active {
   color: var(--mon-red2);
+}
+
+/* Furina */
+.fra {
+  /* 	Note about $scroll: update with variable manually
+   * 		SASS color functions, i.e. transparentize(), rgba(), etc.,
+   *		do not take CSS variables so the color must be copied
+   * 		from root.scss manually
+  */
+  scrollbar-color: var(--fra-scroll) var(--fra-scroll-h);
+}
+.fra::-webkit-scrollbar-thumb {
+  background-color: rgba(158, 222, 250, 0.7);
+}
+.fra::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(158, 222, 250, 0.9);
+}
+.fra .main {
+  background-color: var(--fra-main);
+  color: var(--fra-txt);
+  font-family: SweetIcedCoffee, "Sweet Iced Coffee", serif;
+  font-size: 22px;
+}
+.fra .main h1, .fra .main h2, .fra .main h3, .fra .main h4, .fra .main h5, .fra .main h6 {
+  color: var(--fra-header);
+  font-family: GreatVibes, "Great Vibes", serif;
+}
+.fra .main a {
+  color: var(--fra-a);
+}
+.fra .main a:hover {
+  color: var(--fra-a-h);
+}
+.fra .main a:active {
+  color: var(--fra-a-a);
+}
+.fra .main > div > hr {
+  position: relative;
+  background: url("/images/genshin/furina_teardrop.png") no-repeat top center;
+  background-size: contain;
+  display: block;
+  height: 45px;
+  margin: 0;
+  margin-bottom: 15px;
+  border: 0;
+}
+.fra .main > div > hr:before, .fra .main > div > hr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--fra-gold1);
+  height: 3px;
+  top: 50%;
+}
+.fra .main > div > hr:before {
+  left: 0;
+  right: 52%;
+  margin-right: 10px;
+}
+.fra .main > div > hr:after {
+  right: 0;
+  left: 52%;
+  margin-left: 10px;
+}
+.fra .footer {
+  background-color: var(--fra-foot);
+  color: var(--fra-foot-txt);
+}
+.fra .footer a {
+  color: var(--fra-violet1);
+}
+.fra .footer a:hover {
+  color: var(--fra-gold2);
+}
+.fra .footer a:active {
+  color: var(--fra-blue4);
 }

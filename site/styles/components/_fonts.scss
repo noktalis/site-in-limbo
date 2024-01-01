@@ -12,6 +12,12 @@
     src: url('../../public/fonts/FridayOctoberTwelve.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: FridayOctoberTwelve;
+    src: url('../../public/fonts/FridayOctoberTwelveItalic.woff2') format('woff2');
+    font-style: italic;
+}
+
 @mixin nat-voice {
     font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
 }
@@ -29,14 +35,10 @@
 
 @mixin xue-voice {
     font-family: Dehasta, 'Dehasta', 'Dehasta Momentos', Helvetica, sans-serif;
-    font-size: 120%;
+    font-size: 1.20em;
 }
 
-@font-face {
-    font-family: FridayOctoberTwelve;
-    src: url('../../public/fonts/FridayOctoberTwelveItalic.woff2') format('woff2');
-    font-style: italic;
-}
+
 
 /* SaltyCheese
  *   For headers */
@@ -53,6 +55,27 @@
     src: url('../../public/fonts/Handlee.woff2') format('woff2');
 }
 
+/* Arinda
+ *   For TBD */
+@font-face {
+    font-family: Arinda;
+    src: url('../../public/fonts/Arinda.woff2') format('woff2');
+}
+
+/* Edwardian Script
+ *   For TBD */
+ @font-face {
+    font-family: EdwardianScript;
+    src: url('../../public/fonts/EdwardianScriptITC.woff2') format('woff2');
+}
+
+/* Great Vibes
+ *   For TBD */
+ @font-face {
+    font-family: GreatVibes;
+    src: url('../../public/fonts/GreatVibes-Regular.woff2') format('woff2');
+}
+
 /* Matilda 
  *   For text in Main container */
 @font-face {
@@ -63,6 +86,13 @@
     font-family: Mattilda;
     src: url('../../public/fonts/MattildaItalic.woff2') format('woff2');
     font-style: italic;
+}
+
+/* Sweet Iced Coffee
+ *   For Furina text */
+ @font-face {
+    font-family: SweetIcedCoffee;
+    src: url('../../public/fonts/SweetIcedCoffee.woff2') format('woff2');
 }
 
 /* Roboto Condensed 

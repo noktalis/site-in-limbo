@@ -55,6 +55,10 @@
 .indicator {
 	justify-self: start;	// Keep left
 
+	$size: 64px;
+	width: $size;
+	height: $size;
+
 	// Spacing
 	margin: 6px;
     padding: 2px;
@@ -71,12 +75,12 @@
 
 
 /* Mobile Formatting */
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 	.buttons button {
 		font-size: 18px;
 	}
 }
-@media (max-width: 845px) {
+@media (max-width: 920px) {
 	.nav {
 		grid: 'top' 'buttons';
 		gap: 0vh;
@@ -98,12 +102,15 @@
 		font-size: 18px;
 	}
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
 	.buttons {
 		grid-template-columns: auto;
 		grid-template-rows: repeat(6, auto);
-		// gap: 1vh;
-		// padding-bottom: 2vh;
+	}
+	.indicator {
+		$size: 48px;
+		height: $size;
+		width: $size;
 	}
 }
 
@@ -163,5 +170,23 @@
 
 	.indicator {
 		background-color: var(--mon-indic);
+	}
+}
+
+/* Furina */
+.fra {
+	background-color: var(--fra-nav);
+
+	.buttons button {
+		border-radius: 10px;
+		@include btn-colors(var(--fra-nav), var(--fra-nav-a),
+								var(--fra-nav-h), var(--fra-nav-a-h),
+								var(--fra-nav-h), var(--fra-nav-a-a));
+		font-size: 20px;
+		font-family: FridayOctoberTwelve, 'Friday October Twelve', 'Comic Sans', sans-serif;
+	}
+
+	.indicator {
+		background-color: var(--fra-indic);
 	}
 }

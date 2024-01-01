@@ -5,7 +5,6 @@ import { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
 import { FandomContext } from './FandomContext';
 
-// TODO: fix links later
 /**Top navigation bar of a page
  * Includes Indicator component and 6 navigation buttons between fandom pages
  * @returns  */
@@ -19,6 +18,9 @@ export default function TopNav() {
 			break;
 		case "ri":
 			themeClass = topnav.ri;
+			break;
+		case "fra":
+			themeClass = topnav.fra;
 			break;
 		case "mond":
 		default:
@@ -73,8 +75,6 @@ export default function TopNav() {
 	);
 }
 
-// TODO: indicator theming
-
 /**Image in the left corner of the top navigation bar INDICATING theme of the page
  * @returns  */
 function Indicator() {
@@ -86,11 +86,11 @@ function Indicator() {
 	/* Determines which image to use as indicator */
 	switch(fandom){
 		case "ak":
-			path += "ak/bagpipe_potatoes.png";
+			path += "ak/stickers/bagpipe_potatoes.png";
 			altText += "Bagpipe with potatoes";
 			break;
 		case "genshin":
-			path = "https://64.media.tumblr.com/34912a32339e39b674f4769feb928988/2efd9f400ea04908-9d/s400x600/454d91d9902b4c7cfe2908c1c9b975244fbeb513.pnj";
+			path += "genshin/emotes/lynette_sip.png";
 			altText += "Lynette sipping tea";
 			break;
 		case "hsr":
@@ -98,7 +98,7 @@ function Indicator() {
 			altText += "Yanqing being smug";
 			break;
 		default:
-			path += "genshin/anemo.png";
+			path += "genshin/anemo.svg";
 			altText = "Symbol of Anemo from Genshin Impact"
 	}
 
@@ -115,18 +115,16 @@ function Indicator() {
 		//Show menu
 		else {
 			menu.style.display = 'grid';
-			nav.style.gap = "2vh"; //returns room between indicator and buttons
+			nav.style.gap = "1vh"; //returns room between indicator and buttons
 		}
 	}
 
 	return (
-		<Image
+		<img
 			className={topnav.indicator}
 			id='indicator'
 
 			src={path}
-			width={64}
-			height={64}
 			alt={altText}
 			title="Toggle Menu"
 

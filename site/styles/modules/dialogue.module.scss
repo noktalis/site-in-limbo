@@ -15,12 +15,7 @@
 	width: fit-content;
 }
 
-.left {
-	@include colors(var(--lyt-bub-L), var(--lyt-bub-L-txt));
-}
-
 .right {
-	@include colors(var(--lyt-bub-R), var(--lyt-bub-R-txt));
 	align-self: flex-end;
 	text-align: right;
 }
@@ -34,4 +29,40 @@
 	@include xue-voice;
 }
 
-// TODO: theming
+
+
+/* Mobile Formatting */
+@media (max-width:1000px) {
+	.container {
+		font-size: 18px;
+	}
+}
+@media (max-width:500px) {
+	.container {
+		font-size: 14px;
+	}
+}
+
+/* Theming 
+ *		Applied alongside .container
+ */
+
+ /* Lynette */
+ .lyt {
+	.left {
+		@include colors(var(--lyt-bub-L), var(--lyt-bub-L-txt));
+	}
+	.right {
+		@include colors(var(--lyt-bub-R), var(--lyt-bub-R-txt));
+	}
+ }
+
+ /* Mondstadt */
+ .mond {
+	.left {
+		@include colors(var(--mon-bub-L), var(--mon-bub-L-txt));
+	}
+	.right {
+		@include colors(var(--mon-bub-R), var(--mon-bub-R-txt));
+	}
+ }

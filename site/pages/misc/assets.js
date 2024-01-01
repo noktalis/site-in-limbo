@@ -4,6 +4,7 @@ import { ThemeContext } from '../../components/pageFormat/ThemeContext';
 import { FandomContext } from '../../components/pageFormat/FandomContext';
 import AssetDescription from '../../components/assetDesc';
 import Gallery from '../../components/gallery';
+import style from "/styles/modules/main.module.scss";
 
 /**
  * Defines elements of a page at the highest level, including:
@@ -40,7 +41,7 @@ function Content() {
 				I fear being Perceived&trade; too much to directly ask any artists to use their art so I'm going to stick with the ones that say it's fine to use without asking as long as they're credited &lt;3
 			</p>
 			<p>
-				There's also a lot of official game assets, and I hope it goes without saying that I don't have any claim to them while making my silly lil site.
+				There's also a lot of official game assets, and I hope it goes without saying that I don't have any claim to them while making my silly lil fan site.
 			</p>
 
 
@@ -50,7 +51,7 @@ function Content() {
 
 			<AssetDescription
 				align="left"
-				imgSrc="/images/ak/thorns_spiky.png">
+				imgSrc="/images/ak/stickers/thorns_spiky.png">
 					<p>
 						An <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20'>edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie'>@asbestie</a>
 					</p>
@@ -61,29 +62,16 @@ function Content() {
 
 			<AssetDescription
 				align="right"
-				imgSrc="https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/backgrounds/26_g5_laterano_chapelout.png">
+				imgSrc="/images/ak/laterano_chapel.png">
 					<p>
-						A background from <a href='https://twitter.com/asbestie/status/1302090666063921153?s=20'>edit of an official Arknights sticker</a> by <a href='https://twitter.com/asbestie'>@asbestie</a>
-					</p>
-					<p>
-						sgfdg
+						A background from the Guiding Ahead Event. HD version from <a href='https://aceship.github.io/AN-EN-Tags/akgallery.html'>Aceship CG Gallery</a>.
 					</p>
 			</AssetDescription>
 
-			<h3 style={{textAlign:"center"}}>Official Stickers</h3>
+			<h3 style={{textAlign:"center", paddingTop:'15px'}}>Official Stickers</h3>
 			<h4 style={{textAlign:"center"}}>Downloaded from <a href='https://www.arknights.global/fankit'>Official Arknights Fankit</a>!</h4>
 
-			{/* TODO: sticker gallery */}
-			<Gallery>
-				<img src='/images/ak/bagpipe_potatoes.png' alt='Bagpipe with potatoes'/>
-				<img src='/images/ak/saileach_pat.png' alt='Saileach petting a rainbow dragon'/>
-				<img src='/images/ak/elysium_think.png' alt='Elysium pondering mischief'/>
-				<img src='/images/ak/liskarm_tired.png' alt="Liskarm having none of Franka's mischief"/>
-				<img src='/images/ak/franka_heart.png' alt='Franka winking at Liskarm with finger guns'/>
-				<img src='/images/ak/phantom_boop.png' alt='Miss Christine bopping Phantom on the eyes'/>
-				<img src='/images/ak/vigna_nom.png' alt='Vigna going nom'/>
-				<img src='/images/ak/zima_judge.png' alt='Zima inspecting a Clue 4'/>
-			</Gallery>
+			<Gallery path={"/json/misc/ak_stickers.json"}/>
 
 
 			<hr/> {/* Genshin Section */}
@@ -96,7 +84,7 @@ function Content() {
 
 			<AssetDescription
 				align="left"
-				imgSrc="https://64.media.tumblr.com/ee06d35521aee1d641efcad7bb7aa535/8fc878786876778c-8a/s1280x1920/fa2d08768737e77ae64d3454b25565162c2629c9.png">
+				imgSrc="/images/genshin/jean_namecard.png">
 					<p>
 						<a href='https://genshin-impact.fandom.com/wiki/Jean/Gallery#Namecard'>Jean's Namecard</a>, HD version from <a href='https://genshinresource.tumblr.com/cardlist'>@genshinresource</a>
 					</p>
@@ -106,10 +94,13 @@ function Content() {
 				align="right"
 				imgSrc="/images/genshin/windblumeWindwheel.svg">
 					<p>
-						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className='xue'>Xue</span></a>!
+						A windblume/windwheel aster svg, from my friend <a href='https://sincerelyandyourstruly.neocities.org'><span className={style.xue}>Xue</span></a>!
 					</p>
 					<p>
 						I recolored it to match the colors of windwheel asters and combined it with an in-game screenshot of grass to decorate the side navigation :3
+					</p>
+					<p>
+						The white version also pops up here and there as section dividers :)
 					</p>
 			</AssetDescription>
 
